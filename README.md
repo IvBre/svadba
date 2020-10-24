@@ -1,7 +1,7 @@
 # Ivana & Kay - bibi hochzeit
 
 ## Set it up localy
-Before starting the JS server, you need to start the [PHP API](api/README.md) first.
+Before starting the JS server, you need to start the [PHP API](api/) first.
 
 ## CLI Commands
 
