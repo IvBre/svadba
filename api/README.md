@@ -83,6 +83,8 @@ Sample request:
 ```
 If the `guest` object doesn't have an `guestId`, that means it's a new guest added to this invite.
 
+## Errors and validation
+
 There is a lot of validation for this data, so do not worry, 
 but you need to handle the errors in the frontend.
 Here is an example response in case of a user error:
@@ -98,10 +100,10 @@ Content-Type: application/json
 ```
 
 And in case of a server error:
+```
 HTTP/1.0 500 Internal Server Error
 Content-Type: application/json
 
-```
 {
   "status": "error",
   "message": "An unexpected error occurred.",
