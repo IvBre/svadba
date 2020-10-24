@@ -22,6 +22,7 @@ In case you don't have it or it doesn't work, then you'll need to run it manuall
 ```
 php -S localhost:5000
 ```
+Note that the folder `./public` should be the web root.
 
 ## Endpoints
 
