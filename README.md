@@ -1,22 +1,14 @@
-# Ivana & Kay - bibis svadba
+# Ivana & Kay - bibi hochzeit
 
 ## CLI Commands
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
+yarn dev
 
 # run tests with jest and enzyme
-npm run test
+yarn test
 ```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).

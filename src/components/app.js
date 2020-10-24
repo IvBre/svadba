@@ -5,15 +5,23 @@ import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Profile from '../routes/profile';
+import Rsvp from '../routes/rsvp';
+import Location from '../routes/location';
+import Transportation from '../routes/transportation';
+import Tradition from '../routes/tradition';
+import Interesting from '../routes/interesting';
 
 const App = () => (
 	<div id="app">
 		<Header />
 		<Router>
 			<Home path="/" />
-			<Profile path="/profile/" user="me" />
-			<Profile path="/profile/:user" />
+			<Rsvp path="/rsvp/" />
+			<Rsvp path="/r/:code" />
+			<Location path="/location" />
+			<Transportation path="/transportation" />
+			<Tradition path="/tradition" />
+			<Interesting path="/interesting" />
 		</Router>
 	</div>
 )
