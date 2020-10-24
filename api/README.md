@@ -18,6 +18,11 @@ like for example:
 If you have IntelliJ, the PHP server should already be in the "Run Configurations", 
 just select it and press the green arrow button "Run".
 
+In case you don't have it or it doesn't work, then you'll need to run it manually:
+```
+php -S localhost:5000
+```
+
 ## Endpoints
 
 - `GET /v/<CODE>` - This endpoint will return data we have related to the provided `code`.
@@ -96,6 +101,7 @@ And in case of a server error:
 HTTP/1.0 500 Internal Server Error
 Content-Type: application/json
 
+```
 {
   "status": "error",
   "message": "An unexpected error occurred.",
