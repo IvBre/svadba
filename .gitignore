@@ -1,3 +1,4 @@
+api/config/mysql.json
 api/vendor
 node_modules
 /build
