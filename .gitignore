@@ -1,0 +1,4 @@
+api/vendor
+node_modules
+/build
+/*.log

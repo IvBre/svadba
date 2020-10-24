@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/api/src/Svadba" isTestSource="false" packagePrefix="Svadba\" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/dusank/knapsack" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/gridonic/json-response" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ircmaxell/password-compat" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/simplon/helper" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/simplon/mysql" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/steampixel/simple-php-router" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php54" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php55" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

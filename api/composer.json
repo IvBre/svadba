@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {"Svadba\\": "src/svadba"}
+  },
+  "require": {
+    "simplon/mysql": "^2.2",
+    "steampixel/simple-php-router": "^0.4.1",
+    "gridonic/json-response": "^1.1"
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/simplon/mysql" />
+      <path value="$PROJECT_DIR$/vendor/dusank/knapsack" />
+      <path value="$PROJECT_DIR$/vendor/simplon/helper" />
+      <path value="$PROJECT_DIR$/vendor/steampixel/simple-php-router" />
+      <path value="$PROJECT_DIR$/api/vendor/steampixel/simple-php-router" />
+      <path value="$PROJECT_DIR$/api/vendor/gridonic/json-response" />
+      <path value="$PROJECT_DIR$/api/vendor/simplon/mysql" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api/vendor/dusank/knapsack" />
+      <path value="$PROJECT_DIR$/api/vendor/simplon/helper" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-php55" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-php54" />
+      <path value="$PROJECT_DIR$/api/vendor/composer" />
+      <path value="$PROJECT_DIR$/api/vendor/ircmaxell/password-compat" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>
