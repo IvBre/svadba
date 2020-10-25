@@ -15,7 +15,7 @@ class Application
     private static array $registry = [];
 
     public function main() {
-        self::register();
+        $this->register();
 
         set_exception_handler([$this, "exceptionHandler"]);
 

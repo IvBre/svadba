@@ -26,4 +26,6 @@ const App = () => (
 	</div>
 )
 
+export const AUTH_HASH = "76dC782d964895AE07735c0FE3aDf1063dB7aD1D84ADD04D3b1A5B8FD4b27B37";
+
 export default App;
