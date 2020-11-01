@@ -2,6 +2,7 @@
 namespace Svadba\Controller;
 
 use Gridonic\JsonResponse\SuccessJsonResponse;
+use Svadba\Component\Translations;
 use Svadba\Model\Guest;
 use Svadba\Repository\GuestRepositoryInterface;
 use Svadba\Repository\InvitationRepositoryInterface;
@@ -12,12 +13,16 @@ class IndexController
 
     private GuestRepositoryInterface $guestRepository;
 
+    private Translations $translations;
+
     public function __construct(
         InvitationRepositoryInterface $invitationRepository,
-        GuestRepositoryInterface $guestRepository
+        GuestRepositoryInterface $guestRepository,
+        Translations $translations
     ) {
         $this->invitationRepository = $invitationRepository;
         $this->guestRepository = $guestRepository;
+        $this->translations = $translations;
     }
 
     public static function index() {
@@ -27,7 +32,7 @@ class IndexController
     }
 
     public function getInvitation(string $code) {
-        if (empty($code)) throw new \InvalidArgumentException("The field <b>Code</b> is required.");
+        if (empty($code)) throw new \InvalidArgumentException($this->translations->translate("field_code_required"));
 
         $invitation = $this->invitationRepository->findWithGuests($code);
 
@@ -39,9 +44,9 @@ class IndexController
     public function updateInvitation(string $code) {
         $data = json_decode(file_get_contents('php://input'), true);
 
-        if (empty($code)) throw new \InvalidArgumentException("The field <b>Code</b> is required.");
+        if (empty($code)) throw new \InvalidArgumentException($this->translations->translate("field_code_required"));
 
-        if (!isset($data["guests"])) throw new \InvalidArgumentException("Somehow you're missing the list of invited guests.");
+        if (!isset($data["guests"])) throw new \InvalidArgumentException($this->translations->translate("error_missing_guests"));
 
         $guests = $data["guests"];
         $email = isset($data["email"]) ? $data["email"] : "";

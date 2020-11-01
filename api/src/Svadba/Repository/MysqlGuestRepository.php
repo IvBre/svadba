@@ -2,14 +2,18 @@
 namespace Svadba\Repository;
 
 use Simplon\Mysql\Mysql;
+use Svadba\Component\Translations;
 use Svadba\Model\Guest;
 
 class MysqlGuestRepository implements GuestRepositoryInterface
 {
     private Mysql $dbConn;
 
-    public function __construct(Mysql $dbConn) {
+    private Translations $translations;
+
+    public function __construct(Mysql $dbConn, Translations $translations) {
         $this->dbConn = $dbConn;
+        $this->translations = $translations;
     }
 
     public function findAll(string $code): array {

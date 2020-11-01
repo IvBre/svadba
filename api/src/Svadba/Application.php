@@ -4,6 +4,7 @@ namespace Svadba;
 use Gridonic\JsonResponse\ErrorJsonResponse;
 use mysql_xdevapi\Exception;
 use Steampixel\Route;
+use Svadba\Component\Translations;
 use Svadba\Controller\IndexController;
 use Simplon\Mysql\PDOConnector;
 use Simplon\Mysql\Mysql;
@@ -64,9 +65,18 @@ class Application
 
     private function register() {
         self::$registry["mysql"] = $this->getDbConnection();
-        self::$registry["guestRepository"] = new MysqlGuestRepository(self::$registry["mysql"]);
-        self::$registry["invitationRepository"] = new MysqlInvitationRepository(self::$registry["mysql"], self::$registry["guestRepository"]);
-        self::$registry["indexController"] = new IndexController(self::$registry["invitationRepository"], self::$registry["guestRepository"]);
+        self::$registry["translations"] = new Translations(substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2));
+        self::$registry["guestRepository"] = new MysqlGuestRepository(self::$registry["mysql"], self::$registry["translations"]);
+        self::$registry["invitationRepository"] = new MysqlInvitationRepository(
+            self::$registry["mysql"],
+            self::$registry["guestRepository"],
+            self::$registry["translations"]
+        );
+        self::$registry["indexController"] = new IndexController(
+            self::$registry["invitationRepository"],
+            self::$registry["guestRepository"],
+            self::$registry["translations"]
+        );
     }
 
     public function exceptionHandler($exception) {

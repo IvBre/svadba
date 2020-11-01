@@ -2,6 +2,7 @@
 namespace Svadba\Repository;
 
 use Simplon\Mysql\Mysql;
+use Svadba\Component\Translations;
 use Svadba\Model\Invitation;
 
 class MysqlInvitationRepository implements InvitationRepositoryInterface
@@ -10,12 +11,16 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
 
     private GuestRepositoryInterface $guestRepository;
 
+    private Translations $translations;
+
     public function __construct(
         Mysql $dbConn,
-        GuestRepositoryInterface $guestRepository
+        GuestRepositoryInterface $guestRepository,
+        Translations $translations
     ) {
         $this->dbConn = $dbConn;
         $this->guestRepository = $guestRepository;
+        $this->translations = $translations;
     }
 
     public function find(string $code): Invitation {
@@ -24,7 +29,7 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
         $dbResult = $this->dbConn->fetchRow("SELECT * FROM invitations WHERE code = :code", $condition);
 
         if ($dbResult == null) {
-            throw new \InvalidArgumentException("The provided code does not exist. Please check your invitation card again.");
+            throw new \InvalidArgumentException($this->translations->translate("code_doesnt_exist"));
         }
 
         return new Invitation(
