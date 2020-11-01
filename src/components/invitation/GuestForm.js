@@ -1,9 +1,9 @@
 import React from 'react';
 
-class GuestForm extends React.Component {
+export class GuestForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { guestId: 0, name: "", isComing: false, isVegetarian: false };
+        this.state = GUEST_DEFAULT_OBJ;
     }
 
     render({ onInput, state }) {
@@ -35,4 +35,4 @@ class GuestForm extends React.Component {
     }
 }
 
-export default GuestForm;
+export const GUEST_DEFAULT_OBJ = { guestId: 0, name: "", isComing: false, isVegetarian: false };

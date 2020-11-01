@@ -59,7 +59,7 @@ class IndexController
 
             $isVegetarian = isset($guest["isVegetarian"]) ? (bool)$guest["isVegetarian"] : false;
 
-            if (isset($guest['guestId'])) {
+            if (isset($guest['guestId']) && $guest['guestId'] > 0) {
                 $guestId = (int)$guest['guestId'];
 
                 $updateGuestsData[$guestId] = new Guest(

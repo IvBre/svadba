@@ -62,6 +62,8 @@ class MysqlGuestRepository implements GuestRepositoryInterface
             $insertData[] = $guest->toInsertArray();
         }
 
-        return $this->dbConn->insertMany('guests', $insertData);
+        $result = $this->dbConn->insertMany('guests', $insertData);
+
+        return !$result ?: true;
     }
 }

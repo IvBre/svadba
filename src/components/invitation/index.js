@@ -1,7 +1,8 @@
 import React from 'react';
 import RSVPForm from './RSVPForm';
+import {getInvitationCall} from "../app";
 
-class ViewInvitationForm extends React.Component {
+class SearchInvitationForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { code: '', invitation: {}, display: false };
@@ -12,11 +13,7 @@ class ViewInvitationForm extends React.Component {
     }
 
     handleSubmit = (event) => {
-        fetch('http://localhost:5000/v/' + this.state.code, {
-            method: 'GET'
-        }).then(response => {
-            return response.json()
-        }).then(response => {
+        getInvitationCall(this.state.code).then(response => {
             console.log(response)
             this.setState({ ...this.state, invitation: response.data, display: true });
         }).catch(error => {
@@ -51,4 +48,4 @@ class ViewInvitationForm extends React.Component {
     }
 }
 
-export default ViewInvitationForm;
+export default SearchInvitationForm;

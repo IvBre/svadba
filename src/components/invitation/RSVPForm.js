@@ -1,13 +1,19 @@
 import React from 'react';
-import GuestForm from './GuestForm';
+import { route } from 'preact-router';
+import { GuestForm, GUEST_DEFAULT_OBJ } from './GuestForm';
+import {useContext} from "preact/hooks";
+import {TranslateContext} from "@denysvuika/preact-translate";
 
 class RSVPForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { display: false, addMore: false, code: "", invitation: { email: "", maxGuests: 0, guests: [] } };
+        this.state = { display: false, code: "", invitation: { email: "", maxGuests: 0, guests: [] } };
         this.state = this.props.state;
 
+        this.translation = useContext(TranslateContext);
+
         this.handleAddMoreGuests = this.handleAddMoreGuests.bind(this);
+        this.handleRemoveGuest = this.handleRemoveGuest.bind(this);
     }
 
     handleInvitationChange = (event) => {
@@ -19,27 +25,22 @@ class RSVPForm extends React.Component {
                     [event.target.name]: event.target.value
                 }
             }
-        )
+        );
     }
 
     handleGuestChange = (index) => (event) => {
         console.log("GUEST CHANGE")
 
-        let { name, value, checked } = event.target
+        let { name, value, type, checked } = event.target;
 
-        if (checked === true) value = true
-        else if (checked === false) value = false
+        if (type === "checkbox") value = checked;
 
-        console.log(name)
-        console.log(value)
         let guests = this.state.invitation.guests;
 
         guests[index] = {
             ...guests[index],
             [name.slice(0, -2)]: value
-        }
-
-        console.log(guests)
+        };
 
         this.setState(
             {
@@ -49,29 +50,45 @@ class RSVPForm extends React.Component {
                     guests: guests
                 }
             }
-        )
+        );
         console.log(this.state)
         console.log("FIELD CHANGE END")
     }
 
-    handleNewGuestChange = (index) => (event) => {
-        console.log("NEW GUEST CHANGE")
+    handleAddMoreGuests = (event) => {
+        console.log("ADD MORE");
+        if (this.state.invitation.maxGuests > this.state.invitation.guests.length) {
+            console.log("We can add more!")
 
-        let { name, value, checked } = event.target
+            let guests = this.state.invitation.guests;
+            let index = this.state.invitation.guests.length;
 
-        if (checked === true) value = true
-        else if (checked === false) value = false
+            if (typeof guests[index] === "undefined") {
+                guests[index] = GUEST_DEFAULT_OBJ;
+            }
 
-        console.log(name)
-        console.log(value)
-        let guests = this.state.invitation.guests;
+            this.setState(
+                {
+                    ...this.state,
+                    invitation: {
+                        ...this.state.invitation,
+                        guests: guests
+                    }
+                }
+            );
 
-        guests[index] = {
-            ...guests[index],
-            [name.slice(0, -2)]: value
+            console.log(this.store);
         }
 
-        console.log(guests)
+        event.preventDefault();
+    }
+
+    handleRemoveGuest = (index) => (event) => {
+        console.log("REMOVE GUEST");
+
+        let guests = this.state.invitation.guests;
+
+        guests.splice(index, 1);
 
         this.setState(
             {
@@ -81,23 +98,9 @@ class RSVPForm extends React.Component {
                     guests: guests
                 }
             }
-        )
-        console.log(this.state)
-        console.log("NEW GUEST CHANGE END")
-    }
+        );
 
-    handleAddMoreGuests() {
-        console.log("ADD MORE");
-        if (this.state.invitation.maxGuests > this.state.invitation.guests.length) {
-            this.setState(
-                {
-                    ...this.state,
-                    addMore: true
-                }
-            )
-
-            console.log(this.store);
-        }
+        event.preventDefault();
     }
 
     handleSubmit = (event) => {
@@ -106,12 +109,15 @@ class RSVPForm extends React.Component {
 
         fetch('http://localhost:5000/u/' + this.state.code, {
             method: 'POST',
+            headers: {
+                "Accept-Language": this.translation.lang
+            },
             // We convert the React state to JSON and send it as the POST body
             body: JSON.stringify(this.state.invitation)
-        }).then(response => {
-            console.log(response)
-            return response.json();
-        }).then(data => console.log(data));
+        })
+            .then(response => response.json())
+            .then(data => route('/v/' + this.state.code))
+            .catch((error) => console.log(error));
 
         event.preventDefault();
     }
@@ -119,9 +125,6 @@ class RSVPForm extends React.Component {
     render(props, state) {
         console.log("RENDER RSVP -------")
         console.log(this.state)
-        console.log(this.props)
-        console.log(this.state.invitation.maxGuests)
-        console.log(this.state.invitation.guests.length)
         console.log("RENDER RSVP END -------")
 
         if (!this.state.display) {
@@ -138,16 +141,16 @@ class RSVPForm extends React.Component {
                 </div>
 
                 {this.state.invitation.guests && this.state.invitation.guests.map((guest, index) =>
+                    <>
                     <GuestForm state={guest} onInput={this.handleGuestChange(index)} />
+                    {guest.guestId === 0 ?
+                        <button onClick={this.handleRemoveGuest(index)}>Remove guest</button> : ""
+                    }
+                    </>
                 )}
 
                 {this.state.invitation.maxGuests > this.state.invitation.guests.length ?
                     <button onClick={this.handleAddMoreGuests}>Add more guest(s)</button> : ""
-                }
-
-                {this.state.addMore ?
-                    <GuestForm state={} onInput={this.handleNewGuestChange(this.state.invitation.guests.length + 1)} />
-                    : ""
                 }
 
                 <div class="row">

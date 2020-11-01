@@ -1,19 +1,26 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style.css';
+import MainComponent from "../translation";
+import { TranslateContext } from '@denysvuika/preact-translate';
+import {useContext} from "preact/hooks";
 
-const Header = () => (
-	<header class={style.header}>
-		<h1>Ivana & Kay - bibi hochzeit </h1>
-		<nav>
-			<Link activeClassName={style.active} href="/">About</Link>
-			<Link activeClassName={style.active} href="/rsvp">RSVP</Link>
-			<Link activeClassName={style.active} href="/location">Location</Link>
-			<Link activeClassName={style.active} href="/transportation">Transportation</Link>
-			<Link activeClassName={style.active} href="/tradition">Tradition</Link>
-			<Link activeClassName={style.active} href="/interesting">Interesting things to do in Serbia</Link>
-		</nav>
-	</header>
-);
+const Header = () => {
+	const {t} = useContext(TranslateContext);
+
+	return (
+		<header class={style.header}>
+			<h1>{t("title")} - {t("subtitle")} </h1>
+			<nav>
+				<Link activeClassName={style.active} href="/">{t("about")}</Link>
+				<Link activeClassName={style.active} href="/location">{t("location")}</Link>
+				<Link activeClassName={style.active} href="/transportation">{t("transportation")}</Link>
+				<Link activeClassName={style.active} href="/tradition">{t("tradition")}</Link>
+				<Link activeClassName={style.active} href="/interesting">{t("interesting")}</Link>
+			</nav>
+			<MainComponent />
+		</header>
+	);
+};
 
 export default Header;

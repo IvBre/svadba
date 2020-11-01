@@ -27,6 +27,8 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
+    "@denysvuika/preact-translate": "^0.3.0",
+    "js-cookie": "^3.0.0-rc.1",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1"

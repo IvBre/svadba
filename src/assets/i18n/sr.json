@@ -1,0 +1,18 @@
+{
+  "title": "Ivana & Kay",
+  "subtitle": "bibi venčanje",
+  "home": "Početna",
+  "location": "Lokacija",
+  "transportation": "Prevoz",
+  "tradition": "Tradicija",
+  "interesting": "Zanimljivosti u okolini",
+  "your_invitation": "Detalji tvoje pozivnice",
+  "loading_invitation": "Učitavanje podataka pozivnice...",
+  "view_invitation_summary": "Pregled unetih podataka za tvoju pozivnicu",
+  "name": "Ime",
+  "is_coming": "Dolazak potvrdjen",
+  "is_vegetarian": "Vegetarijanski jelovnik",
+  "yes": "Da",
+  "no": "Ne",
+  "edit_invitation": "Izmeni svoj odgovor"
+}
