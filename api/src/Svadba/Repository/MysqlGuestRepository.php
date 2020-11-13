@@ -19,7 +19,7 @@ class MysqlGuestRepository implements GuestRepositoryInterface
     public function findAll(string $code): array {
         $dbResult = $this->dbConn->fetchRowMany('SELECT * FROM guests WHERE code = :code', ['code' => $code]);
 
-        if ($dbResult == null) throw new \InvalidArgumentException("Somehow there are not guests invited for this code. Please contact us at: petrovivana@gmail.com or by phone: 01702881385");
+        if ($dbResult == null) throw new \InvalidArgumentException($this->translations->translate("system_error_invalid_code"));
 
         $guests = [];
         foreach ($dbResult as $guest) {
@@ -40,10 +40,10 @@ class MysqlGuestRepository implements GuestRepositoryInterface
 
         $dbGuestIds = $this->dbConn->fetchColumnMany('SELECT guestId FROM guests WHERE code = :code', $condition);
 
-        if (count($dbGuestIds) != count($guestIds)) throw new \InvalidArgumentException("Somehow the number of invited guests doesn't match.");
+        if (count($dbGuestIds) != count($guestIds)) throw new \InvalidArgumentException($this->translations->translate("system_error_num_guests"));
 
         foreach ($guestIds as $guestId) {
-            if (!in_array($guestId, $dbGuestIds)) throw new \InvalidArgumentException("Somehow the provided guest ID " . $guestId . " for the code is not valid.");
+            if (!in_array($guestId, $dbGuestIds)) throw new \InvalidArgumentException($this->translations->translate("system_error_invalid_guest_id", [$guestId]));
         }
 
         return true;

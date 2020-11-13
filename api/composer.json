@@ -1,6 +1,6 @@
 {
   "autoload": {
-    "psr-4": {"Svadba\\": "src/svadba"}
+    "psr-4": {"Svadba\\": "src/Svadba"}
   },
   "require": {
     "simplon/mysql": "^2.2",

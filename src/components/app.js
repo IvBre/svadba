@@ -33,7 +33,7 @@ const App = () => (
 );
 
 export const getInvitationCall = (code) => {
-	return fetch('http://localhost:5000/v/' + code, {
+	return fetch(API_HOST + '/v/' + code, {
 		method: 'GET',
 		headers: {
 			"Accept-Language": getDefaultLang()
@@ -46,11 +46,16 @@ function getDefaultLang() {
 
 	if (cookieLang && AllowedLanguages.includes(cookieLang)) return cookieLang;
 
-	let userLang = navigator.language.substring(0, 2);
+	let userLang;
+	if (typeof window !== "undefined") {
+		userLang = navigator.language.substring(0, 2);
+	}
 
 	if (!AllowedLanguages.includes(userLang)) return "en";
 
 	return userLang;
 }
+
+export const API_HOST = "http://api.svad.ba"
 
 export default App;

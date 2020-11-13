@@ -65,7 +65,7 @@ class Application
 
     private function register() {
         self::$registry["mysql"] = $this->getDbConnection();
-        self::$registry["translations"] = new Translations(substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2));
+        self::$registry["translations"] = new Translations($this->getLanguage());
         self::$registry["guestRepository"] = new MysqlGuestRepository(self::$registry["mysql"], self::$registry["translations"]);
         self::$registry["invitationRepository"] = new MysqlInvitationRepository(
             self::$registry["mysql"],
@@ -77,6 +77,12 @@ class Application
             self::$registry["guestRepository"],
             self::$registry["translations"]
         );
+    }
+
+    private function getLanguage(): string {
+        if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
+            return substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
+        return "en";
     }
 
     public function exceptionHandler($exception) {

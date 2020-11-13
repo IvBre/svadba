@@ -3,6 +3,7 @@ import { route } from 'preact-router';
 import { GuestForm, GUEST_DEFAULT_OBJ } from './GuestForm';
 import {useContext} from "preact/hooks";
 import {TranslateContext} from "@denysvuika/preact-translate";
+import {API_HOST} from "../app";
 
 class RSVPForm extends React.Component {
     constructor(props) {
@@ -107,7 +108,7 @@ class RSVPForm extends React.Component {
         console.log('A form was submitted: ');
         console.log(this.state);
 
-        fetch('http://localhost:5000/u/' + this.state.code, {
+        fetch(API_HOST + '/u/' + this.state.code, {
             method: 'POST',
             headers: {
                 "Accept-Language": this.translation.lang

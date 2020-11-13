@@ -55,7 +55,7 @@ class IndexController
         $updateGuestsData = [];
         $insertGuestData = [];
         foreach ($guests as $guest) {
-            if (!isset($guest["name"])) throw new \InvalidArgumentException("Field <b>Name</b> is required for each guest.");
+            if (!isset($guest["name"])) throw new \InvalidArgumentException($this->translations->translate("field_name_required"));
 
             $name = $guest["name"];
             $isComing = isset($guest["isComing"]) ? (bool)$guest["isComing"] : false;
@@ -90,9 +90,7 @@ class IndexController
         $invitation = $this->invitationRepository->find($code);
 
         if ($invitation->getMaxGuests() < $numOfGuests) {
-            throw new \InvalidArgumentException("This invitation can only have maximum of " . $invitation->getMaxGuests() .
-                " guest(s) in total, but you've added " . $numOfGuests . ". Please add " . $invitation->getMaxGuests() .
-                " or less invitees.");
+            throw new \InvalidArgumentException("num_guests_violation", [$invitation->getMaxGuests(), $numOfGuests, $invitation->getMaxGuests()]);
         }
 
         $this->invitationRepository->update($invitation->with($email));
