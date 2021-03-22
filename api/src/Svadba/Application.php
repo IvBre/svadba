@@ -5,6 +5,7 @@ use Gridonic\JsonResponse\ErrorJsonResponse;
 use mysql_xdevapi\Exception;
 use Steampixel\Route;
 use Svadba\Component\Translations;
+use Svadba\Controller\GenerateController;
 use Svadba\Controller\IndexController;
 use Simplon\Mysql\PDOConnector;
 use Simplon\Mysql\Mysql;
@@ -25,6 +26,7 @@ class Application
         });
 
         $index = self::$registry["indexController"];
+        $generate = self::$registry["generateController"];
 
         Route::add('/v/([0-9a-z]*)', function($code) use($index) {
             /** @var $index IndexController */
@@ -35,6 +37,16 @@ class Application
             /** @var $index IndexController */
             $index->updateInvitation($code);
         }, 'post');
+
+        Route::add('/generate', function() use($generate) {
+            /** @var $generate GenerateController */
+            $generate->downloadStickers();
+        }, 'get');
+
+        Route::add('/generate/([0-9a-z]*)', function($code) use($generate) {
+            /** @var $generate GenerateController */
+            $generate->downloadSticker($code);
+        }, 'get');
 
         Route::run('/');
     }
@@ -73,6 +85,11 @@ class Application
             self::$registry["translations"]
         );
         self::$registry["indexController"] = new IndexController(
+            self::$registry["invitationRepository"],
+            self::$registry["guestRepository"],
+            self::$registry["translations"]
+        );
+        self::$registry["generateController"] = new GenerateController(
             self::$registry["invitationRepository"],
             self::$registry["guestRepository"],
             self::$registry["translations"]

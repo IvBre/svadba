@@ -4,23 +4,26 @@ namespace Svadba\Model;
 
 class Invitation
 {
-    private string $code;
+    private $code;
 
-    private string $email;
+    private $email;
 
-    private int $maxGuests;
+    private $maxGuests;
 
-    private string $updatedDatetime;
+    private $updatedDatetime;
+
+    private $language;
 
     /**
      * @var array [Guest]
      */
-    private array $guests;
+    private $guests;
 
     public function __construct(
         string $code,
         string $email,
         int $maxGuests,
+        string $language,
         string $updatedDatetime,
         array $guests = []
     )
@@ -28,6 +31,7 @@ class Invitation
         $this->code = $code;
         $this->email = $email;
         $this->maxGuests = $maxGuests;
+        $this->language = $language;
         $this->updatedDatetime = $updatedDatetime;
         $this->guests = $guests;
     }
@@ -38,6 +42,10 @@ class Invitation
 
     public function getMaxGuests(): int {
         return $this->maxGuests;
+    }
+
+    public function getLanguage(): string {
+        return $this->language;
     }
 
     public function withGuests(array $guests): self {

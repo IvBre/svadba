@@ -23,6 +23,27 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
         $this->translations = $translations;
     }
 
+    public function findAll(): array {
+        $dbResult = $this->dbConn->fetchRowMany("SELECT * FROM invitations");
+
+        if ($dbResult == null) {
+            throw new \InvalidArgumentException($this->translations->translate("code_doesnt_exist"));
+        }
+
+        $invitations = [];
+        foreach ($dbResult as $invitation) {
+            $invitations[] = new Invitation(
+                $invitation["code"],
+                $invitation["email"],
+                (int)$invitation["maxGuests"],
+                $invitation["language"],
+                $invitation["updatedDatetime"]
+            );
+        }
+
+        return $invitations;
+    }
+
     public function find(string $code): Invitation {
         $condition = ['code' => $code];
 
@@ -36,6 +57,7 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
             $dbResult["code"],
             $dbResult["email"],
             (int)$dbResult["maxGuests"],
+            $dbResult["language"],
             $dbResult["updatedDatetime"]
         );
     }
