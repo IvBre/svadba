@@ -7,9 +7,9 @@ use Svadba\Model\Guest;
 
 class MysqlGuestRepository implements GuestRepositoryInterface
 {
-    private Mysql $dbConn;
+    private $dbConn;
 
-    private Translations $translations;
+    private $translations;
 
     public function __construct(Mysql $dbConn, Translations $translations) {
         $this->dbConn = $dbConn;

@@ -35,7 +35,7 @@ class Translations {
         ]
     ];
 
-    private string $language;
+    private $language;
 
     private static $allowedLanguages = [
         "en", "de", "sr"

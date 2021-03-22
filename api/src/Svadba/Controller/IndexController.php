@@ -9,11 +9,11 @@ use Svadba\Repository\InvitationRepositoryInterface;
 
 class IndexController
 {
-    private InvitationRepositoryInterface $invitationRepository;
+    private $invitationRepository;
 
-    private GuestRepositoryInterface $guestRepository;
+    private $guestRepository;
 
-    private Translations $translations;
+    private $translations;
 
     public function __construct(
         InvitationRepositoryInterface $invitationRepository,

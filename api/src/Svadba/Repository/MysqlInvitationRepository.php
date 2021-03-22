@@ -7,11 +7,11 @@ use Svadba\Model\Invitation;
 
 class MysqlInvitationRepository implements InvitationRepositoryInterface
 {
-    private Mysql $dbConn;
+    private $dbConn;
 
-    private GuestRepositoryInterface $guestRepository;
+    private $guestRepository;
 
-    private Translations $translations;
+    private $translations;
 
     public function __construct(
         Mysql $dbConn,

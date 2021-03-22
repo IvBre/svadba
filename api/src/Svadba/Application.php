@@ -13,7 +13,7 @@ use Svadba\Repository\MysqlInvitationRepository;
 
 class Application
 {
-    private static array $registry = [];
+    private static $registry = [];
 
     public function main() {
         $this->register();
