@@ -8,6 +8,8 @@ class Invitation
 
     private $email;
 
+    private $groupName;
+
     private $maxGuests;
 
     private $updatedDatetime;
@@ -22,6 +24,7 @@ class Invitation
     public function __construct(
         string $code,
         string $email,
+        string $groupName,
         int $maxGuests,
         string $language,
         string $updatedDatetime,
@@ -30,6 +33,7 @@ class Invitation
     {
         $this->code = $code;
         $this->email = $email;
+        $this->groupName = $groupName;
         $this->maxGuests = $maxGuests;
         $this->language = $language;
         $this->updatedDatetime = $updatedDatetime;
@@ -38,6 +42,10 @@ class Invitation
 
     public function getCode(): string {
         return $this->code;
+    }
+
+    public function getGroupName(): string {
+        return $this->groupName;
     }
 
     public function getMaxGuests(): int {

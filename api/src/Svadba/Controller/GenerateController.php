@@ -56,7 +56,7 @@ class GenerateController
         $translations = $this->translationsPerLanguage[$invitation->getLanguage()];
         return '
 <div class="sticker">
-    ' . $translations->translate("sticker_text", [$url]) . '
+    ' . $translations->translate("sticker_text", [$invitation->getGroupName(), $url]) . '
     <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl='.$url.'&choe=UTF-8" alt="QR-code" />
 </div>
         ';

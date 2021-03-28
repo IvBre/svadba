@@ -35,6 +35,7 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
             $invitations[] = new Invitation(
                 $invitation["code"],
                 $invitation["email"],
+                $invitation["groupName"],
                 (int)$invitation["maxGuests"],
                 $invitation["language"],
                 $invitation["updatedDatetime"]
@@ -56,6 +57,7 @@ class MysqlInvitationRepository implements InvitationRepositoryInterface
         return new Invitation(
             $dbResult["code"],
             $dbResult["email"],
+            $dbResult["groupName"],
             (int)$dbResult["maxGuests"],
             $dbResult["language"],
             $dbResult["updatedDatetime"]

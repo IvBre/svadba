@@ -12,7 +12,7 @@ class Translations {
             "system_error_invalid_code" => "Somehow there are no guests invited for this code. Please contact us at: petrovivana@gmail.com or by phone: +491702881385",
             "system_error_num_guests" => "Somehow the number of invited guests doesn't match.",
             "system_error_invalid_guest_id" => "Somehow the provided guest ID :?: for the code is not valid.",
-            "sticker_text" => "Please respond to our invitation latest until 30st of June by following to URL: :?: or by scanning the QR code:",
+            "sticker_text" => "Hey :?:! Please respond to our invitation latest until 30st of June by following to URL: :?: or by scanning the QR code:",
         ],
         "de" => [
             "field_code_required" => "The field `Code` is required.",
@@ -23,7 +23,7 @@ class Translations {
             "system_error_invalid_code" => "Somehow there are no guests invited for this code. Please contact us at: petrovivana@gmail.com or by phone: +491702881385",
             "system_error_num_guests" => "Somehow the number of invited guests doesn't match.",
             "system_error_invalid_guest_id" => "Somehow the provided guest ID :?: for the code is not valid.",
-            "sticker_text" => "Please respond to our invitation latest until 30st of June by following to URL: :?: or by scanning the QR code:",
+            "sticker_text" => "Hey :?:! Please respond to our invitation latest until 30st of June by following to URL: :?: or by scanning the QR code:",
         ],
         "sr" => [
             "field_code_required" => "Polje `Code` je obavezno.",
@@ -34,7 +34,7 @@ class Translations {
             "system_error_invalid_code" => "Iz nekog razloga ovaj kod pozivnice nije validan. Molimo da nas kontaktirante na: petrovivana@gmail.com ili telefonom: +491702881385",
             "system_error_num_guests" => "Iz nekog razloga, broj pozvanih gostiju se ne slaže sa našim podacima.",
             "system_error_invalid_guest_id" => "Somehow the provided guest ID :?: for the code is not valid.",
-            "sticker_text" => "Molimo da odgovorite na pozivnicu, najkasnije do 30og Juna, prateći sledeći link: :?: ili skeniranjem QR koda:",
+            "sticker_text" => "Zdravo :?:! Molimo da odgovorite na pozivnicu, najkasnije do 30og Juna, prateći sledeći link: :?: ili skeniranjem QR koda:",
         ]
     ];
 
