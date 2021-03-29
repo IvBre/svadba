@@ -15,6 +15,7 @@ const Header = () => {
 				<Link activeClassName={style.active} href="/">{t("about")}</Link>
 				<Link activeClassName={style.active} href="/location">{t("location")}</Link>
 				<Link activeClassName={style.active} href="/transportation">{t("transportation")}</Link>
+				<Link activeClassName={style.active} href="/schedule">{t("schedule")}</Link>
 				<Link activeClassName={style.active} href="/tradition">{t("tradition")}</Link>
 				<Link activeClassName={style.active} href="/interesting">{t("interesting")}</Link>
 			</nav>

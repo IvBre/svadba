@@ -13,9 +13,6 @@ const Home = () => (
 		<p>Keep in mind that we will drive some 15km to <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Donja Borina</a>
 			 to "pick up" the bride, so make sure you have a designated driver and a car.</p>
 		<p>For more details on these activities check out our <Link href="/tradition">Tradition</Link> page. </p>
-
-		<h3>If you need to respond to the invitation you can type in the following box the code you received on your invitation slip.</h3>
-		<SearchInvitationForm />
 	</div>
 );
 

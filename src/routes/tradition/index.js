@@ -24,8 +24,8 @@ const Tradition = () => (
 		<p>After the bride said her goodbyes to her family, the best man would go with her in one car and her best girl will go with the groom to the other car.</p>
 		<p>This is so that one is protected from the other, and that they both keep their virtue. Also to make sure none of them escape ;)</p>
 		<p>During the ride back to the wedding place, svatovi again need to follow the two cars and press the horn often.</p>
-		<p>Now usually this is the part where everybody would go to the church for the wedding, but since Kay is an Anti-Christ we will just to the municipality wedding at the Kur Salon balcony.</p>
-		<p>After the ceremony is done, and the wedding bouquet throw all guests can go to the main celebration hall and start enjoying the food, drinks and the music.</p>
+		<p>Now usually this is the part where everybody would go to the church for the wedding, but since Kay is an Anti-Christ we will just do the municipality wedding at the Kur Salon balcony.</p>
+		<p>After the ceremony is done, and the wedding bouquet thrown all guests can go to the main celebration hall and start enjoying the food, drinks and the music.</p>
 		<p>After lunch is done, the big wedding cake will be rolled out on wheels, while the orchestra sings a nice tune. After we get some cake then others can also have some :D</p>
 		<p>Usually after the cake is when the party starts, until late hours so bring your comfortable shoes.</p>
 	</div>

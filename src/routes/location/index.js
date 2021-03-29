@@ -6,7 +6,7 @@ const Location = () => (
 		<h1>Venue and accommodation</h1>
 		<p>The wedding venue is in the grand hall of “Kur salon” in a little town called Banja Koviljača in the west of Serbia.</p>
 		<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca1.jpg" alt="kur-salon" width="600" />
-		<p>The building is part of the complex of an old rehabilitation hospital and spa center in  the central park in Banja.</p>
+		<p>The building is part of the complex of an old rehabilitation hospital and a spa center in the central park in Banja.</p>
 		<img src="https://cf.bstatic.com/images/hotel/max1280x900/194/194096561.jpg" alt="banja-koviljaca-park" width="600" />
 		<p>In the middle of this park you can see a big fountain, and if you turn towards west you will see Kur Salon.</p>
 		<img src="https://banjakoviljaca.rs/img/banja-koviljaca/banja-koviljaca.jpg" alt="banjski-park-fontana" width="600" />
@@ -29,7 +29,7 @@ const Location = () => (
 		<p>
 			Loznica is the next bigger city to the wedding venue. If you want you can also book accommodation there,
 			but then you would have to take a 10min ride with a taxi to Banja. Don't worry taxi's in Loznica are very cheap.
-			Although I have to warn you, beside more restaurants and taverns, Loznica doesn't have much else to offer with activities.
+			Although I have to warn you, beside more restaurants and bars, Loznica doesn't have much else to offer regarding activities.
 		</p>
 
 		<h2>Accommodation in Belgrade</h2>
@@ -37,7 +37,7 @@ const Location = () => (
 		<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, the AirSerbia's airplanes are named Novak Djokovic ;) </p>
 		<p>We would recommend you, if you have time, to take couple of days to check out the city.</p>
 		<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.
-			Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and beach.</p>
+			Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
 		<p>Yes, Belgrade has a beach! But its a sweat water lake, called "Ada Ciganlija" and has a bunch of beach bars, beer garden etc.
 			For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
 		<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
@@ -45,7 +45,7 @@ const Location = () => (
 		<img src="./routes/location/img/old-town-stari-grad-belgrade.png" alt="old-town-belgrade" width="600" />
 		<p>If you really want to indulge your self and get a taste of how the upper class was living in Serbia in the early 1900s you can check out the famous <a href="https://hotelmoskva.rs/" target="_blank">Hotel Moskva</a>.
 			It is one of the rare buildings in Belgrade surviving both world wars, and was a witness to many diplomatic strategies and negotiations,
-			inspirational artists, Nobel Price winner writers, royal events, all night long conversations and many secrets that this building walls heard during the last century of its existence.</p>
+			inspirational artists, Nobel Price winner writers, royal events, all night long conversations, so as you can image this building walls heard many secrets during the last century of its existence.</p>
 		<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fe/ea/eb/photo-taken-from-restoran.jpg?w=900&h=-1&s=1" alt="hotel-moskva-belgrade" width="600" />
 
 	</div>

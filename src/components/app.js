@@ -13,6 +13,8 @@ import InvitationPage from "../routes/invitation";
 import {TranslateProvider} from "@denysvuika/preact-translate";
 import TranslationComponent, {AllowedLanguages, LanguageHeaderName} from "./translation";
 import Cookies from 'js-cookie';
+import Schedule from "../routes/schedule";
+import Footer from "./footer";
 
 const App = () => (
 	<TranslateProvider root="/assets/i18n" lang={getDefaultLang()}>
@@ -26,7 +28,9 @@ const App = () => (
 			<Transportation path="/transportation" />
 			<Tradition path="/tradition" />
 			<Interesting path="/interesting" />
+			<Schedule path="/schedule" />
 		</Router>
+		<Footer />
 		<TranslationComponent />
 	</div>
 	</TranslateProvider>
