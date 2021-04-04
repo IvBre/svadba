@@ -24,7 +24,7 @@ class Application
         Route::add('/', function() {
             IndexController::index();
         });
-echo "bla2";
+
         $index = self::$registry["indexController"];
         $generate = self::$registry["generateController"];
 
