@@ -51,7 +51,7 @@ const InvitationPage = ({ code, path }) => {
 			<h1>{t("your_invitation")}: {code}</h1>
 
 			{invitation ?
-				(path === "/v/:code" ? <ViewInvitation code={code} invitation={invitation} /> :
+				(path === "/r/:code" ? <ViewInvitation code={code} invitation={invitation} /> :
 				<RSVPForm state={{ code: code, display: true, invitation: invitation}} />) :
 				error ? <div class="error">{error}</div> : <p>{t("loading_invitation")}</p>}
 		</div>

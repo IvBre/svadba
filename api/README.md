@@ -26,7 +26,7 @@ Note that the folder `./public` should be the web root.
 
 ## Endpoints
 
-- `GET /v/<CODE>` - This endpoint will return data we have related to the provided `code`.
+- `GET /r/<CODE>` - This endpoint will return data we have related to the provided `code`.
 Sample response:
 ```
 HTTP/1.0 200 OK
