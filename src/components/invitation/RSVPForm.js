@@ -117,7 +117,7 @@ class RSVPForm extends React.Component {
             body: JSON.stringify(this.state.invitation)
         })
             .then(response => response.json())
-            .then(data => route('/v/' + this.state.code))
+            .then(data => route('/r/' + this.state.code))
             .catch((error) => console.log(error));
 
         event.preventDefault();

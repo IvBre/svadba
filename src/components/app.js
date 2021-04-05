@@ -23,7 +23,7 @@ const App = () => (
 		<Router>
 			<Home path="/" />
 			<InvitationPage path="/u/:code" />
-			<InvitationPage path="/v/:code" />
+			<InvitationPage path="/r/:code" />
 			<Location path="/location" />
 			<Transportation path="/transportation" />
 			<Tradition path="/tradition" />
@@ -37,7 +37,7 @@ const App = () => (
 );
 
 export const getInvitationCall = (code) => {
-	return fetch(API_HOST + '/v/' + code, {
+	return fetch(API_HOST + '/r/' + code, {
 		method: 'GET',
 		headers: {
 			"Accept-Language": getDefaultLang()

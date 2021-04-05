@@ -28,7 +28,7 @@ class Application
         $index = self::$registry["indexController"];
         $generate = self::$registry["generateController"];
 
-        Route::add('/v/([0-9a-z]*)', function($code) use($index) {
+        Route::add('/r/([0-9a-z]*)', function($code) use($index) {
             /** @var $index IndexController */
             $index->getInvitation($code);
         }, 'get');

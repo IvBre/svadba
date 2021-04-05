@@ -51,7 +51,7 @@ class GenerateController
     }
 
     private function generateSticker(Invitation $invitation) {
-        $url = "http://www.svad.ba/v/" . $invitation->getCode();
+        $url = "http://www.svad.ba/r/" . $invitation->getCode();
         $link = '<a href="' . $url . '">' . $url . '</a>';
         /** @var Translations $translations */
         $translations = $this->translationsPerLanguage[$invitation->getLanguage()];
