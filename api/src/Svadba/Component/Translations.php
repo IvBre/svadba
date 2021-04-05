@@ -26,15 +26,15 @@ class Translations {
             "sticker_text" => "Hey :?:! Please respond to our invitation latest until 30st of June by following to URL: :?: or by scanning the QR code:",
         ],
         "sr" => [
-            "field_code_required" => "Polje `Code` je obavezno.",
-            "error_missing_guests" => "Nekako se dogodilo da ti fali lista gostiju. Osveži stranu i probaj ponovo.",
-            "code_doesnt_exist" => "Kod koji ste uneli nepostoji. Molimo da proverite kod na pozivnici i probate opet.",
-            "field_name_required" => "Polje `Ime` je obavezno za svakog gosta.",
-            "num_guests_violation" => "Pozivnica obuhvata ukupno :?: gostiju, ali Vi ste uneli :?:. Molimo da dodajte :?: ili manje ljudi.",
-            "system_error_invalid_code" => "Iz nekog razloga ovaj kod pozivnice nije validan. Molimo da nas kontaktirante na: petrovivana@gmail.com ili telefonom: +491702881385",
-            "system_error_num_guests" => "Iz nekog razloga, broj pozvanih gostiju se ne slaže sa našim podacima.",
+            "field_code_required" => "Поље `Код` је обавезно.",
+            "error_missing_guests" => "Некако се догодило да ти фали листа гостију. Освежи страну и пробај поново.",
+            "code_doesnt_exist" => "Код који сте унели непостоји. Молимо да проверите код на позивници и пробате опет.",
+            "field_name_required" => "Поље `Име` је обавезно за сваког госта.",
+            "num_guests_violation" => "Позивница обухвата укупно :?: гостију, али Ви сте унели :?:. Молимо да додате :?: или мање људи.",
+            "system_error_invalid_code" => "Из неког разлога овај код позивнице није валидан. Молимо да нас контактирате на: petrovivana@gmail.com или телефоном: +491702881385",
+            "system_error_num_guests" => "Из неког разлога, број позваних гостију се не слаже са нашим подацима.",
             "system_error_invalid_guest_id" => "Somehow the provided guest ID :?: for the code is not valid.",
-            "sticker_text" => "Zdravo :?:! Molimo da odgovorite na pozivnicu, najkasnije do 30og Juna, prateći sledeći link: :?: ili skeniranjem QR koda:",
+            "sticker_text" => "Здраво :?:! Молимо да одговорите на позивницу, најкасније до 30ог Јуна, пратећи линк: :?: или скенирањем QR кода испод.",
         ]
     ];
 
