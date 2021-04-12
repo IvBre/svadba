@@ -16,14 +16,18 @@ export default function TranslationComponent() {
         setLang(lang)
     }
 
+    let listClasses = classNames({
+        'translationList': true,
+    });
+
     return (
-        <div class={style.translation}>
-            <div>Lang: {lang}</div>
-            <div>
-                <button onClick={() => setCookieLang('en')}>EN</button>
-                <button onClick={() => setCookieLang('sr')}>SR</button>
-                <button onClick={() => setCookieLang('de')}>DE</button>
-            </div>
-        </div>
+        <section class={style.translation}>
+            <h3>Language: {lang}</h3>
+            <ul class={listClasses}>
+                <li><button onClick={() => setCookieLang('en')}>EN</button></li>
+                <li><button onClick={() => setCookieLang('sr')}>SR</button></li>
+                <li><button onClick={() => setCookieLang('de')}>DE</button></li>                
+            </ul>
+        </section>
     );
 }

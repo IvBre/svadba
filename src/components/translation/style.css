@@ -1,11 +1,27 @@
 .translation {
-	position: fixed;
+	background: #064920;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	height: 56px;
 	left: 0;
+	padding: 0;
 	top: 56px;
 	width: 100%;
-	height: 56px;
-	padding: 0;
-	background: #bb9df3;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	position: fixed;
 	z-index: 50;
+}
+
+.translationList {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+	max-height: 0;
+	overflow: hidden;
+}
+
+.translationListOpen {
+	max-height: .5vh;
+}
+
+h3 {
+	color: #fff;
 }
