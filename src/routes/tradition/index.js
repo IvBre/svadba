@@ -12,21 +12,22 @@ const Tradition = () => (
 		<p>This will be done during <Link href="/schedule">the cocktail hour explained in the schedule</Link>, between 13 and 14h.</p>
 		<p>It is a custom to put a little money in the basket that the flower girls will carry around with the flower garnishes.</p>
 		<p>Then together with the groom and his best man they will go to the bride's parents house.</p>
-		<p>You will notice that svatovi's cars will also be decorated. But cars with the most decoration are the ones that will take the groom with his best man and later on the bride.</p>
-		<p>Other cars should follow the main two cars behind, in a column of cars, and be heavy on the horns and loud music so that the bride family could hear them from far.</p>
-		<p>Before entering the bride's parents house, groom needs to prove him self to be a good food provider, by shooting
-		an apple from a tall wooden stick, placed in front of the yard.</p>
-		<p>If he manages this challenge he would be allowed to proceed to the house.</p>
+		<p>You will notice that svatovi's cars will also be decorated. But the car with the most decoration is the one that will take the groom with his best man and later on the bride.</p>
+		<p>Other cars should follow the main car behind, in a column of cars, and be heavy on the horns and loud music so that the bride family could hear them from far.</p>
+		<p>Once svatovi arrive at the bride's house, they will have some time to get to know the family of the bride,
+		dance and have a drink.</p>
+		<p>Groom and his best man will go to the house to get the bride. </p>
 		<p>Bride is hiding in her room, and she is being protected by her horde of siblings and cousins, who will give a hard time to the groom and his best man.</p>
 		<p>The groom needs to convince the cousins that he will treat her nice, and only then will he be allowed to take the bride outside of the house.</p>
 		<p>Once outside everybody will celebrate, by dancing, most commonly Kolo.</p>
 		<p>Usually the groom and the best man would organize a wondering orchestra to play for everybody.</p>
-		<p>After the bride said her goodbyes to her family, the best man would go with her in one car and her best girl will go with the groom to the other car.</p>
+		<p>Once the Kolo is done an future spouses are ready to leave, the best man would sit in the middle between the bride and the groom.</p>
 		<p>This is so that one is protected from the other, and that they both keep their virtue. Also to make sure none of them escape ;)</p>
-		<p>During the ride back to the wedding place, svatovi again need to follow the two cars and press the horn often.</p>
-		<p>Now usually this is the part where everybody would go to the church for the wedding, but since Kay is an Anti-Christ we will just do the municipality wedding at the Kur Salon balcony.</p>
+		<p>During the ride back to the wedding place, svatovi again need to follow the main car and press the horn often.</p>
+		<p>Now usually this is the part where everybody would go to the church for the wedding, but since Kay is an Anti-Christ we will just do the municipality wedding at the Kur Salon balcony :D</p>
+		<p>Once everybody arrives at Kur Salon and settles at their tables the wedding ceremony can start.</p>
 		<p>After the ceremony is done, and the wedding bouquet thrown all guests can go to the main celebration hall and start enjoying the food, drinks and the music.</p>
-		<p>After lunch is done, the big wedding cake will be rolled out on wheels, while the orchestra sings a nice tune. After we get some cake then others can also have some :D</p>
+		<p>After the lunch is done, the big wedding cake will be rolled out on wheels, while the orchestra sings a nice tune. After we get some cake then others can also have some :D</p>
 		<p>Usually after the cake is when the party starts, until late hours so bring your comfortable shoes.</p>
 	</div>
 );
