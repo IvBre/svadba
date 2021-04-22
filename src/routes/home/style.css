@@ -1,5 +1,130 @@
 .home {
-	padding: 111px 20px;
-	min-height: 100%;
+	flex: 1 1 100%;
+	overflow-x: hidden;
+	padding: 0 20px 80px;
 	width: 100%;
+}
+
+.IvanaAndKay {
+	font-size: 70px;
+	line-height: .9;
+	text-align: center;
+}
+
+/*
+ * ## Ampersand
+ */
+.ampersand {
+	color: var(--color-blue);
+	display: block;
+	font-size: 40px;
+	position: relative;
+}
+
+.ampersandArrowLeft,
+.ampersandArrowRight {
+	position: relative;
+}
+
+.ampersandArrowLeft::before,
+.ampersandArrowLeft::after,
+.ampersandArrowRight::before,
+.ampersandArrowRight::after {
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.ampersandArrowLeft::before,
+.ampersandArrowRight::before {
+	border-bottom: 2px solid transparent;
+	border-right: 6px solid var(--color-blue);
+	border-top: 2px solid transparent;
+	left: 8px;
+}
+
+.ampersandArrowLeft::before {
+	border-right: 0;
+	border-left: 6px solid var(--color-blue);
+	left: auto;
+	right: 8px;
+}
+
+.ampersandArrowLeft::after,
+.ampersandArrowRight::after {
+	border-bottom: 2px solid transparent;
+	border-left: 270px solid var(--color-blue);
+	border-top: 2px solid transparent;
+	left: 14px;
+}
+
+.ampersandArrowLeft::after {
+	border-left: 0;
+	border-right: 270px solid var(--color-blue);
+	left: auto;
+	right: 14px;
+}
+
+/*
+ * ## Frame
+ */
+.frame {
+	/* background: var(--color-white);
+	border: 1px solid var(--color-gray-100);
+	padding: 20px;
+	position: relative;
+	z-index: auto; */
+	width: 70%;
+    height: 800px;
+    background: #FFF;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+	position: relative;
+	z-index: auto;
+	overflow: visible;
+}
+
+.frame::before,
+.frame::after {
+	/* background: var(--color-gray);
+	bottom: 15px;
+	box-shadow: 0 15px 10px var(--color-gray);
+	content: '';
+	height: 18px;
+	max-width: 300px;
+	position: absolute;
+	width: 50%;
+	z-index: -1; */
+	display: block;
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width:300px;
+	background: #777;
+	-webkit-box-shadow: 0 15px 10px #777;
+	-moz-box-shadow: 0 15px 10px #777;
+	box-shadow: 0 15px 10px #777;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.frame::before {
+	left: 10px;
+	transform: rotate(-3deg);
+}
+
+.frame::after {
+	left: auto;
+	right: 10px;
+	transform: rotate(3deg);
 }
