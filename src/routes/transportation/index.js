@@ -9,9 +9,11 @@ const Transportation = () => (
 			There is also an airport in Tuzla in Bosnia, but due to travel restrictions in Bosnia it could produce problems for you on the border. <br />
 			Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Serbia</a>.
 		</p>
+		<p>Note for people from NRW: There is a direct flight from Düsseldorf with <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> but it is the most expensive one.<br />
+			<a href="https://wizzair.com/" target="_blank">WizzAir</a> is cheaper and it also flies to Belgrade but from Düsseldorf Weeze and Dortmund airports.
+		</p>
 		<p>We recommend spending 2-3 days in Belgrade if you haven’t been there before. The city is famous for it's history and fortress in the city center but also for it's very vivid nightlife.<br />
 		Please check out our <Link href="/interesting">Things to do</Link> page for more details what to do in Belgrade.
-
 		</p>
 		<p>From Belgrade to Banja Koviljača you can take the bus from <a href="http://www.bas.rs/en/" target="_blank">the main bus station</a> in the Belgrade city center.<br />
 			Usually there is a bus every hour that goes to Loznica, from which you can take a taxi to Banja.<br />
