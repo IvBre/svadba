@@ -1,12 +1,63 @@
-footer {
-	position: fixed;
-	left: 0;
+.footer {
+	background: rgb(1,145,65);
+	background: linear-gradient(0deg, rgba(1,145,65,1) 0%, rgba(0,164,73,1) 100%);
 	bottom: 0;
+	box-shadow: inset 0 7px 4px -7px rgba(0, 0, 0, 1);
+	color: var(--color-white);
+	left: 0;
+	padding: 4px 20px 16px;
+	text-shadow: 0 -1px 0 #007534;
 	width: 100%;
-	height: 56px;
-	padding: 0;
-	background: #673AB7;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	z-index: 50;
-	color: #FFFFFF;
+	z-index: 2;
+}
+
+.footerHeadline {
+	color: var(--color-white);
+}
+
+.link {
+	color: var(--color-white);
+	white-space: nowrap;
+}
+
+.link:visited,
+.link:hover,
+.link:focus,
+.link:active {
+	color: var(--color-blue-200);
+	text-decoration: none;
+}
+
+.footerLabelSocial {
+	font-style: normal;
+}
+
+.listItemLabelIcon {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
+}
+
+.icon {
+	display: inline-block;
+	flex-shrink: 0;
+	height: auto;
+	margin: 0 12px -4px 0;
+}
+
+.iconSvg {
+	margin-bottom: -3px;
+}
+
+.icon path {
+	fill: var(--color-white);
+}
+
+.iconMessenger {
+	width: 18px;
+}
+
+.iconEmail {
+	width: 19px;
 }

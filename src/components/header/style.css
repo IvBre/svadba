@@ -1,12 +1,11 @@
 .header {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 56px;
-	padding: 0;
 	background: #0e7d3f;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	left: 0;
+	overflow: hidden;
+	padding: 0;
+	top: 0;
+	width: 100%;
 	z-index: 50;
 }
 

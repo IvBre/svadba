@@ -11,18 +11,22 @@
 }
 
 :root {
-	--color-green: #0e7d3f;
+	--color-green: #019141;
 	--color-white: #fff;
 	--color-black: #000;
-	--color-blue: #
+	--color-blue: #0e468a;
+	--color-blue-100: #70ccfa;	
+	--color-blue-200: #d9feff;
+	--color-gray: #777;
+	--color-gray-100: #ccc;
 }
 
 html, body {
 	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 400;
 	color: #444;
@@ -30,12 +34,26 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body {
+	background: rgb(184,231,251);
+	background: linear-gradient(0deg, rgba(238,255,255,1) 0%, rgba(63,171,225,1) 100%);
+	background-attachment: fixed;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 #app {
-	height: 100%;
+	background-color: var(--color-white);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 800px;
+	min-height: 100%;
+	justify-content: space-between;
+	position: relative;
 }
 
 .row {
@@ -54,9 +72,47 @@ h5 {
 h1 {
 	font-size: 60px;
 	line-height: 1.25;
+	margin: 50px 0;
 }
 
 h2 {
+	font-size: 40px;
+	line-height: 1.25;
+	margin: 40px 0;
+}
+
+h3 {
 	font-size: 30px;
 	line-height: 1.25;
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 24px;
+	margin: 20px 0;
+	line-height: 1;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 24px 0;
+}
+
+a {
+	color: var(--color-blue);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 24px;
+	padding: 0;
+}
+
+iframe {
+	max-width: calc(100%);
 }

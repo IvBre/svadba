@@ -1,27 +1,17 @@
 .translation {
-	background: #064920;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	color: #fff;
+	background: var(--color-green);
+	color: var(--color-white);
 	height: 56px;
 	left: 0;
 	padding: 0;
 	top: 56px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	z-index: 50;
 }
 
 .translationList {
-	background-color: #fff;
+	background-color: var(--color-white);
 	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
-	max-height: 0;
 	overflow: hidden;
-}
-
-.translationListOpen {
-	max-height: 10vh;
-}
-
-h3 {
-	color: #fff;
 }
