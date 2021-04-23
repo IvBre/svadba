@@ -3,6 +3,8 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 
+import './app.scss';
+
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
 import Location from '../routes/location';

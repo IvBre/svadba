@@ -9,7 +9,7 @@ import { TranslateContext } from '@denysvuika/preact-translate';
 const Header = () => {
 	const {t} = useContext(TranslateContext);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	
+
 	return (
 		<header class={style.header}>
 			<h1>{t("title")} - {t("subtitle")} </h1>

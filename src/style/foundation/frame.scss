@@ -1,0 +1,39 @@
+/*
+ * ## Frame
+ */
+ @mixin frame {
+	background: var(--color-white);
+	border: 1px solid var(--color-gray-100);
+	margin: 40px 0;
+	overflow: visible;
+	position: relative;
+	z-index: auto;
+    
+    &::before,
+    &::after {
+        background: var(--color-gray);
+        bottom: 15px;
+        box-shadow: 0 15px 10px var(--color-gray);
+        content: '';
+        height: 18px;
+        max-width: 300px;
+        position: absolute;
+        width: 50%;
+        z-index: 1;
+    }
+    
+    &::before {
+        left: 10px;
+        transform: rotate(-3deg);
+    }
+    
+    &::after {
+        left: auto;
+        right: 10px;
+        transform: rotate(3deg);
+    }
+
+    img {
+        width: 100%;
+    }
+}
