@@ -1,11 +1,16 @@
 import {Link} from "preact-router/match";
-import style from './style.css';
+import style from './style.scss';
 
 const Location = () => (
-	<div class={style.home}>
+	<div class={style.pageWrapper}>
 		<h1>Venue and accommodation</h1>
 		<p>The wedding venue is in the grand hall of “Kur salon” in a little town called Banja Koviljača in the west of Serbia.</p>
-		<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca1.jpg" alt="kur-salon" width="600" />
+		<div class={style.frame}>
+			<div class={style.frameBody}>
+				<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca1.jpg" alt="kur-salon" width="600" />
+			</div>
+		</div>
+		
 		<p>The building is part of the complex of an old rehabilitation hospital and a spa center in the central park in Banja.</p>
 		<img src="https://cf.bstatic.com/images/hotel/max1280x900/194/194096561.jpg" alt="banja-koviljaca-park" width="600" />
 		<p>In the middle of this park you can see a big fountain, and if you turn towards west you will see Kur Salon.</p>

@@ -1,0 +1,13 @@
+@import '../../style/foundation/frame.scss';
+
+.pageWrapper {
+    composes: pageWrapper from "../home/style.scss";
+}
+
+.frame {
+    @include frame;
+}
+
+.frameBody {
+    composes: frameBody from "../home/style.scss";
+}

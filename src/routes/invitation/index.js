@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import style from '../../style/index.scss';
 import {useContext, useEffect, useState} from "preact/hooks";
 import {getInvitationCall} from "../../components/app";
 import {TranslateContext} from "@denysvuika/preact-translate";
