@@ -1,0 +1,75 @@
+@import './mediaqueries.scss';
+
+/*
+ * ## Ampersand
+ */
+.ampersand {
+	color: var(--color-blue);
+	display: block;
+	font-size: 40px;
+	position: relative;
+	text-align: center;
+}
+
+.ampersandArrowLeft,
+.ampersandArrowRight {
+	position: relative;
+}
+
+.ampersandArrowLeft::before,
+.ampersandArrowLeft::after,
+.ampersandArrowRight::before,
+.ampersandArrowRight::after {
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.ampersandArrowLeft::before,
+.ampersandArrowRight::before {
+	border-bottom: 2px solid transparent;
+	border-right: 6px solid var(--color-blue);
+	border-top: 2px solid transparent;
+	left: 8px;
+}
+
+.ampersandArrowLeft::before {
+	border-right: 0;
+	border-left: 6px solid var(--color-blue);
+	left: auto;
+	right: 8px;
+}
+
+.ampersandArrowLeft::after,
+.ampersandArrowRight::after {
+	border-bottom: 2px solid transparent;
+	border-left: 100px solid var(--color-blue);
+	border-top: 2px solid transparent;
+	left: 14px;
+
+    @include respond-to-min($screen-phablet) {
+        border-left: 200px solid var(--color-blue);
+    }
+
+    @include respond-to-min($screen-medium) {
+        border-left: 270px solid var(--color-blue);
+    }
+}
+
+.ampersandArrowLeft::after {
+	border-left: 0;
+    border-right: 100px solid var(--color-blue);
+	left: auto;
+	right: 14px;
+
+	@include respond-to-min($screen-phablet) {
+		border-right: 200px solid var(--color-blue);
+	}
+	
+    @include respond-to-min($screen-medium) {
+		border-right: 270px solid var(--color-blue);
+	}
+}
