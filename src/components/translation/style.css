@@ -1,17 +1,13 @@
 .translation {
 	background: var(--color-green);
 	color: var(--color-white);
-	height: 56px;
-	left: 0;
 	padding: 0;
-	top: 56px;
+	position: relative;
 	width: 100%;
-	position: absolute;
-	z-index: 50;
 }
 
 .translationList {
 	background-color: var(--color-white);
 	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
-	overflow: hidden;
+	margin: 0;
 }

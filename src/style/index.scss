@@ -1,5 +1,7 @@
-@use 'foundation/frame.scss';
-@use 'foundation/mediaqueries.scss';
+@import './foundation/mediaqueries.scss';
+@import './foundation/frame.scss';
+@import './foundation/ampersand.scss';
+@import './foundation/utilityGebimsel.scss';
 
 /*
  * # Webfont
@@ -48,22 +50,6 @@ body {
 
 * {
 	box-sizing: border-box;
-}
-
-#app {
-	background-color: var(--color-white);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	max-width: 800px;
-	min-height: 100%;
-	justify-content: space-between;
-	position: relative;
-}
-
-.row {
-	margin-bottom: 15px;
 }
 
 h1,
@@ -121,4 +107,31 @@ ul {
 
 iframe {
 	max-width: calc(100%);
+}
+
+#app {
+	background-color: var(--color-white);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 800px;
+	min-height: 100%;
+	justify-content: space-between;
+	position: relative;
+}
+
+/*
+ * # General page wrapper
+ */
+.pageWrapper {
+    padding: 16px;
+
+	@include respond-to-min($screen-phablet) {
+		padding: 32px;
+	}
+}
+
+.row {
+	margin-bottom: 15px;
 }
