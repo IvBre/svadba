@@ -1,6 +1,7 @@
 @import './foundation/mediaqueries.scss';
-@import './foundation/frame.scss';
 @import './foundation/ampersand.scss';
+@import './foundation/frame.scss';
+@import './foundation/textImagePair.scss';
 @import './foundation/utilityGebimsel.scss';
 
 /*
@@ -16,7 +17,9 @@
 }
 
 :root {
+	--color-cadmium-green: #046029;
 	--color-green: #019141;
+	--color-green-pantone: #09ad4b;
 	--color-white: #fff;
 	--color-black: #000;
 	--color-blue: #0e468a;
@@ -24,6 +27,11 @@
 	--color-blue-200: #d9feff;
 	--color-gray: #777;
 	--color-gray-100: #ccc;
+
+	--text-shadow-dark: 0 -1px 0 #003317;
+	--text-shadow-bright: 0 0 2px rgb(255, 254, 204);
+
+	--box-shadow-inset: inset 0 8px 2px -7px rgba(0,0,0,.35);
 }
 
 /*
@@ -46,6 +54,7 @@ body {
 	background: rgb(184,231,251);
 	background: linear-gradient(0deg, rgba(238,255,255,1) 0%, rgba(63,171,225,1) 100%);
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 * {
@@ -114,10 +123,10 @@ iframe {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
-	max-width: 800px;
-	min-height: 100%;
 	justify-content: space-between;
+	margin: 0 auto;
+	max-width: $screen-medium;
+	min-height: 100%;
 	position: relative;
 }
 

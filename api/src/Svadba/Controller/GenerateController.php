@@ -113,7 +113,7 @@ class GenerateController
             
             .sticker-wrapper {
                 border: 1px solid red;
-                margin-bottom: 4cm;
+                margin-bottom: 12cm;
                 width: 12cm;
                 box-sizing: border-box;
                 display: flex;

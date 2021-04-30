@@ -10,17 +10,26 @@ export const LanguageHeaderName = "language";
 const TranslationComponent = () => {
     const {t, setLang} = useContext(TranslateContext);
     const [isLangSelectionVisible, setLangSelectionVisibility] = useState(false);
+    const buttonElement = document.querySelector('.js-toggleTransList');
 
     const setCookieLang = (lang) => {
         if (!AllowedLanguages.includes(lang)) return;
 
         Cookies.set(LanguageHeaderName, lang);
         setLang(lang);
+
+        console.log(buttonElement);
     }
+
+    console.log('setCookieLang is: ', LanguageHeaderName);
     
     return (
         <section class={ style.translation }>
-            <button type="button" class="js-toggleTransList" onClick={() => setLangSelectionVisibility(isLangSelectionVisible => !isLangSelectionVisible)}>Language: {t("lang")}</button>
+            <button type="button" 
+                    class={`js-toggleTransList ${style.toggleTransList}`} 
+                    onClick={() => setLangSelectionVisibility(isLangSelectionVisible => !isLangSelectionVisible)}>
+                        Language: {t("lang")}
+            </button>
             { isLangSelectionVisible &&
                 <ul class={ `${ style.translationList } js-translationList` }>
                     <li><button onClick={() => setCookieLang('en')}>English</button></li>

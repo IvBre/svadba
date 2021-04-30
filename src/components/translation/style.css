@@ -1,5 +1,11 @@
+.toggleTransList {
+	background: transparent;
+	border: 0;
+	color: var(--color-white);
+	font-size: 16px;
+}
+
 .translation {
-	background: var(--color-green);
 	color: var(--color-white);
 	padding: 0;
 	position: relative;
@@ -7,7 +13,6 @@
 }
 
 .translationList {
-	background-color: var(--color-white);
 	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
 	margin: 0;
 }

@@ -1,0 +1,28 @@
+.textImagePair {
+    .frame {
+        @include respond-to-min($screen-medium) {
+            margin: 0 auto 48px;
+            max-width: 90%;
+        }
+    }
+
+    p {
+        margin-bottom: 64px;
+    }
+
+    &.textImagePairAli {
+        .frame {
+            transform: rotate(-2deg);
+        }
+    }
+    
+    &.textImagePairBenny {
+        .frame {
+            transform: rotate(2deg);
+
+            @include respond-to-min($screen-medium) {
+                width: 70%;
+            }
+        }
+    }
+}

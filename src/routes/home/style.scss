@@ -1,7 +1,6 @@
 /*
  * # Imports
  */
-@import '../../style/foundation/frame.scss';
 @import '../../style/foundation/ampersand.scss';
 @import '../../style/foundation/mediaqueries.scss';
 
@@ -9,18 +8,6 @@
 	font-size: 70px;
 	line-height: .9;
 	text-align: center;
-}
-
-.frame {
-    @include frame;
-}
-
-.frameBody {
-	background: var(--color-white);
-	padding: 16px;
-	position: relative;
-	width: 100%;
-	z-index: 3;
 }
 
 .infoSection {

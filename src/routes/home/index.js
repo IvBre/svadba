@@ -34,8 +34,8 @@ const Home = () => (
 			</h2>
 			<h3 class="textAlignCenter">Kur Salon - Banja Koviljača, Serbia</h3>
 			<p>The ceremony will happen at <strong>16h</strong>, at the upper balcony of the Kur Salon.</p>
-			<div class={style.frame}>
-				<div class={style.frameBody}>
+			<div class="frame">
+				<div class="frameBody">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.0885908735054!2d19.154184315525825!3d44.51333877910117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475960c4281d7f37%3A0x9b6e72a9a7ad9b9c!2sKur-salon!5e0!3m2!1sen!2sde!4v1618772933613!5m2!1sen!2sde" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>

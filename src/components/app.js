@@ -33,7 +33,6 @@ const App = () => (
 			<Schedule path="/schedule" />
 		</Router>
 		<Footer />
-		<TranslationComponent />
 	</div>
 	</TranslateProvider>
 );
