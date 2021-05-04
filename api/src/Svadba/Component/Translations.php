@@ -12,7 +12,7 @@ class Translations {
             "system_error_invalid_code" => "Somehow there are no guests invited for this code. Please contact us at: <a href='mailto:petrovivana@gmail.com'>petrovivana@gmail.com</a> or by phone: <a href='tel:+491702881385'>+49170 28 81 385</a>",
             "system_error_num_guests" => "Somehow the number of invited guests doesn't match.",
             "system_error_invalid_guest_id" => "Somehow the provided guest ID :?: for the code is not valid.",
-            "sticker_text" => "<strong>Hey :?:!</strong><br /> Please respond to our invitation <em>latest until 30st of June</em><br> by following to <abbr lang='en' title='Uniform Resource Locator'>URL: :?:</abbr> or by scanning the <abbr lang='en' title='Quick Response'>QR</abbr> code:",
+            "sticker_text" => "<strong>Hey :?:!</strong><br /> Please respond to our invitation <br /><em>latest until 30st of June</em><br> by following to <abbr lang='en' title='Uniform Resource Locator'>URL: :?:</abbr> <br />or by scanning the <abbr lang='en' title='Quick Response'>QR</abbr> code:",
         ],
         "de" => [
             "field_code_required" => "Das Feld `Code` ist ein Pflichtfeld.",
