@@ -2,7 +2,7 @@ import { h } from 'preact';
 import style from '../../style/index.scss';
 
 const Interesting = () => (
-	<div class={style.home}>
+	<div class="pageWrapper">
 		<h1>Interesting things to do while in Serbia</h1>
 		<h2>Belgrade</h2>
 		<p>We recommend spending 2-3 days in Belgrade if you haven’t been there before. The city is famous for it's history and the fortress in the city center but also for it's very vivid nightlife.</p>

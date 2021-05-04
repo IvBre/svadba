@@ -1,4 +1,6 @@
 .textImagePair {
+    flex-wrap: wrap;
+    
     .frame {
         @include respond-to-min($screen-medium) {
             margin: 0 auto 48px;
@@ -6,23 +8,84 @@
         }
     }
 
-    p {
+    .paragraph {
         margin-bottom: 64px;
+
+        @include respond-to-min($screen-medium) {
+            flex: 1 1 50%;
+        }
     }
 
     &.textImagePairAli {
         .frame {
-            transform: rotate(-2deg);
+            transform: rotate(-1.25deg);
         }
     }
     
     &.textImagePairBenny {
+        @include respond-to-min($screen-medium) {
+            display: flex;
+        }
+
         .frame {
             transform: rotate(2deg);
 
             @include respond-to-min($screen-medium) {
-                width: 70%;
+                flex: 1 1 50%;
             }
+        }
+
+        .paragraph {
+            @include respond-to-min($screen-medium) {
+                flex-basis: 40%;
+                margin-left: 32px;
+            }
+        }
+    }
+
+    &.textImagePairMicha {
+        @include respond-to-min($screen-medium) {
+            display: flex;
+        }
+
+        .frame {
+            transform: rotate(-1.5deg);
+
+            @include respond-to-min($screen-medium) {
+                flex: 1 1 100%;
+            }
+        }
+
+        .paragraph {
+            @include respond-to-min($screen-medium) {
+                flex-basis: 40%;
+                margin-right: 32px;
+            }
+        }
+    }
+
+    &.textImagePairJerome {
+        @include respond-to-min($screen-medium) {
+            display: flex;
+        }
+
+        .frame {
+            transform: rotate(2.5deg);
+
+            @include respond-to-min($screen-medium) {
+                flex: 1 1 50%;
+            }
+        }
+
+        .paragraph-wrapper {
+            @include respond-to-min($screen-medium) {
+                flex-basis: 40%;
+                margin-left: 32px;
+            }
+        }
+
+        .paragraph {
+            margin-bottom: 16px;
         }
     }
 }

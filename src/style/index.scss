@@ -20,6 +20,7 @@
 	--color-cadmium-green: #046029;
 	--color-green: #019141;
 	--color-green-pantone: #09ad4b;
+	--color-green-kelly: #47c409;
 	--color-white: #fff;
 	--color-black: #000;
 	--color-blue: #0e468a;
@@ -71,27 +72,44 @@ h5 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 40px;
+	hyphens: auto;
 	line-height: 1;
 	margin: 50px 0;
+
+	@include respond-to-min($screen-medium) {
+		font-size: 60px;
+	}
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 1.25;
 	margin: 40px 0;
+
+	@include respond-to-min($screen-medium) {
+		font-size: 40px;
+	}
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 1.25;
 	margin: 20px 0;
+
+	@include respond-to-min($screen-medium) {
+		font-size: 30px;
+	}
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 18px;
 	margin: 20px 0;
 	line-height: 1;
+
+	@include respond-to-min($screen-medium) {
+		font-size: 24px;
+	}
 }
 
 p {

@@ -1,0 +1,38 @@
+@import '../../style/foundation/mediaqueries.scss';
+
+.home {
+    padding: 111px 20px;
+    min-height: 100%;
+    width: 100%;
+}
+
+.listItem {
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include respond-to-min($screen-medium) {
+        margin-bottom: 82px;
+    }
+}
+
+.time {
+    color: var(--color-blue);
+	font-family: calmiusextra_bold_italic, Garamond, Times, "Times New Roman", serif;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 6px;
+    min-width: 118px;
+}
+
+.listItemText {
+    font-size: 18px;
+    width: 100%;
+}
+
+// .separator {
+//     background: url("../../assets/images/deco_02.png") 0 0 no-repeat;
+//     background-size: 100% auto;
+//     display: inline-block;
+//     height: 86px;
+//     width: 40px;
+// }
