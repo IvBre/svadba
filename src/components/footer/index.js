@@ -1,7 +1,4 @@
-import { h } from 'preact';
-import { Link } from 'preact-router/match';
 import style from './style.css';
-import MainComponent from "../translation";
 import { TranslateContext } from '@denysvuika/preact-translate';
 import {useContext} from "preact/hooks";
 
@@ -10,7 +7,7 @@ const Footer = () => {
 
 	return (
 		<footer class={style.footer}>
-			<h4 class={style.footerHeadline}>For any further information you can contact us by:</h4>
+			<h4 class={style.footerHeadline}>{t("footer.message")}:</h4>
 			<ul>
 				<li class={style.listItemLabelIcon}>
 					<span class={ `${style.icon} ${style.iconMessenger}` }>
@@ -20,7 +17,7 @@ const Footer = () => {
 					</span>
 					<span>
 						<em class={style.labelIcon}>
-							<span class={style.label}>Phone, Viber or Whatsapp:</span>
+							<span class={style.label}>{t("footer.contact")}:</span>
 						</em>&nbsp;<a href="tel:+491702881385" class={style.link}>+49 170 / 28 81 385</a>
 					</span>
 				</li>	

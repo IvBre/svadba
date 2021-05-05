@@ -1,5 +1,4 @@
-import {Link} from "preact-router/match";
-import style from './style.scss';
+import { Link } from "preact-router/match";
 
 const Location = () => (
 	<div class="pageWrapper">
@@ -9,7 +8,7 @@ const Location = () => (
 		<div class="textImagePair textImagePairAli">
 			<div class="frame">
 				<div class="frameBody">
-					<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca1.jpg" alt="kur-salon" width="600" />
+					<img src="./routes/location/img/kur_salon_banja_koviljaca1.jpeg" alt="kur-salon" width="600" />
 				</div>
 			</div>
 			<p class="paragraph">The building is part of the complex of an old rehabilitation hospital and a spa center in the central park in Banja.</p>
@@ -18,10 +17,14 @@ const Location = () => (
 		<div class="textImagePair textImagePairBenny">
 			<div class="frame">
 				<div class="frameBody">
-					<img src="https://cf.bstatic.com/images/hotel/max1280x900/194/194096561.jpg" alt="banja-koviljaca-park" width="600" />
+					<img src="./routes/location/img/banjski-park.jpeg" alt="banja-koviljaca-park" width="600" />
 				</div>
 			</div>
-			<p class="paragraph">In the middle of this park you can see a big fountain, and if you turn towards west you will see Kur Salon.</p>
+			<p class="paragraph">
+				Here's how this park looks like from the birds perspective. <br />
+				In the middle of it you can see a big fountain, and if you turn towards west you will see Kur Salon.<br />
+				Other buildings that you can see are specialized rehabilitation hospital and a wellness center "Kovilje".
+			</p>
 		</div>
 
 		{/* 
@@ -30,7 +33,7 @@ const Location = () => (
 		<div class="textImagePair textImagePairAli">
 			<div class="frame">
 				<div class="frameBody">
-					<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca9.jpg" alt="kur-salon-king-petar" width="600" />
+					<img src="./routes/location/img/kur_salon_banja_koviljaca9.jpeg" alt="kur-salon-king-petar" width="600" />
 				</div>
 			</div>
 			<p class="paragraph">The ceremony will be performed on the upper balcony of “King Petar I Karadjordjevic” hall in Kur-Salon, overlooking the park and the fountain.</p>
@@ -75,11 +78,11 @@ const Location = () => (
 
 		<h2>Accommodation in Belgrade</h2>
 		<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>
-		<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, the AirSerbia's airplanes are named <span lang="sr">Novak Djokovic</span> ;) </p>
+		<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>
 		<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
 		<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.
 			Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
-		<p>Yes, Belgrade has a beach! But its a sweat water lake, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc.
+		<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc.
 			For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
 		<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
 		<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
@@ -97,7 +100,7 @@ const Location = () => (
 		<div class="textImagePair textImagePairAli">
 			<div class="frame">
 				<div class="frameBody">
-					<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fe/ea/eb/photo-taken-from-restoran.jpg?w=900&h=-1&s=1" alt="hotel-moskva-belgrade" width="600" />
+					<img src="./routes/location/img/moskva.jpeg" alt="hotel-moskva-belgrade" width="600" />
 				</div>
 			</div>
 		</div>

@@ -15,5 +15,20 @@
   "is_vegetarian": "Vegetarian meal",
   "yes": "Yes",
   "no": "No",
-  "edit_invitation": "Edit your response"
+  "edit_invitation": "Edit your response",
+  "footer.message": "For any further information you can contact us by",
+  "footer.contact": "Phone, Viber or Whatsapp",
+  "date": "Date",
+  "date.actual": "8th of August, 2021",
+  "serbia": "Serbia",
+  "home.location.intro": "The ceremony will happen at <strong>16h</strong>, at the upper balcony of the Kur Salon.",
+  "home.location.intro.2": "If you want to partake in ",
+  "home.location.intro.21": "the traditional serbian wedding activities",
+  "home.location.intro.22": ", please arrive at the above location at <strong>13h, latest 14h</strong>. Please refer to ",
+  "home.location.intro.23": "the schedule",
+  "home.location.intro.24": " for more details.",
+  "home.location.intro.3": "Please keep in mind that we will drive some 15km to ",
+  "home.location.intro.31": " to \"pick up\" the bride, so make sure you have a designated driver and a car.",
+  "home.location.intro.4": "For more details on these activities check out our ",
+  "home.location.intro.41": " page."
 }
