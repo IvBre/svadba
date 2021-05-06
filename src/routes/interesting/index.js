@@ -394,7 +394,7 @@ const Interesting = () => {
 			<h2>{t("interesting_other_bih")}</h2>
 			{lang === "sr" ? (
 				<div>
-					<h3>Višegrad</h3>,
+					<h3>Višegrad</h3>
 					<p>If the restrictions are lifted by then, you could visit Višegrad on the way back from Zlatibor. It is a city in Bosnia and Herzegovina, right on the river Drina, <br />
 						some 20km from the border.</p>
 					<p>In this city you can see the ancient bridge on Drina built by the famous Grand Vizier of the Ottoman Empire - Mehmed Paša Sokolović</p>
@@ -409,7 +409,7 @@ const Interesting = () => {
 				</div>
 			) : lang === "de" ? (
 				<div>
-					<h3>Višegrad</h3>,
+					<h3>Višegrad</h3>
 					<p>If the restrictions are lifted by then, you could visit Višegrad on the way back from Zlatibor. It is a city in Bosnia and Herzegovina, right on the river Drina, <br />
 						some 20km from the border.</p>
 					<p>In this city you can see the ancient bridge on Drina built by the famous Grand Vizier of the Ottoman Empire - Mehmed Paša Sokolović</p>
@@ -424,7 +424,7 @@ const Interesting = () => {
 				</div>
 			) : (
 				<div>
-					<h3>Višegrad</h3>,
+					<h3>Višegrad</h3>
 					<p>If the restrictions are lifted by then, you could visit Višegrad on the way back from Zlatibor. It is a city in Bosnia and Herzegovina, right on the river Drina, <br />
 						some 20km from the border.</p>
 					<p>In this city you can see the ancient bridge on Drina built by the famous Grand Vizier of the Ottoman Empire - Mehmed Paša Sokolović</p>
