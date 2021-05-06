@@ -1,4 +1,3 @@
-import { h, render } from 'preact';
 import { useContext } from 'preact/hooks';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'preact-router/match';
