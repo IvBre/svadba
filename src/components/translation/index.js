@@ -8,7 +8,7 @@ export const AllowedLanguages = ["en", "de", "sr"];
 export const LanguageHeaderName = "language";
 
 const TranslationComponent = () => {
-    const {t, setLang} = useContext(TranslateContext);
+    const {t, lang, setLang} = useContext(TranslateContext);
     const [isLangSelectionVisible, setLangSelectionVisibility] = useState(false);
     const buttonElement = document.querySelector('.js-toggleTransList');
 
@@ -26,9 +26,9 @@ const TranslationComponent = () => {
     return (
         <section class={ style.translation }>
             <button type="button" 
-                    class={`js-toggleTransList ${style.toggleTransList}`} 
+                    class={`js-toggleTransList ${style.toggleTransList} icon-${lang}`} 
                     onClick={() => setLangSelectionVisibility(isLangSelectionVisible => !isLangSelectionVisible)}>
-                        Language: {t("lang")}
+                        Language: {t(lang)}
             </button>
             { isLangSelectionVisible &&
                 <ul class={ `${ style.translationList } js-translationList` }>
