@@ -6,7 +6,7 @@ const Location = () => {
 	const { t, lang } = useContext(TranslateContext);
 	return (
 		<div class="pageWrapper">
-			<h1>{t("location_title")}Venue and acco&shy;mmoda&shy;tion</h1>
+			<h1>{t("location_title")}</h1>
 			{lang === "sr" ? (
 				<p>The wedding venue is in the grand hall of <strong>“Kur salon”</strong> in a little town called Banja Koviljača in the west of Serbia.</p>
 			) : lang === "de" ? (
@@ -21,7 +21,7 @@ const Location = () => {
 						<img src="./routes/location/img/kur_salon_banja_koviljaca1.jpeg" alt="kur-salon" width="600" />
 					</div>
 				</div>
-				<p class="paragraph">{t("location_intro")}The building is part of the complex of an old rehabilitation hospital and a spa center in the central park in Banja.</p>
+				<p class="paragraph">{t("location_intro")}</p>
 			</div>
 
 			<div class="textImagePair textImagePairBenny">
@@ -61,15 +61,15 @@ const Location = () => {
 						<img src="./routes/location/img/kur_salon_banja_koviljaca9.jpeg" alt="kur-salon-king-petar" width="600" />
 					</div>
 				</div>
-				<p class="paragraph">The ceremony will be performed on the upper balcony of “King Petar I Karadjordjevic” hall in Kur-Salon, overlooking the park and the fountain.</p>
+				<p class="paragraph">{t("location_text_1")}</p>
 			</div>
 
 			{/*
 			<img src="https://www.kursalon.rs/img/kur_salon_banja_koviljaca17.jpg" alt="kur-salon-balcony" width="600" />
 		*/}
 
-			<h2>Accommodation in Banja Koviljaca</h2>
-			<p>Banja is a touristic place, so you will find many hotels and apartments for rent in the near.</p>
+			<h2>{t("location_accommodation_banja")}</h2>
+			<p>{t("location_accommodation_banja_intro")}</p>
 
 			<div class="textImagePair textImagePairMicha">
 				<div class="frame">
@@ -108,16 +108,12 @@ const Location = () => {
 					)}
 				</div>
 			</div>
-			<p>You can check <a href="https://www.trivago.de/?aDateRange%5Barr%5D=2021-08-06&aDateRange%5Bdep%5D=2021-08-08&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=418308%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=" target="_blank">trivago</a> for more accommodations, just keep in mind that you want to be within walking distance from the Banja’s central park.</p>
+			<p>{t("location_accommodation_trivago_1")}<a href="https://www.trivago.de/?aDateRange%5Barr%5D=2021-08-06&aDateRange%5Bdep%5D=2021-08-08&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=418308%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=" target="_blank">trivago</a>{t("location_accommodation_trivago_2")}</p>
 
-			<h2>Accommodation in Loznica</h2>
-			<p>
-				Loznica is the next bigger city to the wedding venue. If you want you can also book accommodation there,
-				but then you would have to take a 10min ride with a taxi to Banja. Don't worry taxi's in Loznica are very cheap.
-				Although we have to warn you, beside more restaurants and bars, Loznica doesn't have much else to offer regarding activities.
-			</p>
+			<h2>{t("location_accommodation_loznica")}</h2>
+			<p>{t("location_accommodation_loznica_intro")}</p>
 
-			<h2>Accommodation in Belgrade</h2>
+			<h2>{t("location_accommodation_belgrade")}</h2>
 			{lang === "sr" ? (
 				<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>,
 				<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>,
