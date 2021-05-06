@@ -3,7 +3,7 @@ import style from './style.css';
 	import {Link} from "preact-router/match";
 
 const Transportation = () => (
-	<div class={style.home}>
+	<div class="pageWrapper">
 		<h1>Transportation</h1>
 		<p>Coming from outside of Serbia it is best to come with the airplane to Belgrade.<br />
 			There is also an airport in Tuzla in Bosnia, but due to travel restrictions in Bosnia it could produce problems for you on the border. <br />

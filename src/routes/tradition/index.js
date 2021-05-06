@@ -2,7 +2,7 @@ import {Link} from "preact-router/match";
 import style from './style.css';
 
 const Tradition = () => (
-	<div class={style.home}>
+	<div class="pageWrapper">
 		<h1>Serbian wedding traditions</h1>
 		<p>Disclaimer: There are many more traditions on Serbian weddings but we decided to do just some of them that we find interesting or fun. Also some parts we amended to our liking.</p>
 		<p>On serbian weddings there are two types of guests, regular guests and "svatovi". </p>
