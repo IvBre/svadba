@@ -65,7 +65,7 @@
   "en": "Engleski",
   "de": "Nemački",
   "sr": "Srpski",
-  "location_title": "Venue and acco&shy;mmoda&shy;tion",
+  "location_title": "Venue and accommodation",
   "location_intro": "The building is part of the complex of an old rehabilitation hospital and a spa center in the central park in Banja.",
   "location_text_1": "The ceremony will be performed on the upper balcony of “King Petar I Karadjordjevic” hall in Kur-Salon, overlooking the park and the fountain.",
   "location_accommodation_banja": "Accommodation in Banja Koviljača",
@@ -74,5 +74,14 @@
   "location_accommodation_trivago_2": " for more accommodations, just keep in mind that you want to be within walking distance from the Banja’s central park.",
   "location_accommodation_loznica": "Accommodation in Loznica",
   "location_accommodation_loznica_intro": "Loznica is the next bigger city to the wedding venue. If you want you can also book accommodation there,\nbut then you would have to take a 10min ride with a taxi to Banja. Don't worry taxi's in Loznica are very cheap.\nAlthough we have to warn you, beside more restaurants and bars, Loznica doesn't have much else to offer regarding activities.",
-  "location_accommodation_belgrade": "Accommodation in Belgrade"
+  "location_accommodation_belgrade": "Accommodation in Belgrade",
+  "schedule_title": "Wedding day schedule",
+  "schedule_1": "Cocktail for the guests (svatovi) at the top balcony of Kur-salon.",
+  "schedule_2": "The svatovi are going with the groom to Donja Borina to get his future bride.",
+  "schedule_3": "Arrival at the house of the bride's parents. There will be drinks and music.",
+  "schedule_4": "Going back to Kur-Salon together with the bride.",
+  "schedule_5": "Guests can enter the wedding hall, and sit on their designated tables. \nPlease ask at the door where you need to sit.",
+  "schedule_6": "Wedding ceremony at the top balcony of Kur-Salon.",
+  "schedule_7": "The wedding cake ceremony.",
+  "schedule_8": "Actually there is an end at midnight, but if we want we can prolong it."
 }
