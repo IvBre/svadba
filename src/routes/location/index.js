@@ -94,17 +94,23 @@ const Location = () => {
 				</div>
 				<div class="paragraph-wrapper">
 					{lang === "sr" ? (
-						<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>,
-						<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>,
-						<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						<div>
+							<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>
+							<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>
+							<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						</div>
 					) : lang === "de" ? (
-						<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>,
-						<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>,
-						<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						<div>
+							<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>
+							<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>
+							<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						</div>
 					) : (
-						<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>,
-						<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>,
-						<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						<div>
+							<p class="paragraph">A slightly cheaper but also very nice hotel is “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” which is right next to the park.</p>
+							<p class="paragraph">For the Royal Spa we can have a discount if more people would like to book there. Unfortunatelly we can't know the amount of this discount until we know how many people would be interested.</p>
+							<p class="paragraph">If you are one of the interested please let us know asap at: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
+						</div>
 					)}
 				</div>
 			</div>
@@ -115,35 +121,41 @@ const Location = () => {
 
 			<h2>{t("location_accommodation_belgrade")}</h2>
 			{lang === "sr" ? (
-				<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>,
-				<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>,
-				<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>,
-				<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
-				Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>,
-				<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
-				For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>,
-				<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>,
-				<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				<div>
+					<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>
+					<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>
+					<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
+					<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
+						Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
+					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
+						For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
+					<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
+					<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				</div>
 			) : lang === "de" ? (
-				<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>,
-				<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>,
-				<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>,
-				<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
-					Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>,
-				<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
-					For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>,
-				<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>,
-				<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				<div>
+					<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>
+					<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>
+					<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
+					<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
+						Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
+					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
+						For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
+					<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
+					<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				</div>
 			) : (
-				<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>,
-				<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>,
-				<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>,
-				<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
-					Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>,
-				<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
-					For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>,
-				<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>,
-				<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				<div>
+					<p>If you are coming with the airplane you will arrive to the one and only airport in Belgrade: Airport <span lang="rs">Nicola Tesla</span>. </p>
+					<p>Yes, Tesla was Serbian and don't worry we didn't forgot about our other wordly known Serbian, AirSerbia's airplanes are named by <span lang="sr">Novak Djokovic</span> ;) </p>
+					<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
+					<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
+						Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
+					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
+						For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
+					<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
+					<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
+				</div>
 			)}
 
 			{/* <img src="./routes/location/img/old-town-stari-grad-belgrade.png" alt="old-town-belgrade" width="600" /> */}
