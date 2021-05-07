@@ -25,7 +25,7 @@ const TranslationComponent = () => {
                 <button type="button" 
                         class={`js-toggleTransList ${style.toggleTransList} icon-${lang}`} 
                         onClick={() => setLangSelectionVisibility(isLangSelectionVisible => !isLangSelectionVisible)}>
-                            Language: {t(lang)}
+                            {t("language")}: {t(lang)}
                 </button>
                 { isLangSelectionVisible &&
                     <div class={style.translationListWrapper}>
