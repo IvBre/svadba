@@ -1,0 +1,123 @@
+@import '../../style/foundation/mediaqueries.scss';
+@import '../../style/foundation/utilityGebimsel.scss';
+
+@mixin iconFlag {
+	background-size: 24px auto;
+	padding-right: 30px;
+}
+
+.translationWrapper {
+	margin-right: 16px;
+	position: relative;
+	width: 100%;
+	z-index: 3;
+
+	@include respond-to-min($screen-medium) {
+		width: auto;
+	}
+}
+
+.toggleTransList {
+	background: transparent;
+	border: 0;
+	color: var(--color-white);
+	font-size: 16px;
+	padding: 16px 0;
+	position: relative;
+	text-shadow: var(--text-shadow-dark);
+	text-align: left;
+}
+
+.translation {
+	//background: rgba(255, 255, 255, .082);
+	//border: 1px solid var(--color-green);
+	//border-radius: 6px;
+	color: var(--color-white);
+	padding: 0 8px 0;
+	position: relative;
+
+	@include respond-to-min($screen-medium) {
+		margin: 18px 16px 0 0;
+		width: auto;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		border-top: 8px solid var(--color-white);
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		height: 0;
+		position: absolute;
+		left: 185px;
+		top: 22px;
+		width: 0;
+	}
+}
+
+.translationListWrapper {
+	position: absolute;
+	top: 50px;
+	z-index: 5;
+}
+
+.translationList {
+	background: var(--color-green);
+	border-radius: 8px;
+	box-shadow: var(--box-shadow);
+	left: 0;
+	margin: 0;
+	padding: 16px;
+	position: ab;
+	top: 0;
+
+	&::before,
+	&::after {
+		content: "";
+		border-left: 12px solid transparent;
+		border-bottom: 14px solid var(--color-green);
+		border-right: 12px solid transparent;
+		display: block;
+		height: 0;
+		position: absolute;
+		left: 28px;
+		top: -11px;
+		width: 0;
+		z-index: 2;
+	}
+	
+	&::after {
+		border-bottom: 14px solid #0e7d3f;
+		top: -12px;
+		z-index: 1;
+	}
+}
+
+.listItem {
+	margin: 0 0 16px;	
+}
+
+:global(.icon-en) {
+	@include iconFlag;
+	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-gb.svg");
+}
+
+:global(.icon-de) {
+	@include iconFlag;
+	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-de.svg");
+}
+
+:global(.icon-sr) {
+	@include iconFlag;
+	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-rs.svg");
+}
+
+.buttonChoice {
+	@include buttonStyle;
+	margin-bottom: 16px;
+	width: 160px;
+
+	.listItem:last-of-type & {
+		margin-bottom: 0;
+	}
+}

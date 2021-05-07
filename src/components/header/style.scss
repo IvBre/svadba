@@ -2,18 +2,19 @@
 @import '../../style/foundation/mediaqueries.scss';
 
 .header {
-	background: var(--color-cadmium-green);
+	align-items: flex-start;
+	background: var(--color-green-cadmium);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	display: flex;
 	flex-wrap: wrap;
 	left: 0;
-	overflow: hidden;
-	padding: 16px 64px 16px 16px;
+	padding: 16px;
 	top: 0;
 	width: 100%;
 	z-index: 50;
 
 	@include respond-to-min($screen-medium) {
+		justify-content: space-between;
 		padding: 0;
 	}
 }
@@ -24,7 +25,7 @@
 	font-weight: 400;
 	line-height: 1.25;
 	margin: 0 0 24px;
-	padding: 0 15px 0 0;
+	padding: 0 64px 0 0;
 	text-shadow: var(--text-shadow-dark);
 
 	@include respond-to-min($screen-medium) {
@@ -42,7 +43,7 @@
 	top: 68px;
 	transition: right 1s ease-in;
 	width: 100%;
-	z-index: 10;
+	z-index: 2;
 
 	:global(.bodyMenuOpen) & {
 		right: 0;
