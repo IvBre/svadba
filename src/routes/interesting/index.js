@@ -38,20 +38,20 @@ const Interesting = () => {
 			{lang === "sr" ? (
 				<div>
 					<p>
-						Banja Koviljača is famous for its healing thermal mineral springs where Romans were the first to create a bath for.<br />
-						It was again rebuilt in the 17th century by the Turks during the Ottoman Empire.<br />
-						The first chemical analysis of the water was performed in 1855 after which the first guest house was built. It was soon after protected by the state and expanded during the reigns of the Obrenović dynasty and Karadjordjević after them.<br />
-						Part of the spa complex is our wedding venue “Kur-Salon” which was built by the king Aleksandar I Karadjordjević in 1932, who was heavily inspired by similar “Kur-Salon” buildings in Vienna of that time.<br />
-						Kur-Salon was a popular place for festivities organized by the noble class in forms of balls and galas. It was also the first gambling hole in the entire Balkans. It was so popular that musicians paid to play there.<br />
-						After the collapse of Yugoslavia, Kur-Salon was not maintained and soon became a ruin.<br />
-						Finally, it was reinstated to its previous glory in 2016. And since then it has become a popular venue for events with also a restaurant that has live traditional music almost every night and superb food.<br />
-						The Banja’s spa complex today consists of a big park with a fountain in the middle, surrounded by several rehabilitation centers, wellness hotels and the above mentioned “Kur-Salon”.<br />
-						We hope you will enjoy this place as much as we enjoy it every time we are in Serbia!<br />
+						Баља Ковиљача је позната по својим исцељујућим термалним водама и блатом где су Римљани направили прво купатило.<br />
+						Поново је обновљено током Отоманског царства у 17-ом веку.<br />
+						Прва хемијска анализа воде је урађена 1855-те године након чега је и прва гостиона направљена. Убрзо након тога држава ју је заштитила као националну баштину, и радови на проширењу су започети током владавине Обреновића и завршени током Карађорђевић династије.<br />
+						Део бањског комплекса је и место нашег венчања ”Кур салон” који је изграђен по наређењу краља Александра Првог Карађорђевића 1932. године, по узору на сличне ”Кур Салоне” тада у Бечу.<br />
+						Кур Салон је постало популарно место за разне свечаности и балове тадашње српске елите. Такође је било прво место у читавом Балкану где су се одражавале вечери коцкарнице. Место је било толико популарно да су извођачи плаћали како би ту свирали.<br />
+						Након пада СФР Југославије, Кур Салон постаје рушевина.<br />
+						Коначно, 2016-те године држава га реновира и враћа у претходну славу. Након тога место постаје популарно за разне догађаје и свечаности, са одличним рестораном у приземљу, где музика свира скоро свако вече.<br />
+						Бањски комплекс се данас састоји од великог парка и фонтаном у средини, окружена са неколико рехабилитационих центара, велнес хотелом и горе поменутим Кур Салоном.<br />
+						Надамо се да ћете уживати у овом месту колико и ми уживамо сваки пут кад дођемо у Србију!<br />
 						<img src="https://banjakoviljaca.rs/img/banja-koviljaca/banja-koviljaca.jpg" alt="banjski-park-fontana" width="600" />
 					</p>
 					<p>
-						Since Banja is a spa center, there is nothing much to do except relaxing in a spa and in the surrounding park.<br />
-						But if you do have some spare time, you could check out the <a href="https://suncanareka.rs/" target="_blank">Sunčana reka</a> (translation: Sunny River) complex, some 10min drive from Banja.<br />
+						Пошто је Бања место пре свега за људе који долазе да се лече, нема неких додатних активности у којима можете уживати сем опуштања у велнесу или шетња по парку. <br />
+						Али ако имате нешто времена, можете отићи у комплекс <a href="https://suncanareka.rs/" target="_blank">Сунчана река</a>, неких 10 мин вожње од Бање. Деца би посебно уживала јер комплекс има прилично разних домаћих животиња.<br />
 					</p>
 				</div>
 			) : lang === "de" ? (
@@ -70,7 +70,7 @@ const Interesting = () => {
 					</p>
 					<p>
 						Since Banja is a spa center, there is nothing much to do except relaxing in a spa and in the surrounding park.<br />
-						But if you do have some spare time, you could check out the <a href="https://suncanareka.rs/" target="_blank">Sunčana reka</a> (translation: Sunny River) complex, some 10min drive from Banja.<br />
+						But if you do have some spare time, you could check out the <a href="https://suncanareka.rs/" target="_blank">Sunčana reka</a> (translation: Sunny River) complex, some 10min drive from Banja. Kids would enjoy there very much because the complex has a lot of domesticated animals to pet.<br />
 					</p>
 				</div>
 			) : (
@@ -89,7 +89,7 @@ const Interesting = () => {
 					</p>
 					<p>
 						Since Banja is a spa center, there is nothing much to do except relaxing in a spa and in the surrounding park.<br />
-						But if you do have some spare time, you could check out the <a href="https://suncanareka.rs/" target="_blank">Sunčana reka</a> (translation: Sunny River) complex, some 10min drive from Banja.<br />
+						But if you do have some spare time, you could check out the <a href="https://suncanareka.rs/" target="_blank">Sunčana reka</a> (translation: Sunny River) complex, some 10min drive from Banja.  Kids would enjoy there very much because the complex has a lot of domesticated animals to pet.<br />
 					</p>
 				</div>
 			)}

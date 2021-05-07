@@ -9,19 +9,19 @@ const Transportation = () => {
 			<h1>{t("transportation_title")}</h1>
 			{lang === "sr" ? (
 				<div>
-					<p>Coming from outside of Serbia it is best to come with the airplane to Belgrade.<br />
-						There is also an airport in Tuzla in Bosnia, but due to travel restrictions in Bosnia it could produce problems for you on the border. <br />
-						Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Serbia</a> due to COVID-19.
+					<p>Ако долазите ван Србије онда је најбоље да дођете аивионом у Београд.<br />
+						Постоји такође аеродром у Тузли у Босни, али због Ковид рестрикција у Босни може се десити да Вас неће пустити на граници. <br />
+						Молимо проверите последње регулације за улазак у <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Србију</a> током Ковид-19 пандемије.
 					</p>
-					<p>Note for people from NRW: There is a direct flight from Düsseldorf with <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> but it is the most expensive one.<br />
-						<a href="https://wizzair.com/" target="_blank">WizzAir</a> is cheaper and it also flies to Belgrade but from Düsseldorf Weeze and Dortmund airports.
+					<p>Напомена за људе који долазе из СРВ: Постоји директан лет из Дизелдорфа са <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> али је то најскупљи превозник.<br />
+						<a href="https://wizzair.com/" target="_blank">WizzAir</a> је јефтинији и лети исто у београд али из аеродрома у Дизелдорф Weeze и из Дортмунда.
 					</p>
-					<p>We recommend spending 2-3 days in Belgrade if you haven’t been there before. The city is famous for it's history and the fortress in the city center but also for it's very vivid nightlife.<br />
-						Please check out our <Link href="/interesting">Things to do</Link> page for more details what to do in Belgrade.
+					<p>Препоручујемо да проведете бар 2-3 дана у београду ако већ нисте били ту. Град је познат по својој историји и тврђави у центру града, али и по свом шароликом ноћном животу.<br />
+						Молимо погледајте нашу <Link href="/interesting">Занимљивости</Link> страницу за више детаља.
 					</p>
-					<p>From Belgrade to Banja Koviljača you can take the bus from <a href="http://www.bas.rs/en/" target="_blank">the main bus station</a> in the Belgrade city center.<br />
-						Usually there is a bus every hour that goes to Loznica, from which you can take a 10 min drive taxi to Banja.<br />
-						You can also take the direct bus to Banja, but <a href="http://www.bas.rs/en/" target="_blank">check for the schedule beforehand</a>.
+					<p>Из Београда до Бање Ковиљаче можете кренути аутобусом са <a href="http://www.bas.rs/en/" target="_blank">главне аутобуске станице</a> у центру Београда.<br />
+						Аутобуси обично иду сваког сата за Лозницу, одакле можете узети 10-минутну вожњу таксијем до Бање.<br />
+						Можете такође узети и директан бус до Бање, али <a href="http://www.bas.rs/en/" target="_blank">проверите распоред вожње пре тога</a>.
 					</p>
 				</div>
 			) : lang === "de" ? (
@@ -68,12 +68,12 @@ const Transportation = () => {
 				</div>
 				{lang === "sr" ? (
 					<p>
-						Besides the bus you can also take the train. The train goes once per day so it might be tricky to arrange yourself,
-						but the ride is very enjoyable since not so many people use it. <br />
-						The main train station in Belgrade is moved to <a href="https://goo.gl/maps/NKFs2xao1nYPBPrB8" target="_blank">Prokop</a> which is not in the city center <br />
-						so you would need to take a taxi and calculate some extra time to get there.<br />
-						Instead of going to Prokop, you can also go to the next station which is on <a href="https://goo.gl/maps/Vkeg11fbDxy2joZf9" target="_blank">New Belgrade</a>.<br />
-						You can check the train timetable here: <a href="https://www.srbvoz.rs/en/timetable/" target="_blank">srbvoz.rs</a>
+						Поред аутобусе можете доћи и возом. Воз иде једном дневно тако да може бити мало незгодно за организацију,
+						али вожња је врло удобна јер нема много људи и возови су чисти. <br />
+						Главна железничка станица у Београду је померена у <a href="https://goo.gl/maps/NKFs2xao1nYPBPrB8" target="_blank">Прокоп</a> што није директно у центру града.<br />
+						Требало би онда да узмете такси или градским превоз, свакако рачунајте додатно време за то.<br />
+						Уместо да идете на Прокоп, можете ухватити воз на другој станици после главне, што је на <a href="https://goo.gl/maps/Vkeg11fbDxy2joZf9" target="_blank">Новом Београду</a>.<br />
+						Проверите ред вожње воза овде: <a href="https://www.srbvoz.rs/en/timetable/" target="_blank">srbvoz.rs</a>
 					</p>
 				) : lang === "de" ? (
 					<p>
@@ -98,11 +98,10 @@ const Transportation = () => {
 
 			{lang === "sr" ? (
 				<div>
-					<p>Note that if there are no ticket boots on the station, you can also get a ticket directly in the train/bus from the conductor or the driver.</p>
-					<p>You can also rent a car in Belgrade and drive to Banja. This is specifically recommended because there will be one part of the wedding ceremony where you would need a car.<br />
-						Check the <Link href="/tradition">Tradition</Link> page for more details on that.<br />
-						It's best to rent the car on the airport. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">The list of rental companies you can find on the airport website.</a>
-
+					<p>Напомињемо да ако нема шалтера за продају карата на станици, можете узети карту директно у возу/бусу код кондуктера или возача.</p>
+					<p>Поред тога, можете и изнајмити ауто у Београду и тако отићи у Бању. Ово је посебно препоручљиво ако хоћете да идете у сватове.<br />
+						Погледајте <Link href="/tradition">Традиција</Link> страницу за више детаља о сватовима.<br />
+						Најбоље је да изнајмите кола на аеродрому. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">Листа компанија за изнајмљивање аута можете наћи на сајту аеродрома.</a>
 					</p>
 					<p><b>Important warning #1!</b> Once you land at the airport, don't take a taxi from the people who are asking you if you need a taxi.<br />
 						There are a lot of fake taxi drivers that will try to rip you off. So once you leave the gate you will see a booth next to the exit from the airport building where it says something like “taxi vouchers”.<br />
