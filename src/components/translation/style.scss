@@ -17,6 +17,17 @@
 	}
 }
 
+.translation {
+	color: var(--color-white);
+	padding: 0;
+	position: relative;
+
+	@include respond-to-min($screen-medium) {
+		margin: 18px 16px 0 0;
+		width: auto;
+	}
+}
+
 .toggleTransList {
 	background: transparent;
 	border: 0;
@@ -26,33 +37,20 @@
 	position: relative;
 	text-shadow: var(--text-shadow-dark);
 	text-align: left;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
-.translation {
-	//background: rgba(255, 255, 255, .082);
-	//border: 1px solid var(--color-green);
-	//border-radius: 6px;
-	color: var(--color-white);
-	padding: 0 8px 0;
-	position: relative;
-
-	@include respond-to-min($screen-medium) {
-		margin: 18px 16px 0 0;
-		width: auto;
-	}
-
-	&::after {
-		content: "";
-		display: block;
-		border-top: 8px solid var(--color-white);
-		border-left: 6px solid transparent;
-		border-right: 6px solid transparent;
-		height: 0;
-		position: absolute;
-		left: 185px;
-		top: 22px;
-		width: 0;
-	}
+.arrowTip {
+	display: inline-block;
+	border-top: 8px solid var(--color-white);
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	height: 0;
+	margin-left: 42px;
+	width: 0;
 }
 
 .translationListWrapper {
@@ -62,12 +60,12 @@
 }
 
 .translationList {
-	background: var(--color-green);
+	background: var(--color-white);
 	border-radius: 8px;
-	box-shadow: var(--box-shadow);
+	box-shadow: var(--box-shadow-andere);
 	left: 0;
 	margin: 0;
-	padding: 16px;
+	padding: 16px 16px 24px;
 	position: ab;
 	top: 0;
 
@@ -75,13 +73,13 @@
 	&::after {
 		content: "";
 		border-left: 12px solid transparent;
-		border-bottom: 14px solid var(--color-green);
+		border-bottom: 14px solid var(--color-white);
 		border-right: 12px solid transparent;
 		display: block;
 		height: 0;
 		position: absolute;
 		left: 28px;
-		top: -11px;
+		top: -12px;
 		width: 0;
 		z-index: 2;
 	}
@@ -99,22 +97,37 @@
 
 :global(.icon-en) {
 	@include iconFlag;
-	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-gb.svg");
+	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-gb.svg");
+
+	.translationListWrapper & {
+		background-position: right top 3px;
+		padding-right: 30px;
+	}
 }
 
 :global(.icon-de) {
 	@include iconFlag;
-	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-de.svg");
+	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-de.svg");
+
+	.translationListWrapper & {
+		background-position: right top 3px;
+		padding-right: 30px;
+	}
 }
 
 :global(.icon-sr) {
 	@include iconFlag;
-	background: transparent right 1px top 16px/21px auto no-repeat url("../../assets/images/flag-rs.svg");
+	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-rs.svg");
+
+	.translationListWrapper & {
+		background-position: right top 3px;
+		padding-right: 30px;
+	}
 }
 
 .buttonChoice {
 	@include buttonStyle;
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 	width: 160px;
 
 	.listItem:last-of-type & {

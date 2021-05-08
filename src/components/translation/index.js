@@ -26,13 +26,14 @@ const TranslationComponent = () => {
                         class={`js-toggleTransList ${style.toggleTransList} icon-${lang}`} 
                         onClick={() => setLangSelectionVisibility(isLangSelectionVisible => !isLangSelectionVisible)}>
                             {t("language")}: {t(lang)}
+                            <span class={style.arrowTip} />
                 </button>
                 { isLangSelectionVisible &&
                     <div class={style.translationListWrapper}>
                         <ul class={ `${ style.translationList } js-translationList` }>
-                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('en')}>English</button></li>
-                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('sr')}>Српски</button></li>
-                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('de')}>Deutsch</button></li>                
+                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('en')}><span class="icon-en">English</span></button></li>
+                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('sr')}><span class="icon-sr">Српски</span></button></li>
+                            <li class={style.listItem}><button class={style.buttonChoice} type="button" onClick={() => setCookieLang('de')}><span class="icon-de">Deutsch</span></button></li>                
                         </ul>
                     </div>
                 }
