@@ -31,74 +31,81 @@ const Header = () => {
 	const listClasses = `marginBottomNone ${style.list}`;
 
 	return (
-		<header class={style.header}>
-			<p>Please keep yourself informed about the COVID-19 situation in Serbia on our page: <Link href="/covid">COVID-19 in Serbia</Link>.</p>
-			<h1 class={style.headerLogo}>{t("title")} - {t("subtitle")} </h1>
+		<div>
+			{ (!isMenuOpen) && 
+				<section class={ style.covid19 }>
+					<h2 class={ style.covidHeadline }>Attention!</h2>
+					<p class={ style.covidParagraph }><em>Please keep yourself informed about the COVID-19 situation in Serbia on our page:</em> <Link href="/covid">COVID-19 in Serbia</Link>.</p>
+				</section>
+			}
+			<header class={style.header}>
+				<h1 class={style.headerLogo}>{t("title")} - {t("subtitle")} </h1>
 
-			<MainComponent />
-			
-			{ width < screenMedium &&
-				<button type="button" class={ toggleButtonClasses } onClick={() => setIsMenuOpen(isOpen => !isOpen)}>	
-					<span class="visuallyHidden">
-						{ isMenuOpen ? 'Close Menu' : 'Open Menu'}
-					</span>
-					<span class={style.burger}>
-						<span class={style.burgerOne} />
-						<span class={style.burgerTwo} />
-						<span class={style.burgerThree} />
-					</span>
-				</button>
-			}
-			
-			{ (isMenuOpen || (width >= screenMedium)) &&
-				<nav class={style.navigation}>
-					<ul class={listClasses}>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("home")}
-								</span>
-							</Link>
-						</li>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/location" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("location")}
-								</span>
-							</Link>
-						</li>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/transportation" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("transportation")}
-								</span>
-							</Link>
-						</li>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/schedule" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("schedule")}
-								</span>
-							</Link>
-						</li>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/tradition" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("tradition")}
-								</span>
-							</Link>
-						</li>
-						<li class={style.listItem}>
-							<Link activeClassName="navLinkActive" href="/interesting" onClick={setToggleBehavior}>
-								<span class="listItemBackground">
-									{t("interesting")}
-								</span>
-							</Link>
-						</li>
-					</ul>
-				</nav>
-			}
-		</header>
+				<MainComponent />
+				
+				{ width < screenMedium &&
+					<button type="button" class={ toggleButtonClasses } onClick={() => setIsMenuOpen(isOpen => !isOpen)}>	
+						<span class="visuallyHidden">
+							{ isMenuOpen ? 'Close Menu' : 'Open Menu'}
+						</span>
+						<span class={style.burger}>
+							<span class={style.burgerOne} />
+							<span class={style.burgerTwo} />
+							<span class={style.burgerThree} />
+						</span>
+					</button>
+				}
+				
+				{ (isMenuOpen || (width >= screenMedium)) &&
+					<nav class={style.navigation}>
+						<ul class={listClasses}>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("home")}
+									</span>
+								</Link>
+							</li>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/location" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("location")}
+									</span>
+								</Link>
+							</li>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/transportation" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("transportation")}
+									</span>
+								</Link>
+							</li>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/schedule" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("schedule")}
+									</span>
+								</Link>
+							</li>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/tradition" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("tradition")}
+									</span>
+								</Link>
+							</li>
+							<li class={style.listItem}>
+								<Link activeClassName="navLinkActive" href="/interesting" onClick={setToggleBehavior}>
+									<span class="listItemBackground">
+										{t("interesting")}
+									</span>
+								</Link>
+							</li>
+						</ul>
+					</nav>
+				}
+			</header>
+		</div>
 	);
 	
 };

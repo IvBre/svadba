@@ -10,10 +10,10 @@ const Home = () => {
 			<h1 class={style.IvanaAndKay}>
 				{t("ivana")}
 				<span class="ampersand">
-				<span class="ampersandArrowLeft"></span>
-				&
-				<span class="ampersandArrowRight"></span>
-			</span>
+					<span class="ampersandArrowLeft"></span>
+					&
+					<span class="ampersandArrowRight"></span>
+				</span>
 				{t("kay")}
 			</h1>
 

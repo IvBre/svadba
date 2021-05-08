@@ -1,5 +1,6 @@
 @import '../../style/foundation/center.scss';
 @import '../../style/foundation/mediaqueries.scss';
+@import '../../style/foundation/utilityGebimsel.scss';
 
 .header {
 	align-items: flex-start;
@@ -9,6 +10,7 @@
 	flex-wrap: wrap;
 	left: 0;
 	padding: 16px;
+	position: relative;
 	top: 0;
 	width: 100%;
 	z-index: 50;
@@ -56,28 +58,33 @@
 	@include respond-to-min($screen-medium) {
 		background: transparent;
 		border-bottom: 1px solid var(--color-green-pantone);
-		position: static;
+		left: 0;
+		position: relative;
+		top: 0;
+		z-index: 1;
 	}
 
-	&::before,
-	&::after {
-		content: "";
-		border-left: 12px solid transparent;
-		border-bottom: 14px solid var(--color-green);
-		border-right: 12px solid transparent;
-		display: block;
-		height: 0;
-		position: absolute;
-		right: 28px;
-		top: -11px;
-		width: 0;
-		z-index: 2;
-	}
-	
-	&::after {
-		border-bottom: 14px solid #0e7d3f;
-		top: -12px;
-		z-index: 1;
+	@include respond-to-max($screen-medium) {
+		&::before,
+		&::after {
+			content: "";
+			border-left: 12px solid transparent;
+			border-bottom: 14px solid var(--color-green);
+			border-right: 12px solid transparent;
+			display: block;
+			height: 0;
+			position: absolute;
+			right: 28px;
+			top: -11px;
+			width: 0;
+			z-index: 2;
+		}
+		
+		&::after {
+			border-bottom: 14px solid #0e7d3f;
+			top: -12px;
+			z-index: 1;
+		}
 	}
 }
 
@@ -318,4 +325,23 @@ $transition-time-function: cubic-bezier(1,1.64,1,1.2);
 	height: 100%;
 	overflow: hidden;
 	position: fixed;
+}
+
+/*
+ * # Covid
+ */
+.covid19 {
+	background: linear-gradient(to bottom, var(--color-yellow-lime) 0%,var(--color-yellow-pear) 100%);
+    font-size: 20px;
+	padding: 16px;
+}
+
+.covidHeadline {
+	margin: 0;
+	@include visuallyhidden;
+}
+
+.covidParagraph { 
+	margin: 0;
+	text-shadow: var(--text-shadow-bright);
 }
