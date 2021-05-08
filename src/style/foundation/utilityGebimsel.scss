@@ -11,6 +11,72 @@
 }
 
 /*
+ * # General prominent button background
+ */
+@mixin buttonStyle {
+    background: linear-gradient(to bottom, #05b44e 0%,#017d34 100%);
+	border-radius: 8px;
+	border: 2px solid var(--color-green-forest);
+	color: var(--color-white);
+	cursor: pointer;
+	display: inline-block;
+	font-family: Times, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 20px;
+	min-width: 50px;
+	padding: .8em 2em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: var(--text-shadow-dark);
+	transition: text-shadow 0.125s linear;
+	transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1); /* background 150ms cubic-bezier(0, 0, 0.58, 1) */
+	vertical-align: middle;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: var(--color-green-cadmium);
+		border-radius: inherit;
+		box-shadow: 0 0 0 2px var(--color-green-forest), 0 0.625em 0 0 rgba(9, 173, 75, .5);
+		transform: translate3d(0, 0.75em, -1em);
+		transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+		z-index: 1;
+    }
+
+	&:hover {
+		text-shadow: var(--text-shadow-bright);
+	}
+
+	&:hover {
+		background: var(--color-green-pantone);
+		transform: translate(0, 0.25em);
+		
+		&::before {
+			box-shadow: 0 0 0 2px var(--color-green-forest), 0 0.5em 0 0 var(--color-green-pantone);
+			transform: translate3d(0, 0.5em, -1em);
+		}
+	}
+	
+	&:active {
+		background: var(--color-green-pantone);
+		transform: translate(0em, 0.75em);
+	
+		&::before {
+			box-shadow: 0 0 0 2px var(--color-green-kelly), 0 0 var(--color-green-kelly);
+			transform: translate3d(0, 0, -1em);
+		}
+	  }
+}
+
+/*
  * # Text/Font
  */
 .textAlignCenter {

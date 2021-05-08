@@ -47,7 +47,7 @@ const InvitationPage = ({ code, path }) => {
 	}, [])
 
 	return (
-		<div class={style.invitation}>
+		<div class="pageWrapper">
 			<h1>{t("your_invitation")}: {code}</h1>
 
 			{invitation ?
