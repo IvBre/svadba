@@ -35,7 +35,7 @@ const Header = () => {
 			{ (!isMenuOpen) && 
 				<section class={ style.covid19 }>
 					<h2 class={ style.covidHeadline }>Attention!</h2>
-					<p class={ style.covidParagraph }><em>Please keep yourself informed about the COVID-19 situation in Serbia on our page:</em> <Link href="/covid">COVID-19 in Serbia</Link>.</p>
+					<p class={ style.covidParagraph }><em>{t("covid_banner_title_1")}</em> <Link href="/covid">{t("covid_banner_title_2")}COVID-19 in Serbia</Link>.</p>
 				</section>
 			}
 			<header class={style.header}>
