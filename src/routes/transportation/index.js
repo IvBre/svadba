@@ -63,7 +63,7 @@ const Transportation = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/transportation/img/zeleznicka_stanica_prokop_2_foto_srbijadanassasa_dzambic_10.jpeg" alt="zeleznicka-stanica" width="600" />
+						<img src="/assets/transportation/zeleznicka_stanica_prokop_2_foto_srbijadanassasa_dzambic_10.jpeg" alt="zeleznicka-stanica" width="600" />
 					</div>
 				</div>
 				{lang === "sr" ? (
@@ -221,7 +221,7 @@ const Transportation = () => {
 				</div>
 			)}
 
-			<img src="./routes/transportation/img/38832-vip-sim-prepaid-kartica.jpeg" alt="vip-mobile" width="600" />
+			<img src="/assets/transportation/38832-vip-sim-prepaid-kartica.jpeg" alt="vip-mobile" width="600" />
 
 			{lang === "sr" ? (
 				<div>
@@ -279,7 +279,7 @@ const Transportation = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/transportation/img/dinari_081117_tw1024.jpeg" alt="srpski-dinari" width="600" />
+						<img src="/assets/transportation/dinari_081117_tw1024.jpeg" alt="srpski-dinari" width="600" />
 					</div>
 				</div>
 				{lang === "sr" ? (

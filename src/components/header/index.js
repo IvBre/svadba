@@ -32,6 +32,7 @@ const Header = () => {
 
 	return (
 		<header class={style.header}>
+			<p>Please keep yourself informed about the COVID-19 situation in Serbia on our page: <Link href="/covid">COVID-19 in Serbia</Link>.</p>
 			<h1 class={style.headerLogo}>{t("title")} - {t("subtitle")} </h1>
 
 			<MainComponent />

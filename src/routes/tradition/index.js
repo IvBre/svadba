@@ -10,7 +10,7 @@ const Tradition = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/tradition/img/Svatovi-i-običaji-mladenaca6.jpeg" alt="stari-obicaji" width="600" />
+						<img src="/assets/tradition/Svatovi-i-običaji-mladenaca6.jpeg" alt="stari-obicaji" width="600" />
 					</div>
 				</div>
 				<p>{t("tradition_disclaimer")}</p>
@@ -45,7 +45,7 @@ const Tradition = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/tradition/img/kako-se-pravilno-kite-svatovi.jpeg" alt="kicenje-svatova" width="600" />
+						<img src="/assets/tradition/kako-se-pravilno-kite-svatovi.jpeg" alt="kicenje-svatova" width="600" />
 					</div>
 				</div>
 				<p>{t("tradition_text_1")}</p>
@@ -92,7 +92,7 @@ const Tradition = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/tradition/img/trubacki-orkestar-2.jpeg" alt="trubaci" width="600" />
+						<img src="/assets/tradition/trubacki-orkestar-2.jpeg" alt="trubaci" width="600" />
 					</div>
 				</div>
 				<p>{t("tradition_text_2")}</p>

@@ -7,6 +7,7 @@ const Interesting = () => {
 		<div class="pageWrapper">
 			<h1>{t("interesting_title")}</h1>
 			<h2>{t("interesting_belgrade")}</h2>
+			<img src="/assets/interesting/Upoznajte-Beograd.jpeg" alt="beograd" width="600" />
 			<p>{t("interesting_intro_1")}</p>
 			<p>
 				{t("interesting_intro_2")}<br />
@@ -47,7 +48,7 @@ const Interesting = () => {
 						Коначно, 2016-те године држава га реновира и враћа у претходну славу. Након тога место постаје популарно за разне догађаје и свечаности, са одличним рестораном у приземљу, где музика свира скоро свако вече.<br />
 						Бањски комплекс се данас састоји од великог парка и фонтаном у средини, окружена са неколико рехабилитационих центара, велнес хотелом и горе поменутим Кур Салоном.<br />
 						Надамо се да ћете уживати у овом месту колико и ми уживамо сваки пут кад дођемо у Србију!<br />
-						<img src="https://banjakoviljaca.rs/img/banja-koviljaca/banja-koviljaca.jpg" alt="banjski-park-fontana" width="600" />
+						<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
 					</p>
 					<p>
 						Пошто је Бања место пре свега за људе који долазе да се лече, нема неких додатних активности у којима можете уживати сем опуштања у велнесу или шетња по парку. <br />
@@ -66,7 +67,7 @@ const Interesting = () => {
 						Finally, it was reinstated to its previous glory in 2016. And since then it has become a popular venue for events with also a restaurant that has live traditional music almost every night and superb food.<br />
 						The Banja’s spa complex today consists of a big park with a fountain in the middle, surrounded by several rehabilitation centers, wellness hotels and the above mentioned “Kur-Salon”.<br />
 						We hope you will enjoy this place as much as we enjoy it every time we are in Serbia!<br />
-						<img src="https://banjakoviljaca.rs/img/banja-koviljaca/banja-koviljaca.jpg" alt="banjski-park-fontana" width="600" />
+						<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
 					</p>
 					<p>
 						Since Banja is a spa center, there is nothing much to do except relaxing in a spa and in the surrounding park.<br />
@@ -85,7 +86,7 @@ const Interesting = () => {
 						Finally, it was reinstated to its previous glory in 2016. And since then it has become a popular venue for events with also a restaurant that has live traditional music almost every night and superb food.<br />
 						The Banja’s spa complex today consists of a big park with a fountain in the middle, surrounded by several rehabilitation centers, wellness hotels and the above mentioned “Kur-Salon”.<br />
 						We hope you will enjoy this place as much as we enjoy it every time we are in Serbia!<br />
-						<img src="https://banjakoviljaca.rs/img/banja-koviljaca/banja-koviljaca.jpg" alt="banjski-park-fontana" width="600" />
+						<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
 					</p>
 					<p>
 						Since Banja is a spa center, there is nothing much to do except relaxing in a spa and in the surrounding park.<br />
@@ -181,7 +182,7 @@ const Interesting = () => {
 					<p>
 						If you continue driving from the cabin, in the direction of Tara and Bajina Bašta city you will see right before the entrance to Bajina Bašta,<br />
 						a famous House on the Drina river, which appeared on the front cover of the National Geographic magazine as the best picture taken of that month.<br />
-						<img src="https://www.mustseespots.com/serbia/img/kucica-na-drini.jpg" alt="kucica-na-drini" width="600"/><br />
+						<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/><br />
 						And it is quite interesting to see it. It's a house built on a natural rock in the middle of the river. This river is very wild, and every year there is a risk of floods.<br />
 						Naturally, this house was swooshed by the river several times. But that didn't stop the owner to rebuild it every time. Last time he made it so that when the river is high, the water can go through the house,<br />
 						instead of having the house there as a form of resistance to the river. Which allowed his house to survive for the last several years.
@@ -195,7 +196,7 @@ const Interesting = () => {
 					<p>
 						If you continue driving from the cabin, in the direction of Tara and Bajina Bašta city you will see right before the entrance to Bajina Bašta,<br />
 						a famous House on the Drina river, which appeared on the front cover of the National Geographic magazine as the best picture taken of that month.<br />
-						<img src="https://www.mustseespots.com/serbia/img/kucica-na-drini.jpg" alt="kucica-na-drini" width="600"/><br />
+						<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/><br />
 						And it is quite interesting to see it. It's a house built on a natural rock in the middle of the river. This river is very wild, and every year there is a risk of floods.<br />
 						Naturally, this house was swooshed by the river several times. But that didn't stop the owner to rebuild it every time. Last time he made it so that when the river is high, the water can go through the house,<br />
 						instead of having the house there as a form of resistance to the river. Which allowed his house to survive for the last several years.
@@ -209,7 +210,7 @@ const Interesting = () => {
 					<p>
 						If you continue driving from the cabin, in the direction of Tara and Bajina Bašta city you will see right before the entrance to Bajina Bašta,<br />
 						a famous House on the Drina river, which appeared on the front cover of the National Geographic magazine as the best picture taken of that month.<br />
-						<img src="https://www.mustseespots.com/serbia/img/kucica-na-drini.jpg" alt="kucica-na-drini" width="600"/><br />
+						<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/><br />
 						And it is quite interesting to see it. It's a house built on a natural rock in the middle of the river. This river is very wild, and every year there is a risk of floods.<br />
 						Naturally, this house was swooshed by the river several times. But that didn't stop the owner to rebuild it every time. Last time he made it so that when the river is high, the water can go through the house,<br />
 						instead of having the house there as a form of resistance to the river. Which allowed his house to survive for the last several years.
@@ -232,11 +233,11 @@ const Interesting = () => {
 					</p>
 					<p>
 						There is a famous viewpoint "Banjska stena" where you can see the massive canyon of Tara and Drina.<br />
-						<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Tara_Vidikovac_Banjska_Stena_01.jpg" alt="vidikovac-tara" width="600" /><br />
+						<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" /><br />
 						There is a lake underneath this mountain called "Perućac" and there is another lake on the top called "Zaovinsko". Both of them are artificial lakes. <br />
 						Zaovine lake is an accumulative reversible lake, meaning that in the times of electricity shortage on the national level it can become almost empty. <br />
 						Although in summer times this barely ever happens, since the demand of electricity is not as high as in the winter.<br />
-						<img src="https://www.nationalgeographic.rs/files/images/2019/03/zaovinsko_jezero_aps_341442240.jpg" alt="zaovisnko-jezero" width="600" /><br />
+						<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" /><br />
 						Never the less it is an interesting place to see, since it's surrounded by forest. It is in the middle of a national park so construction of solid houses is forbidden.<br />
 						You can also swim there if you wish, and also camp. Be aware that since it's a national park zone there are no restaurants, bars or any kind of shops. So please bring the stuff you need with you.<br />
 						The lake is about 20km from Kaludjerske bare, so be sure you have enough gasoline, since you will go mostly in 2nd or 3rd gear - there are a lot of curves.
@@ -256,11 +257,11 @@ const Interesting = () => {
 					</p>
 					<p>
 						There is a famous viewpoint "Banjska stena" where you can see the massive canyon of Tara and Drina.<br />
-						<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Tara_Vidikovac_Banjska_Stena_01.jpg" alt="vidikovac-tara" width="600" /><br />
+						<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" /><br />
 						There is a lake underneath this mountain called "Perućac" and there is another lake on the top called "Zaovinsko". Both of them are artificial lakes. <br />
 						Zaovine lake is an accumulative reversible lake, meaning that in the times of electricity shortage on the national level it can become almost empty. <br />
 						Although in summer times this barely ever happens, since the demand of electricity is not as high as in the winter.<br />
-						<img src="https://www.nationalgeographic.rs/files/images/2019/03/zaovinsko_jezero_aps_341442240.jpg" alt="zaovisnko-jezero" width="600" /><br />
+						<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" /><br />
 						Never the less it is an interesting place to see, since it's surrounded by forest. It is in the middle of a national park so construction of solid houses is forbidden.<br />
 						You can also swim there if you wish, and also camp. Be aware that since it's a national park zone there are no restaurants, bars or any kind of shops. So please bring the stuff you need with you.<br />
 						The lake is about 20km from Kaludjerske bare, so be sure you have enough gasoline, since you will go mostly in 2nd or 3rd gear - there are a lot of curves.
@@ -280,11 +281,11 @@ const Interesting = () => {
 					</p>
 					<p>
 						There is a famous viewpoint "Banjska stena" where you can see the massive canyon of Tara and Drina.<br />
-						<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Tara_Vidikovac_Banjska_Stena_01.jpg" alt="vidikovac-tara" width="600" /><br />
+						<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" /><br />
 						There is a lake underneath this mountain called "Perućac" and there is another lake on the top called "Zaovinsko". Both of them are artificial lakes. <br />
 						Zaovine lake is an accumulative reversible lake, meaning that in the times of electricity shortage on the national level it can become almost empty. <br />
 						Although in summer times this barely ever happens, since the demand of electricity is not as high as in the winter.<br />
-						<img src="https://www.nationalgeographic.rs/files/images/2019/03/zaovinsko_jezero_aps_341442240.jpg" alt="zaovisnko-jezero" width="600" /><br />
+						<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" /><br />
 						Never the less it is an interesting place to see, since it's surrounded by forest. It is in the middle of a national park so construction of solid houses is forbidden.<br />
 						You can also swim there if you wish, and also camp. Be aware that since it's a national park zone there are no restaurants, bars or any kind of shops. So please bring the stuff you need with you.<br />
 						The lake is about 20km from Kaludjerske bare, so be sure you have enough gasoline, since you will go mostly in 2nd or 3rd gear - there are a lot of curves.
@@ -302,7 +303,7 @@ const Interesting = () => {
 						You will probably remember him by the film <a href="https://www.imdb.com/title/tt0118843/?ref_=nv_sr_srsg_0" target="_blank">White cat, black cat</a>, or <a href="https://www.imdb.com/title/tt0106307/?ref_=nm_knf_t2" target="_blank">Arizona dream</a> starring Johnny Depp. <br />
 						Anyways, needless to say this "village" has a lot of movie memorabilia as well, it's own alternative movies cinema, restaurant etc. <br />
 						It happened more often then not that some famous move stars would visit Kusturice here.<br />
-						<img src="http://www.serbia.com/wp-content/uploads/2016/05/Drvengrad.jpg" alt="drvengrad" width="600" />
+						<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
 					</p>
 					<p>While you're there you could also have a ride with the <a href="https://www.srbvoz.rs/en/nostalgija-2/" target="_blank">Nostalgia</a> steam train around the mountains.</p>
 				</div>
@@ -315,7 +316,7 @@ const Interesting = () => {
 						You will probably remember him by the film <a href="https://www.imdb.com/title/tt0118843/?ref_=nv_sr_srsg_0" target="_blank">White cat, black cat</a>, or <a href="https://www.imdb.com/title/tt0106307/?ref_=nm_knf_t2" target="_blank">Arizona dream</a> starring Johnny Depp. <br />
 						Anyways, needless to say this "village" has a lot of movie memorabilia as well, it's own alternative movies cinema, restaurant etc. <br />
 						It happened more often then not that some famous move stars would visit Kusturice here.<br />
-						<img src="http://www.serbia.com/wp-content/uploads/2016/05/Drvengrad.jpg" alt="drvengrad" width="600" />
+						<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
 					</p>
 					<p>While you're there you could also have a ride with the <a href="https://www.srbvoz.rs/en/nostalgija-2/" target="_blank">Nostalgia</a> steam train around the mountains.</p>
 				</div>
@@ -328,7 +329,7 @@ const Interesting = () => {
 						You will probably remember him by the film <a href="https://www.imdb.com/title/tt0118843/?ref_=nv_sr_srsg_0" target="_blank">White cat, black cat</a>, or <a href="https://www.imdb.com/title/tt0106307/?ref_=nm_knf_t2" target="_blank">Arizona dream</a> starring Johnny Depp. <br />
 						Anyways, needless to say this "village" has a lot of movie memorabilia as well, it's own alternative movies cinema, restaurant etc. <br />
 						It happened more often then not that some famous move stars would visit Kusturice here.<br />
-						<img src="http://www.serbia.com/wp-content/uploads/2016/05/Drvengrad.jpg" alt="drvengrad" width="600" />
+						<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
 					</p>
 					<p>While you're there you could also have a ride with the <a href="https://www.srbvoz.rs/en/nostalgija-2/" target="_blank">Nostalgia</a> steam train around the mountains.</p>
 				</div>
@@ -345,7 +346,7 @@ const Interesting = () => {
 					<p>
 						In the middle of it is a town also called "Zlatibor" that became a bit more urban then intended but still interesting to see, if you're missing a bit of society.<br />
 						This town has a little lake in the middle of it, and a nice park/forest area were you can go for a walk.<br />
-						<img src="http://monix.rs/wp-content/uploads/2020/02/slika-zlatibor-1.jpg" alt="zlatibor-lake" width="600" /><br />
+						<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" /><br />
 						There is a mountain top in the near were you can have a nice view of the area, called <a href="https://goo.gl/maps/sHscMfpazoMdPpGJA" target="_blank">Crni Vrh</a> (translation: Black Peak), <br />
 						but we would recommend taking a car or a bus at least until some part. <br />
 					</p>
@@ -363,7 +364,7 @@ const Interesting = () => {
 					<p>
 						In the middle of it is a town also called "Zlatibor" that became a bit more urban then intended but still interesting to see, if you're missing a bit of society.<br />
 						This town has a little lake in the middle of it, and a nice park/forest area were you can go for a walk.<br />
-						<img src="http://monix.rs/wp-content/uploads/2020/02/slika-zlatibor-1.jpg" alt="zlatibor-lake" width="600" /><br />
+						<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" /><br />
 						There is a mountain top in the near were you can have a nice view of the area, called <a href="https://goo.gl/maps/sHscMfpazoMdPpGJA" target="_blank">Crni Vrh</a> (translation: Black Peak), <br />
 						but we would recommend taking a car or a bus at least until some part. <br />
 					</p>
@@ -381,7 +382,7 @@ const Interesting = () => {
 					<p>
 						In the middle of it is a town also called "Zlatibor" that became a bit more urban then intended but still interesting to see, if you're missing a bit of society.<br />
 						This town has a little lake in the middle of it, and a nice park/forest area were you can go for a walk.<br />
-						<img src="http://monix.rs/wp-content/uploads/2020/02/slika-zlatibor-1.jpg" alt="zlatibor-lake" width="600" /><br />
+						<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" /><br />
 						There is a mountain top in the near were you can have a nice view of the area, called <a href="https://goo.gl/maps/sHscMfpazoMdPpGJA" target="_blank">Crni Vrh</a> (translation: Black Peak), <br />
 						but we would recommend taking a car or a bus at least until some part. <br />
 					</p>
@@ -402,7 +403,7 @@ const Interesting = () => {
 						He rose through the ranks of the Ottoman Empire, eventually becoming the Grand Vizier.</p>
 					<p>Even though he was taken to become a Turk, he never forgot his roots. So when he had an opportunity he helped his people back home as much as he could.<br />
 						One of these things he did is also building this bridge on the Drina river.</p>
-					<img src="https://www.idemonaput.rs/wp-content/uploads/2019/08/na-drini-cuprija.jpg" alt="na-drini-cuprija" width="600" />
+					<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
 					<p>This bridge also inspired our Nobelist writer Ivo Andrić in writing his master piece "Na Drini Ćuprija".</p>
 					<p>Fun fact for trivago folks: One of our ex. colleagues is actually Paša's grand-grand-grand... daughter, Olus Sevilmis. <br />
 						It was very interesting finding this out, accidentally, on a team event.</p>
@@ -417,7 +418,7 @@ const Interesting = () => {
 						He rose through the ranks of the Ottoman Empire, eventually becoming the Grand Vizier.</p>
 					<p>Even though he was taken to become a Turk, he never forgot his roots. So when he had an opportunity he helped his people back home as much as he could.<br />
 						One of these things he did is also building this bridge on the Drina river.</p>
-					<img src="https://www.idemonaput.rs/wp-content/uploads/2019/08/na-drini-cuprija.jpg" alt="na-drini-cuprija" width="600" />
+					<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
 					<p>This bridge also inspired our Nobelist writer Ivo Andrić in writing his master piece "Na Drini Ćuprija".</p>
 					<p>Fun fact for trivago folks: One of our ex. colleagues is actually Paša's grand-grand-grand... daughter, Olus Sevilmis. <br />
 						It was very interesting finding this out, accidentally, on a team event.</p>
@@ -432,7 +433,7 @@ const Interesting = () => {
 						He rose through the ranks of the Ottoman Empire, eventually becoming the Grand Vizier.</p>
 					<p>Even though he was taken to become a Turk, he never forgot his roots. So when he had an opportunity he helped his people back home as much as he could.<br />
 						One of these things he did is also building this bridge on the Drina river.</p>
-					<img src="https://www.idemonaput.rs/wp-content/uploads/2019/08/na-drini-cuprija.jpg" alt="na-drini-cuprija" width="600" />
+					<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
 					<p>This bridge also inspired our Nobelist writer Ivo Andrić in writing his master piece "Na Drini Ćuprija".</p>
 					<p>Fun fact for trivago folks: One of our ex. colleagues is actually Paša's grand-grand-grand... daughter, Olus Sevilmis. <br />
 						It was very interesting finding this out, accidentally, on a team event.</p>
@@ -445,7 +446,7 @@ const Interesting = () => {
 					<p>We are not that far from Montenegro nether. 400km to be exact. It's obviously not super close, but also not super far.<br />
 						So if you have another week to spear then we would recommend you to visit it, if you haven't did so before.</p>
 					<p>The road through Bosnia is actually better, has less curves, so if it's possible take that route, and go straight to "Herceg Novi" city.</p>
-					<img src="https://www.gate98.com/wp-content/uploads/2020/01/herceg-novi-slider.jpg" alt="herceg novi" width="600" />
+					<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
 					<p>From there you can explore the "Boka Kotorska" bay, and the old city "Kotor". After that you can continue east, towards Budva and other bigger cities.</p>
 				</div>
 			) : lang === "de" ? (
@@ -453,7 +454,7 @@ const Interesting = () => {
 					<p>We are not that far from Montenegro nether. 400km to be exact. It's obviously not super close, but also not super far.<br />
 						So if you have another week to spear then we would recommend you to visit it, if you haven't did so before.</p>
 					<p>The road through Bosnia is actually better, has less curves, so if it's possible take that route, and go straight to "Herceg Novi" city.</p>
-					<img src="https://www.gate98.com/wp-content/uploads/2020/01/herceg-novi-slider.jpg" alt="herceg novi" width="600" />
+					<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
 					<p>From there you can explore the "Boka Kotorska" bay, and the old city "Kotor". After that you can continue east, towards Budva and other bigger cities.</p>
 				</div>
 			) : (
@@ -461,12 +462,12 @@ const Interesting = () => {
 					<p>We are not that far from Montenegro nether. 400km to be exact. It's obviously not super close, but also not super far.<br />
 						So if you have another week to spear then we would recommend you to visit it, if you haven't did so before.</p>
 					<p>The road through Bosnia is actually better, has less curves, so if it's possible take that route, and go straight to "Herceg Novi" city.</p>
-					<img src="https://www.gate98.com/wp-content/uploads/2020/01/herceg-novi-slider.jpg" alt="herceg novi" width="600" />
+					<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
 					<p>From there you can explore the "Boka Kotorska" bay, and the old city "Kotor". After that you can continue east, towards Budva and other bigger cities.</p>
 				</div>
 			)}
 
-			<img src="https://whc.unesco.org/uploads/thumbs/site_0125_0025-750-0-20151105143925.jpg" alt="kotor" width="600" />
+			<img src="/assets/interesting/site_0125_0025-750-0-20151105143925.jpeg" alt="kotor" width="600" />
 
 		</div>
 	)
