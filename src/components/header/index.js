@@ -15,8 +15,11 @@ const Header = () => {
 	const toggleButtonClasses = `${style.toggleButton} ${isToggleButtonActive}`;
 
 	/* Toggling the body tag's class when menu is open/closed */
-	const bodyTag = document.querySelector('body');
-	isMenuOpen ? bodyTag.classList.add('bodyMenuOpen') : bodyTag.classList.remove('bodyMenuOpen');
+	let bodyTag;
+	if (typeof document !== "undefined") {
+		bodyTag = document.querySelector('body');
+		isMenuOpen ? bodyTag.classList.add('bodyMenuOpen') : bodyTag.classList.remove('bodyMenuOpen');
+	}
 
 	/* Reading the current width of the window object */
 	const { width, height } = useWindowDimensions();

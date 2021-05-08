@@ -10,7 +10,10 @@ export const LanguageHeaderName = "language";
 const TranslationComponent = () => {
     const {t, lang, setLang} = useContext(TranslateContext);
     const [isLangSelectionVisible, setLangSelectionVisibility] = useState(false);
-    const buttonElement = document.querySelector('.js-toggleTransList');
+    let buttonElement;
+    if (typeof document !== "undefined") {
+        buttonElement = document.querySelector('.js-toggleTransList');
+    }
 
     const setCookieLang = (lang) => {
         if (!AllowedLanguages.includes(lang)) return;
