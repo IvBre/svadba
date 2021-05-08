@@ -12,6 +12,7 @@ const Covid = () => {
             <p>All other stores are open as usual.</p>
             <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&pickerSort=desc&pickerMetric=total_cases&hideControls=true&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=false&Align+outbreaks=false&country=SRB~DEU~USA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 
+            <p>Almost 30% of population in Serbia is vaccinated against COVID-19. Belgrade more then 40% and our wedding venue region almost 30%.</p>
             <iframe src="https://ourworldindata.org/grapher/covid-vaccination-doses-per-capita?region=Europe&country=SRB~DEU~USA~GBR" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
         </div>
     )
