@@ -16,6 +16,7 @@ import {TranslateProvider} from "@denysvuika/preact-translate";
 import TranslationComponent, {AllowedLanguages, LanguageHeaderName} from "./translation";
 import Cookies from 'js-cookie';
 import Schedule from "../routes/schedule";
+import Covid from "../routes/covid";
 import Footer from "./footer";
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
 			<Tradition path="/tradition" />
 			<Interesting path="/interesting" />
 			<Schedule path="/schedule" />
+			<Covid path="/covid" />
 		</Router>
 		<Footer />
 	</div>

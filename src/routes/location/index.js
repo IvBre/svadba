@@ -18,7 +18,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/kur_salon_banja_koviljaca1.jpeg" alt="kur-salon" width="600" />
+						<img src="/assets/location/kur_salon_banja_koviljaca1.jpeg" alt="kur-salon" width="600" />
 					</div>
 				</div>
 				<p class="paragraph">{t("location_intro")}</p>
@@ -27,7 +27,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairBenny">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/banjski-park.jpeg" alt="banja-koviljaca-park" width="600" />
+						<img src="/assets/location/banjski-park.jpeg" alt="banja-koviljaca-park" width="600" />
 					</div>
 				</div>
 				{lang === "sr" ? (
@@ -58,7 +58,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/kur_salon_banja_koviljaca9.jpeg" alt="kur-salon-king-petar" width="600" />
+						<img src="/assets/location/kur_salon_banja_koviljaca9.jpeg" alt="kur-salon-king-petar" width="600" />
 					</div>
 				</div>
 				<p class="paragraph">{t("location_text_1")}</p>
@@ -74,7 +74,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairMicha">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/kovilje.png" alt="kovilje-welness-hotel" width="600" />
+						<img src="/assets/location/kovilje.png" alt="kovilje-welness-hotel" width="600" />
 					</div>
 				</div>
 				{lang === "sr" ? (
@@ -89,7 +89,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairJerome">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/royal-spa.png" alt="banja-koviljaca-royal-spa" width="600" />
+						<img src="/assets/location/royal-spa.png" alt="banja-koviljaca-royal-spa" width="600" />
 					</div>
 				</div>
 				<div class="paragraph-wrapper">
@@ -182,7 +182,7 @@ const Location = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="./routes/location/img/moskva.jpeg" alt="hotel-moskva-belgrade" width="600" />
+						<img src="/assets/location/moskva.jpeg" alt="hotel-moskva-belgrade" width="600" />
 					</div>
 				</div>
 			</div>
