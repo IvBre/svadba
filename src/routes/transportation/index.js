@@ -221,7 +221,11 @@ const Transportation = () => {
 				</div>
 			)}
 
-			<img src="/assets/transportation/38832-vip-sim-prepaid-kartica.jpeg" alt="vip-mobile" width="600" />
+			<div class="frame">
+				<div class="frameBody">
+					<img src="/assets/transportation/38832-vip-sim-prepaid-kartica.jpeg" alt="vip-mobile" width="600" />
+				</div>
+			</div>
 
 			{lang === "sr" ? (
 				<div>

@@ -10,7 +10,7 @@ const ViewInvitation = ({code, invitation}) => {
 
 	return (
 		<div class={style.viewInvitation}>
-			<p>{t("view_invitation_summary")}:</p>
+			<h2>{t("view_invitation_summary")}:</h2>
 			<div class="row">
 				E-mail: {invitation.email}
 			</div>
