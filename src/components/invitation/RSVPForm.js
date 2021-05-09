@@ -30,8 +30,6 @@ class RSVPForm extends React.Component {
     }
 
     handleGuestChange = (index) => (event) => {
-        console.log("GUEST CHANGE")
-
         let { name, value, type, checked } = event.target;
 
         if (type === "checkbox") value = checked;
@@ -52,14 +50,10 @@ class RSVPForm extends React.Component {
                 }
             }
         );
-        console.log(this.state)
-        console.log("FIELD CHANGE END")
     }
 
     handleAddMoreGuests = (event) => {
-        console.log("ADD MORE");
         if (this.state.invitation.maxGuests > this.state.invitation.guests.length) {
-            console.log("We can add more!")
 
             let guests = this.state.invitation.guests;
             let index = this.state.invitation.guests.length;
@@ -77,16 +71,12 @@ class RSVPForm extends React.Component {
                     }
                 }
             );
-
-            console.log(this.store);
         }
 
         event.preventDefault();
     }
 
     handleRemoveGuest = (index) => (event) => {
-        console.log("REMOVE GUEST");
-
         let guests = this.state.invitation.guests;
 
         guests.splice(index, 1);
@@ -105,9 +95,6 @@ class RSVPForm extends React.Component {
     }
 
     handleSubmit = (event) => {
-        console.log('A form was submitted: ');
-        console.log(this.state);
-
         fetch(API_HOST + '/u/' + this.state.code, {
             method: 'POST',
             headers: {
@@ -124,10 +111,6 @@ class RSVPForm extends React.Component {
     }
 
     render(props, state) {
-        console.log("RENDER RSVP -------")
-        console.log(this.state)
-        console.log("RENDER RSVP END -------")
-
         if (!this.state.display) {
             return;
         }
@@ -136,8 +119,8 @@ class RSVPForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <div class="box">
                     <div class="boxBody">
-                        <label class="label" for="input-email">Email:</label>
-                        <input id="input-email" name="input-email" class="inputText" type="email" value={this.state.invitation.email} onInput={this.handleInvitationChange} />
+                        <label class="label" for="email">Email:</label>
+                        <input id="input-email" name="email" class="inputText" type="email" value={this.state.invitation.email} onInput={this.handleInvitationChange} />
                     </div>
                 </div>
 

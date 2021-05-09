@@ -210,7 +210,7 @@ const Transportation = () => {
 						</ul>
 
 					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
-						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a>.</p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
@@ -238,7 +238,7 @@ const Transportation = () => {
 					</ul>
 
 					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
-						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a>.</p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
