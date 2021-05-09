@@ -9,14 +9,14 @@ const Transportation = () => {
 			<h1>{t("transportation_title")}</h1>
 			{lang === "sr" ? (
 				<div>
-					<p>Ако долазите ван Србије онда је најбоље да дођете аивионом у Београд.<br />
+					<p>Ако долазите ван Србије онда је најбоље да дођете авионом у Београд.<br />
 						Постоји такође аеродром у Тузли у Босни, али због Ковид рестрикција у Босни може се десити да Вас неће пустити на граници. <br />
 						Молимо проверите последње регулације за улазак у <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Србију</a> током Ковид-19 пандемије.
 					</p>
 					<p>Напомена за људе који долазе из СРВ: Постоји директан лет из Дизелдорфа са <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> али је то најскупљи превозник.<br />
-						<a href="https://wizzair.com/" target="_blank">WizzAir</a> је јефтинији и лети исто у београд али из аеродрома у Дизелдорф Weeze и из Дортмунда.
+						<a href="https://wizzair.com/" target="_blank">WizzAir</a> је јефтинији и лети исто у Београд али из аеродрома у Дизелдорф Weeze и из Дортмунда.
 					</p>
-					<p>Препоручујемо да проведете бар 2-3 дана у београду ако већ нисте били ту. Град је познат по својој историји и тврђави у центру града, али и по свом шароликом ноћном животу.<br />
+					<p>Препоручујемо да проведете бар 2-3 дана у Београду ако већ нисте били раније. Град је познат по својој историји и тврђави у центру града, али и по свом шароликом ноћном животу.<br />
 						Молимо погледајте нашу <Link href="/interesting">Занимљивости</Link> страницу за више детаља.
 					</p>
 					<p>Из Београда до Бање Ковиљаче можете кренути аутобусом са <a href="http://www.bas.rs/en/" target="_blank">главне аутобуске станице</a> у центру Београда.<br />
@@ -28,7 +28,7 @@ const Transportation = () => {
 				<div>
 					<p>Coming from outside of Serbia it is best to come with the airplane to Belgrade.<br />
 						There is also an airport in Tuzla in Bosnia, but due to travel restrictions in Bosnia it could produce problems for you on the border. <br />
-						Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Serbia</a> due to COVID-19.
+						Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/en/citizens/travel-serbia/covid-19-entry-requirements" target="_blank">Serbia</a> due to COVID-19.
 					</p>
 					<p>Note for people from NRW: There is a direct flight from Düsseldorf with <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> but it is the most expensive one.<br />
 						<a href="https://wizzair.com/" target="_blank">WizzAir</a> is cheaper and it also flies to Belgrade but from Düsseldorf Weeze and Dortmund airports.
@@ -45,7 +45,7 @@ const Transportation = () => {
 				<div>
 					<p>Coming from outside of Serbia it is best to come with the airplane to Belgrade.<br />
 						There is also an airport in Tuzla in Bosnia, but due to travel restrictions in Bosnia it could produce problems for you on the border. <br />
-						Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/gradjani/ulazak-u-srbiju/covid-19-uslovi-za-ulazak" target="_blank">Serbia</a> due to COVID-19.
+						Please check the latest regulations for entering <a href="https://www.mfa.gov.rs/en/citizens/travel-serbia/covid-19-entry-requirements" target="_blank">Serbia</a> due to COVID-19.
 					</p>
 					<p>Note for people from NRW: There is a direct flight from Düsseldorf with <a href="https://www.airserbia.com/" target="_blank">AirSerbia</a> but it is the most expensive one.<br />
 						<a href="https://wizzair.com/" target="_blank">WizzAir</a> is cheaper and it also flies to Belgrade but from Düsseldorf Weeze and Dortmund airports.
@@ -98,7 +98,8 @@ const Transportation = () => {
 
 			{lang === "sr" ? (
 				<div>
-					<p>Напомињемо да ако нема шалтера за продају карата на станици, можете узети карту директно у возу/бусу код кондуктера или возача.</p>
+					<p>Напомињемо да ако нема шалтера за продају карата на станици, можете узети карту директно у возу/бусу код кондуктера или возача.<br />
+					Цена карте ѕа бус или воз је обично око 10 еура.</p>
 					<p>Поред тога, можете и изнајмити ауто у Београду и тако отићи у Бању. Ово је посебно препоручљиво ако хоћете да идете у сватове.<br />
 						Погледајте <Link href="/tradition">Традиција</Link> страницу за више детаља о сватовима.<br />
 						Најбоље је да изнајмите кола на аеродрому. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">Листа компанија за изнајмљивање аута можете наћи на сајту аеродрома.</a>
@@ -109,7 +110,10 @@ const Transportation = () => {
 						You will then go outside of the building and look for the line of taxi vehicles on the left.<br />
 						The taxi driver will ask you for the voucher to show it. Only enter in a vehicle where the driver is asking for this voucher.<br />
 						No matter what the taxi driver says, you are obliged only to pay the amount written on this voucher, no more.<br />
-						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.
+						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.<br />
+						UPDATE: The taxi voucher booth has been removed because of Corona and the fact that there was not so many passengers.<br />
+						But there is still a line of taxi's in front of the building that you can take. <br />
+						Take a look if the driver has an ID displayed on the front console of his car (this means the taxi is legit), otherwise you might end up paying 40e instead of 15e for a drive to the city.
 					</p>
 					<p><b>Important warning #2!</b> Never enter in a taxi on the street. Always call the taxi service instead.<br />
 						There are a lot of wild fake taxis that will try to rip you off especially when they realize you are a foreigner.<br />
@@ -122,7 +126,8 @@ const Transportation = () => {
 				</div>
 			) : lang === "de" ? (
 				<div>
-					<p>Note that if there are no ticket boots on the station, you can also get a ticket directly in the train/bus from the conductor or the driver.</p>
+					<p>Note that if there are no ticket boots on the station, you can also get a ticket directly in the train/bus from the conductor or the driver.<br />
+					Ticket price for the bus or the train is around 10 euros.</p>
 					<p>You can also rent a car in Belgrade and drive to Banja. This is specifically recommended because there will be one part of the wedding ceremony where you would need a car.<br />
 						Check the <Link href="/tradition">Tradition</Link> page for more details on that.<br />
 						It's best to rent the car on the airport. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">The list of rental companies you can find on the airport website.</a>
@@ -134,7 +139,10 @@ const Transportation = () => {
 						You will then go outside of the building and look for the line of taxi vehicles on the left.<br />
 						The taxi driver will ask you for the voucher to show it. Only enter in a vehicle where the driver is asking for this voucher.<br />
 						No matter what the taxi driver says, you are obliged only to pay the amount written on this voucher, no more.<br />
-						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.
+						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.<br />
+						UPDATE: The taxi voucher booth has been removed because of Corona and the fact that there was not so many passengers.<br />
+						But there is still a line of taxi's in front of the building that you can take. <br />
+						Take a look if the driver has an ID displayed on the front console of his car (this means the taxi is legit), otherwise you might end up paying 40e instead of 15e for a drive to the city.
 					</p>
 					<p><b>Important warning #2!</b> Never enter in a taxi on the street. Always call the taxi service instead.<br />
 						There are a lot of wild fake taxis that will try to rip you off especially when they realize you are a foreigner.<br />
@@ -147,7 +155,8 @@ const Transportation = () => {
 				</div>
 			) : (
 				<div>
-					<p>Note that if there are no ticket boots on the station, you can also get a ticket directly in the train/bus from the conductor or the driver.</p>
+					<p>Note that if there are no ticket boots on the station, you can also get a ticket directly in the train/bus from the conductor or the driver.<br />
+						Ticket price for the bus or the train is around 10 euros.</p>
 					<p>You can also rent a car in Belgrade and drive to Banja. This is specifically recommended because there will be one part of the wedding ceremony where you would need a car.<br />
 						Check the <Link href="/tradition">Tradition</Link> page for more details on that.<br />
 						It's best to rent the car on the airport. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">The list of rental companies you can find on the airport website.</a>
@@ -159,7 +168,10 @@ const Transportation = () => {
 						You will then go outside of the building and look for the line of taxi vehicles on the left.<br />
 						The taxi driver will ask you for the voucher to show it. Only enter in a vehicle where the driver is asking for this voucher.<br />
 						No matter what the taxi driver says, you are obliged only to pay the amount written on this voucher, no more.<br />
-						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.
+						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.<br />
+						UPDATE: The taxi voucher booth has been removed because of Corona and the fact that there was not so many passengers.<br />
+						But there is still a line of taxi's in front of the building that you can take. <br />
+						Take a look if the driver has an ID displayed on the front console of his car (this means the taxi is legit), otherwise you might end up paying 40e instead of 15e for a drive to the city.
 					</p>
 					<p><b>Important warning #2!</b> Never enter in a taxi on the street. Always call the taxi service instead.<br />
 						There are a lot of wild fake taxis that will try to rip you off especially when they realize you are a foreigner.<br />
@@ -186,6 +198,19 @@ const Transportation = () => {
 						Everything is calculated and paid by the app, so you don't need to give any money to the driver.<br />
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+						<ul>
+							<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+							<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+							<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+							<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+						</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
@@ -201,6 +226,20 @@ const Transportation = () => {
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
 
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+					<ul>
+						<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+						<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+						<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+						<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+					</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
+
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
 						Almost every kiosk sells these.</p>
@@ -214,6 +253,20 @@ const Transportation = () => {
 						Everything is calculated and paid by the app, so you don't need to give any money to the driver.<br />
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
+
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+					<ul>
+						<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+						<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+						<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+						<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+					</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+					Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
@@ -231,10 +284,11 @@ const Transportation = () => {
 				<div>
 					<p>We usually use VIP mobile provider, since they have a nice starting package. Last time we each got 21 GB that you can use for a month.<br />
 						And you would pay only 300 dinars, which is like 2.5 euro.<br />
+						Last time we were in Serbia we saw that they changed their brand name to <a href="https://a1.rs/privatni" target="_blank">A1.</a><br />
 						Make sure not to take "the special sim card for foreigners". They also offer this, not sure why would anyone buy this, it's way less GBs and you pay ~30 euros.</p>
 					<p>
-						The instructions to activate the sim card are not in English, unfortunately, but it is easy. <br />
-						You need to call once `0601234` number, and then activate the "Bonus" package by calling `*123#` and choosing the correct option, usually by replying with 1.<br />
+						The instructions to activate the sim card are sometimes not in English, unfortunately, but it is easy. <br />
+						You need to call once `0611234` number, and then activate the "Bonus" package by calling `*123#` and choosing the correct option, usually by replying with 1.<br />
 						Sometimes it takes some minutes for the GBs to be activated so be patient. <br />
 						If it still doesn't work, restart your phone, or google translate the instructions. <br />
 						Don't be desperate, usually in every caffe, restaurant etc. there is a complimentary WiFi that you could use, just ask the waiter for the password if it's not open.<br />

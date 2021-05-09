@@ -53,7 +53,7 @@ const Home = () => {
 				{lang === "sr" ? (
 					<div>
 						<p>Уколико желите да дођете у сватове молимо Вас да дођете на горе поменуту локацију у 13, најкасније 14 часова. Погледајте <Link href="/schedule">распоред</Link> за више детаља.</p>
-						<p>Молимо Вас имајте у виду да ће сватови путовати неких 15км до <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Доње Борине</a> како би ”изели” младу. Тако да ако желите да будете у сватовима морате имати возача и ауто.</p>
+						<p>Имајте у виду да ће сватови путовати неких 15км до <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Доње Борине</a> како би ”узели” младу. Тако да ако желите да будете у сватовима морате имати возача и ауто.</p>
 					</div>
 				) : lang === "de" ? (
 					<div>
@@ -66,9 +66,8 @@ const Home = () => {
 						<p>Please keep in mind that we will drive some 15km to <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Donja Borina</a> to "pick up" the bride, so make sure you have a designated driver and a car.</p>
 					</div>
 				)}
+				<p>{t("home.info_1")}<Link href="/tradition">{t("tradition")}</Link>{t("home.info_11")}</p>
 			</section>
-
-			<p>{t("home.info_1")}<Link href="/tradition">{t("tradition")}</Link>{t("home.info_11")}</p>
 		</div>
 	)
 };

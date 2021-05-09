@@ -8,7 +8,7 @@ const Location = () => {
 		<div class="pageWrapper">
 			<h1>{t("location_title")}</h1>
 			{lang === "sr" ? (
-				<p>Церемонија венчања је у великој сали <strong>“Кур Салона”</strong> у малом месту званом Бања Ковиљача, у западној Србији.</p>
+				<p>Венчање и свечани ручак ће се одржати у великој сали <strong>“Кур Салона”</strong> у малом месту званом Бања Ковиљача, у западној Србији.</p>
 			) : lang === "de" ? (
 				<p>The wedding venue is in the grand hall of <strong>“Kur salon”</strong> in a little town called Banja Koviljača in the west of Serbia.</p>
 			) : (
@@ -32,7 +32,7 @@ const Location = () => {
 				</div>
 				{lang === "sr" ? (
 					<p class="paragraph">
-						Овако изгледа парк из птичије перспекитве.<br />
+						Овако изгледа парк из птичије перспективе.<br />
 						У средини се може видети фонтана, и ако се од ње окренете ка западу видећете Кур Салон.<br />
 						Остале зграде које се виде су рехабилитациона болница и велнес ”Ковиље”.
 					</p>
@@ -96,7 +96,7 @@ const Location = () => {
 					{lang === "sr" ? (
 						<div>
 							<p class="paragraph">Мало јефтинији али исто фин хотел је и “<a href="http://www.royalspa.rs/smestaj_en.php" target="_balnk">Royal Spa</a>” који је одмах поред парка.</p>
-							<p class="paragraph">За Royal Spa можемо добити попуст ако се више људи пријави за смештај. Нажалост не знамо износ попуста док не сазнамо колико људи би узело по собу. </p>
+							<p class="paragraph">За Royal Spa можемо добити попуст ако се више људи пријави за смештај. Нажалост не знамо износ попуста док не сазнамо колико људи би узело собу. </p>
 							<p class="paragraph">Ако сте заинтересовани за овај хотел, јавите нам што пре на: <a href="mailto:petrovivana@gmail.com">petrovivana@gmail.com</a></p>
 						</div>
 					) : lang === "de" ? (
@@ -125,12 +125,12 @@ const Location = () => {
 					<p>Ако долазите авионом слетећете на аеродром ”Никола Тесла” у Београду. </p>
 					<p>Да, Никола Тесла је био србин, и не брините се нисмо заборавили и нашег другог светски познатом србина, авиони AirSerbia-е су названи по <span lang="sr">Новаку Ђоковићу</span> ;) </p>
 					<p>Препоручили би смо Вам, ако имате времена, да одвојите неколико дана за Београд.</p>
-					<p>Обично у 2-3 дана може да се обиђу најпознатија места, али ако волите журке онда узмите мало више дана.<br />
+					<p>Обично у 2-3 дана могу да се обиђу најпознатија места, али ако волите журке онда узмите мало више дана.<br />
 						Журке су обично од четвртка до суботе, додуше лети журке су сваки дан, поготово на плажи и поред реке.</p>
-					<p>Да, Београд има плажу! Али плажа слатководног језера, зове се <span lang="sr">"Ада Циганлија"</span> и има доста бич барова, башти пива итд. <br />
+					<p>Да, Београд има плажу! Али плажа слатководног језера које се зове "<a href="https://www.adaciganlija.rs/" target="_blank">Ада Циганлија</a>" и које има доста бич барова, башти пива итд. <br />
 					За више детаља око активности у Београду, погледајте нашу <Link href="/interesting">Занимљивости</Link> страницу.</p>
 					<p>Што се тиче смештаја, наћете стварно много што шта на интернету. Ми препоручујемо да узмете AirBnB апартман, јер су прилично јефтинији од хотела и већином су у центру града.</p>
-					<p>У центру је најбоље да се стационирате, у старом делу поготово. Можете пробати Нови Београд (преко реке Саве), али имахте у виду да сваки пут кад хоћете до центра морате ићи градским превозом или таксијем.</p>
+					<p>Најбоље је да се стационирате у центру, у старом делу поготово. Можете пробати Нови Београд (преко реке Саве), али имајте у виду да сваки пут кад хоћете до центра морате ићи градским превозом или таксијем.</p>
 				</div>
 			) : lang === "de" ? (
 				<div>
@@ -139,7 +139,7 @@ const Location = () => {
 					<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
 					<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
 						Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
-					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
+					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called "<a href="https://www.adaciganlija.rs/en/" target="_blank">Ada Ciganlija</a>" and has a bunch of beach bars, beer garden etc. <br />
 						For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
 					<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
 					<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
@@ -151,7 +151,7 @@ const Location = () => {
 					<p>We would recommend you, if you have time, to take a couple of days to check out the city.</p>
 					<p>Usually in 2-3 days you can see most of the stuff, but if you are a party animal then take some days more.<br />
 						Party days are from Thursday until Saturday. Although in August there will be parties on other days as well, especially on the river and the beach.</p>
-					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called <span lang="sr">"Ada Ciganlija"</span> and has a bunch of beach bars, beer garden etc. <br />
+					<p>Yes, Belgrade has a beach! But its a sweat water lake beach, called "<a href="https://www.adaciganlija.rs/en/" target="_blank">Ada Ciganlija</a>" and has a bunch of beach bars, beer garden etc. <br />
 						For more information on activities in Belgrade check our <Link href="/interesting">Things to do</Link> page.</p>
 					<p>For accommodation, you can find really a lot online. We would recommend to take an AirBnB apartment, since they are quite cheaper then hotels, and are mostly central.</p>
 					<p>This is where you want to be basically, in the old town. You can also try New Belgrade (other side of the river) but keep in mind that for every trip to the city center you need to take a tram/bus/taxi.</p>
@@ -167,8 +167,8 @@ const Location = () => {
 			</div>
 			{lang === "sr" ? (
 				<p>Ако баш желите да себи удовољите и осетите како је живела елита почетком прошлог века можете преноћити у познатом <a href="https://hotelmoskva.rs/" target="_blank">Хотелу Москва</a>.
-					То је једна од ретких зграда у Београду која је преживела оба светска рата, и која је била сведок многих дипломатских стратегија, преговарања, утицајних уметника, носиоцима Нобелове награде,
-					краљевским догађајима, дано-ноћним разговорима, тако да можете претпоставити да су зидови ове зграде чули мноштво разних тајни током својих 100 година постојања.</p>
+					То је једна од ретких зграда у Београду која је преживела оба светска рата, и која је била сведок многих дипломатских стратегија, преговарања, утицајних уметника, носиоца Нобелове награде,
+					краљевских догађаја, дано-ноћних разговора, тако да можете претпоставити да су зидови ове зграде чули мноштво тајни током својих 100 година постојања.</p>
 			) : lang === "de" ? (
 				<p>If you really want to indulge your self and get a taste of how the upper class was living in Serbia in the early 1900s you can check out the famous <a href="https://hotelmoskva.rs/" target="_blank">Hotel Moskva</a>.
 					It is one of the rare buildings in Belgrade surviving both world wars, and was a witness to many diplomatic strategies and negotiations,
