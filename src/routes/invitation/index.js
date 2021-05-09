@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../../style/index.scss';
+import style from './style.scss';
 import {useContext, useEffect, useState} from "preact/hooks";
 import {getInvitationCall} from "../../components/app";
 import {TranslateContext} from "@denysvuika/preact-translate";
@@ -11,17 +11,30 @@ const ViewInvitation = ({code, invitation}) => {
 	return (
 		<div class={style.viewInvitation}>
 			<h2>{t("view_invitation_summary")}:</h2>
-			<div class="row">
-				E-mail: {invitation.email}
+			<div class="box">
+				<div class="boxBody">
+					<em class="label">E-mail:</em>
+					<p class="answeredField">{invitation.email}</p>
+				</div>
 			</div>
 			{invitation.guests && invitation.guests.map((guest, index) =>
-				<div class="row">
-					<p>{t("name")}: {guest.name}</p>
-					<p>{t("is_coming")}: {guest.isComing ? t("yes") : t("no")}</p>
-					<p>{t("is_vegetarian")}: {guest.isVegetarian ? t("yes") : t("no")}</p>
+				<div class="box">
+					<div class="boxBody">
+						<em class="label">{t("name")}: </em>
+						<p class="answeredField">{guest.name}</p>
+						
+						<em class="label">{t("is_coming")}:</em>
+						<p class="answeredField">{guest.isComing ? t("yes") : t("no")}</p>
+						
+						<em class="label">{t("is_vegetarian")}:</em>
+						<p class="answeredField">{guest.isVegetarian ? t("yes") : t("no")}</p>
+					</div>	
 				</div>
 			)}
-			<a href={"/u/" + code}>{t("edit_invitation")}</a>
+
+			<span class="centerX">
+				<a href={"/u/" + code} class="buttonChoice">{t("edit_invitation")}</a>
+			</span>
 
 		</div>
 	);
@@ -53,7 +66,7 @@ const InvitationPage = ({ code, path }) => {
 			{invitation ?
 				(path === "/r/:code" ? <ViewInvitation code={code} invitation={invitation} /> :
 				<RSVPForm state={{ code: code, display: true, invitation: invitation}} />) :
-				error ? <div class="error">{error}</div> : <p>{t("loading_invitation")}</p>}
+				error ? <div class="error"><strong>{error}</strong></div> : <p>{t("loading_invitation")}</p>}
 		</div>
 	);
 }

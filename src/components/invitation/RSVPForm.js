@@ -134,29 +134,29 @@ class RSVPForm extends React.Component {
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <div class="row">
-                    <label>
-                        Email:
-                        <input type="email" value={this.state.invitation.email} name="email" onInput={this.handleInvitationChange} />
-                    </label>
+                <div class="box">
+                    <div class="boxBody">
+                        <label class="label" for="input-email">Email:</label>
+                        <input id="input-email" name="input-email" class="inputText" type="email" value={this.state.invitation.email} onInput={this.handleInvitationChange} />
+                    </div>
                 </div>
 
                 {this.state.invitation.guests && this.state.invitation.guests.map((guest, index) =>
                     <>
                     <GuestForm state={guest} onInput={this.handleGuestChange(index)} />
                     {guest.guestId === 0 ?
-                        <button onClick={this.handleRemoveGuest(index)}>Remove guest</button> : ""
+                        <button onClick={this.handleRemoveGuest(index)} class="buttonChoice">Remove guest</button> : ""
                     }
                     </>
                 )}
 
                 {this.state.invitation.maxGuests > this.state.invitation.guests.length ?
-                    <button onClick={this.handleAddMoreGuests}>Add more guest(s)</button> : ""
+                    <button onClick={this.handleAddMoreGuests} class="buttonChoice">Add more guest(s)</button> : ""
                 }
 
-                <div class="row">
-                    <input type="submit" value="Submit" />
-                </div>
+                <span class="centerX">
+                    <button type="submit" class="buttonChoice">Submit</button>
+                </span>
             </form>
         );
     }

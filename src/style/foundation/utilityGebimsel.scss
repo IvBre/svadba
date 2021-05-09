@@ -87,13 +87,27 @@
 }
 
 /*
+ * Centering
+ */
+.centerX {
+	display: inline-block;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+}
+
+/*
  * # Margins / Paddings
  */
-.marginBottomNone {
+.pageWrapper .marginBottomNone {
     margin-bottom: 0;
 }
 
-.marginTopNone {
+.pageWrapper .marginLeftNone {
+	margin-left: 0;
+}
+
+.pageWrapper .marginTopNone {
     margin-top: 0;
 }
 

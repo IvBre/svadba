@@ -12,23 +12,25 @@ export class GuestForm extends React.Component {
         return (
             <>
                 <input type="hidden" name="guestId[]" value={state.guestId} />
-                <div class="row">
-                    <label>
-                        Name:
-                        <input name="name[]" type="text" value={state.name} onInput={onInput} />
-                    </label>
-                </div>
-                <div class="row">
-                    <label>
-                        Are you joining us?
-                        <input name="isComing[]" type="checkbox" defaultChecked={state.isComing} onInput={onInput} />
-                    </label>
-                </div>
-                <div class="row">
-                    <label>
-                        Are you a vegetarian?
-                        <input name="isVegetarian[]" type="checkbox" defaultChecked={state.isVegetarian} onInput={onInput} />
-                    </label>
+                <div class="box">
+                    <div class="boxBody">
+                        <label>
+                            <span class="label">Name:</span>
+                            <input name="name[]" type="text" value={state.name} onInput={onInput} class="inputText" />
+                        </label>
+
+                        <div class="layout">
+                            <label class="labelWrapperInline marginLeftNone">
+                                <span class="label labelInline">Are you joining us?</span>
+                                <input name="isComing[]" type="checkbox" defaultChecked={state.isComing} onInput={onInput} class="inputCheckbox" />
+                            </label>
+
+                            <label class="labelWrapperInline">
+                                <span class="label labelInline">Are you a vegetarian?</span>
+                                <input name="isVegetarian[]" type="checkbox" defaultChecked={state.isVegetarian} onInput={onInput} class="inputCheckbox" />
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </>
         );
