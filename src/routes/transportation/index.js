@@ -198,6 +198,19 @@ const Transportation = () => {
 						Everything is calculated and paid by the app, so you don't need to give any money to the driver.<br />
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+						<ul>
+							<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+							<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+							<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+							<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+						</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
@@ -213,6 +226,20 @@ const Transportation = () => {
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
 
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+					<ul>
+						<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+						<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+						<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+						<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+					</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+						Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
+
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
 						Almost every kiosk sells these.</p>
@@ -226,6 +253,20 @@ const Transportation = () => {
 						Everything is calculated and paid by the app, so you don't need to give any money to the driver.<br />
 						Make sure to create the account and add your credit card, to be able to use it when you need it.
 					</p>
+
+					<p>
+						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
+						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
+						There are several types of tickets you can get:</p>
+					<ul>
+						<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
+						<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
+						<li>The daily ticket for 1, 3 or 5 days, which costs 40 RSD plus additional tickets you need. This card you need to "read" on the ticket reader every time you switch buses during the 90min of your ride.</li>
+						<li>MasterCard - if you have it you can just place it on the ticket reader in the bus and you got a 90min ticket for one person. If you switch buses you need to place it on the reader again.</li>
+					</ul>
+
+					<p>You can get these tickets on almost any kiosk you see, just ask for "Bus Plus".<br />
+					Read more about the types of tickets on <a href="https://www2.busplus.rs/lt/vrste-karata" target="_blank">the Bus Plus website</a></p>
 
 					<h2>Internet</h2>
 					<p>Without internet it would be hard for you to navigate around, so make sure the moment you see a kiosk to get one pre-paid sim card.<br />
