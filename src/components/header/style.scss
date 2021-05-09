@@ -332,6 +332,7 @@ $transition-time-function: cubic-bezier(1,1.64,1,1.2);
  */
 .covid19 {
 	background: linear-gradient(to bottom, var(--color-yellow-lime) 0%,var(--color-yellow-pear) 100%);
+	box-shadow: inset 0 0 3px var(--color-white);
     font-size: 20px;
 	padding: 16px;
 }

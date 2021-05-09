@@ -32,14 +32,18 @@ class SearchInvitationForm extends React.Component {
         return (
             <>
                 <form onSubmit={this.handleSubmit}>
-                    <div class="row">
-                        <label>
-                            Name:
-                            <input type="text" value={this.state.value} name="code" onInput={this.handleCodeChange} />
-                        </label>
+                    <div class="box">
+                        <div class="boxBody">
+                            <label>
+                                Name:
+                                <input type="text" value={this.state.value} name="code" onInput={this.handleCodeChange} />
+                            </label>
+                        </div>
                     </div>
                     <div class="row">
-                        <input type="submit" value="Submit" />
+                        <span class="centerX">
+                            <button type="submit">Submit</button>
+                        </span>
                     </div>
                 </form>
                 {rsvpForm}

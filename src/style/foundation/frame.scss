@@ -3,7 +3,7 @@
  */
 .frame {
 	background: var(--color-white);
-	border: 1px solid var(--color-gray-100);
+	border: 1px solid var(--color-gray-alabaster);
 	margin: 40px 0;
 	overflow: visible;
 	position: relative;
@@ -11,9 +11,9 @@
     
     &::before,
     &::after {
-        background: var(--color-gray);
+        background: var(--color-gray-xanadu);
         bottom: 15px;
-        box-shadow: 0 15px 10px var(--color-gray);
+        box-shadow: 0 15px 10px var(--color-gray-xanadu);
         content: '';
         height: 18px;
         max-width: 300px;

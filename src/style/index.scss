@@ -24,14 +24,22 @@
 	--color-green-kelly: #47c409;
 	--color-yellow-pear: #E0F02F;
 	--color-yellow-lime: #F4FD8D;
+	--color-yellow-lemon-creola: #F9FFB6;
+	--color-yellow-cream: #FAFFC5;
+	
 	--color-white: #fff;
 	--color-black: #000;
+	
 	--color-blue: #0e468a;
 	--color-carolina-blue: #44AAE0;
 	--color-blue-100: #70ccfa;	
 	--color-blue-200: #d9feff;
-	--color-gray: #777;
-	--color-gray-100: #ccc;
+	
+	--color-gray-xanadu: #5F7470;
+	--color-gray-spanish: #889696;
+	--color-gray-ash: #B8BDB5;
+	--color-gray-alabaster: #E0E2DB;
+	--color-gray-baby-powder: #F5F7F1;
 
 	--text-shadow-dark: 0 -1px 0 #003317;
 	--text-shadow-bright: 0 0 2px rgb(255, 254, 204);
@@ -165,6 +173,111 @@ iframe {
 	}
 }
 
-.row {
-	margin-bottom: 15px;
+/*
+ * # Form elements
+ */
+.label {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+	color: var(--color-blue);
+	margin-bottom: 12px;
+	white-space: nowrap;
 }
+
+.answeredField {
+	border-bottom: 1px dashed var(--color-gray-xanadu);
+	color: var(--color-gray-xanadu);
+	font-style: italic;
+	margin: 0 0 48px;
+	min-height: 36px;
+}
+
+.inputText {
+	background: linear-gradient(to bottom, var(--color-yellow-cream) 0%,var(--color-yellow-lime) 100%);
+	border-bottom: 2px solid var(--color-white);
+	border-left: 2px solid var(--color-white);
+	border-right: 2px solid var(--color-white);
+	border-top: 0;
+	border-radius: 16px;
+	box-shadow: inset 0 1px 3px 2px rgba(0, 0, 0, 0.3);
+	color: var(--color-gray-xanadu);
+	font-size: 24px;
+	margin: 0 0 32px;
+	padding: 16px;
+	width: 100%;
+}
+
+.inputCheckbox {
+	outline: 1px solid var(--color-blue);
+	margin-right: 16px;
+}
+
+.labelWrapperInline {
+	display: inline-flex;
+	flex-wrap: nowrap;
+
+	.inputCheckbox {
+		margin: 0 0 32px 12px;
+	}
+}
+
+/*
+ * # Layout
+ */
+.layout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*
+ * # Boxes
+ */
+.box {
+	position: relative;
+	margin-bottom: 16px;
+	
+	&::before,
+	&::after {
+		background: var(--color-gray-xanadu);
+		bottom: 15px;
+		box-shadow: 0 15px 10px var(--color-gray-xanadu);
+		content: '';
+		height: 18px;
+		max-width: 300px;
+		position: absolute;
+		width: 50%;
+		z-index: 1;
+	}
+	
+	&::before {
+		left: 10px;
+		transform: rotate(-3deg);
+	}
+	
+	&::after {
+		left: auto;
+		right: 10px;
+		transform: rotate(3deg);
+	}
+
+	.boxBody {
+		background: var(--color-gray-baby-powder);
+		border-radius: 8px;
+		box-shadow: inset 0 0 1px rgba(0, 0, 0, .3);
+		margin-bottom: 96px;
+		padding: 32px;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+/*
+ * # Buttons
+ */
+ .buttonChoice {
+	 @include buttonStyle;
+	 margin-bottom: 64px;
+ }
