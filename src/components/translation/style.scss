@@ -3,7 +3,6 @@
 
 @mixin iconFlag {
 	background-size: 24px auto;
-	padding-right: 30px;
 }
 
 .translationWrapper {
@@ -13,6 +12,7 @@
 	z-index: 3;
 
 	@include respond-to-min($screen-medium) {
+		margin-top: 12px;
 		width: auto;
 	}
 }
@@ -23,7 +23,7 @@
 	position: relative;
 
 	@include respond-to-min($screen-medium) {
-		margin: 18px 16px 0 0;
+		margin: 18px 0 0;
 		width: auto;
 	}
 }
@@ -95,9 +95,11 @@
 	margin: 0 0 16px;	
 }
 
-:global(.icon-en) {
+:global(.icon-en),
+:global(.icon-sr),
+:global(.icon-de) {
 	@include iconFlag;
-	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-gb.svg");
+	background: transparent right 24px top 16px/21px auto no-repeat url("../../assets/images/flag-gb.svg");
 
 	.translationListWrapper & {
 		background-position: right top 3px;
@@ -106,23 +108,11 @@
 }
 
 :global(.icon-de) {
-	@include iconFlag;
-	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-de.svg");
-
-	.translationListWrapper & {
-		background-position: right top 3px;
-		padding-right: 30px;
-	}
+	background-image: url("../../assets/images/flag-de.svg");
 }
 
 :global(.icon-sr) {
-	@include iconFlag;
-	background: transparent right 54px top 16px/21px auto no-repeat url("../../assets/images/flag-rs.svg");
-
-	.translationListWrapper & {
-		background-position: right top 3px;
-		padding-right: 30px;
-	}
+	background-image: url("../../assets/images/flag-rs.svg");
 }
 
 .buttonChoice {
