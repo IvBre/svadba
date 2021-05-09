@@ -89,6 +89,8 @@
 }
 
 .list {
+	margin: 0;
+	
 	@include respond-to-min($screen-medium) {
 		display: flex;
 		justify-content: space-between;
