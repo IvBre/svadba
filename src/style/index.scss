@@ -209,11 +209,71 @@ iframe {
 	width: 100%;
 }
 
+/*
+ * ## Checkbox switches
+ */
 .inputCheckbox {
-	outline: 1px solid var(--color-blue);
 	margin-right: 16px;
+	@include visuallyhidden;
+
+	&:checked {
+		+ .pinoeppel {
+			&:before{
+				background-color: var(--color-green-pantone);
+			}
+			&:after{
+				margin-left: 32px;
+			}
+		}
+	}	
+		
+	& + .pinoeppel {
+		background: var(--color-white);
+		border-radius: 80px;
+		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+		display: block;
+		position: relative;
+		cursor: pointer;
+		margin: -2px 0 32px 16px;
+		outline: none;
+		padding: 2px 5px;
+		width: 64px;
+		height: 32px;
+		user-select: none;
+	
+		&::before,
+		&::after {
+			content: "";
+			bottom: 2px;
+			display: block;
+			left: 2px;
+			position: absolute;
+			top: 2px;
+		}
+	
+		&::before {
+			right: 1px;
+			background: var(--color-gray-alabaster);
+			border-radius: 75px;
+			transition: 0.4s;
+			right: 2px;
+		}
+
+		&::after {
+			width: 32px;
+			height: 32px;
+			background-color: var(--color-gray-baby-powder);
+			border-radius: 100%;
+			transition: 0.4s;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}	
+	}
 }
 
+
+/*
+ * ## form layout
+ */
 .labelWrapperInline {
 	display: inline-flex;
 	flex-wrap: nowrap;

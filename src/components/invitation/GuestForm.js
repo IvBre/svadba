@@ -23,11 +23,13 @@ export class GuestForm extends React.Component {
                             <label class="labelWrapperInline marginLeftNone">
                                 <span class="label labelInline">Are you joining us?</span>
                                 <input name="isComing[]" type="checkbox" defaultChecked={state.isComing} onInput={onInput} class="inputCheckbox" />
+                                <span class="pinoeppel"></span>
                             </label>
 
                             <label class="labelWrapperInline">
                                 <span class="label labelInline">Are you a vegetarian?</span>
                                 <input name="isVegetarian[]" type="checkbox" defaultChecked={state.isVegetarian} onInput={onInput} class="inputCheckbox" />
+                                <span class="pinoeppel"></span>
                             </label>
                         </div>
                     </div>
