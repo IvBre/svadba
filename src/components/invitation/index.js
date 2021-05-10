@@ -35,14 +35,14 @@ class SearchInvitationForm extends React.Component {
                     <div class="box">
                         <div class="boxBody">
                             <label>
-                                Name:
+                                {t("name")}:
                                 <input type="text" value={this.state.value} name="code" onInput={this.handleCodeChange} />
                             </label>
                         </div>
                     </div>
                     <div class="row">
                         <span class="centerX">
-                            <button type="submit">Submit</button>
+                            <button type="submit">{t("submit")}</button>
                         </span>
                     </div>
                 </form>

@@ -104,24 +104,25 @@ const Transportation = () => {
 						Погледајте <Link href="/tradition">Традиција</Link> страницу за више детаља о сватовима.<br />
 						Најбоље је да изнајмите кола на аеродрому. <a href="https://beg.aero/eng/parking_access/transport/car_rental" target="_blank">Листа компанија за изнајмљивање аута можете наћи на сајту аеродрома.</a>
 					</p>
-					<p><b>Important warning #1!</b> Once you land at the airport, don't take a taxi from the people who are asking you if you need a taxi.<br />
-						There are a lot of fake taxi drivers that will try to rip you off. So once you leave the gate you will see a booth next to the exit from the airport building where it says something like “taxi vouchers”.<br />
-						You need to go there and tell them where you need to go and they will give you a voucher on which the real price for that destination is written.<br />
-						You will then go outside of the building and look for the line of taxi vehicles on the left.<br />
-						The taxi driver will ask you for the voucher to show it. Only enter in a vehicle where the driver is asking for this voucher.<br />
-						No matter what the taxi driver says, you are obliged only to pay the amount written on this voucher, no more.<br />
-						I never had problems with these taxi vouchers, but if you encounter some problems there is a number on the voucher that you can call.<br />
-						UPDATE: The taxi voucher booth has been removed because of Corona and the fact that there was not so many passengers.<br />
-						But there is still a line of taxi's in front of the building that you can take. <br />
-						Take a look if the driver has an ID displayed on the front console of his car (this means the taxi is legit), otherwise you might end up paying 40e instead of 15e for a drive to the city.
+					<p><b>Важно упозорење #1!</b>Када слетите на аеродром, немојте узети такси од људи који Вам нуде такси.<br />
+						На аеродрому има много нелегалних таксиста који ће пробати да Вас опељеше.
+						Тако да кад напустите гејт, видећете као шалтер са десне стране пре излаза из зграде аеродрома, на ком пише такси ваучери, или слично.<br />
+						Идите тамо и реците у који део града треба да идете и они ће Вам дати ваучер на којем пише тачна цена таксија за ту дестинацију.<br />
+						Онда са тим ваучером изађете напоље и видећете колону такси возила паркирану лево. <br />
+						Возач ће Вам тражити дапокажете тај ваучер. Уђите само у таксије који траже тај ваучер.<br />
+						Без обзира шта каже возач, у обавези сте само да платите износ који је назначен на ваучеру, не више.<br />
+						Нисмо имали проблема раније са овим ваучерима, али ако се нешто догоди имате број на том ваучеру који можете позвати.<br />
+						ИЗМЕНА: Овај шалтер за ваучере више не постоји, због Короне и чињенице да нема много путника.<br />
+						Али и даље можете наћи такси испред зграде аеродрома. <br />
+						Обратите пажњу да возач има своју такси идентификацију на централној конзоли у ауту (то значи да је такси легалан), у супротном може да се деси да платите 40 еура уместо 15 за вожњу до града.
 					</p>
-					<p><b>Important warning #2!</b> Never enter in a taxi on the street. Always call the taxi service instead.<br />
-						There are a lot of wild fake taxis that will try to rip you off especially when they realize you are a foreigner.<br />
+					<p><b>Важно упозорење #2!</b> Никад немојте улазити у такси на улици. Увек позовите такси службу.<br />
+						С обзиром да има доста нелегалних такси возила, покушазе да Вас опељеше за цену вожње поготово ако виде да сте странац.<br />
 					</p>
 					<p>
-						The numbers of Belgrade taxi call centers can be found here: <a href="https://zovitaxi.com/beograd_e.html" target="_blank">zovitaxi.com</a><br />
-						We would recommend, Pink, Lux or Beogradski taxi.<br />
-						If you don't feel comfortable calling by phone, you can also use some of the apps:
+						Бројеви такси службе у Београду можете наћи овде: <a href="https://zovitaxi.com/beograd_e.html" target="_blank">zovitaxi.com</a><br />
+						Препоручујемо Пинк, Лукс или Београдски такси.<br />
+						Ако радије не би да зовете службу, можете наручити такси и преко апликације:
 					</p>
 				</div>
 			) : lang === "de" ? (
@@ -192,16 +193,16 @@ const Transportation = () => {
 			{lang === "sr" ? (
 				<div>
 					<p>
-						You can also use the <a href="https://appcargo.com/en/cargo-2/" target="_blank">car::go</a> app which is like a Serbian Uber. <br />
-						It is cheaper then taxi, but be aware that sometimes you need to wait a bit longer to find the driver in the near of you.<br />
-						But if you're in the city center then there will always be some drivers ready to pick you up. <br />
-						Everything is calculated and paid by the app, so you don't need to give any money to the driver.<br />
-						Make sure to create the account and add your credit card, to be able to use it when you need it.
+						Имате опцију и <a href="https://appcargo.com/en/cargo-2/" target="_blank">car::go</a> апликације која је као српски Убер. <br />
+						Јефтиније је него такси, али имајте у виду да некад треба мало дуже да сачекате за возило.<br />
+						Али ако сте у центру града онда увек има возача у околони који би дошли брзо.<br />
+						Све је израчунато преко апликације, тако да не морате да дајете новац возачу.<br />
+						Најбоље је да направите налог и додате кредитну картицу пре него што Вам буде затребао превоз.
 					</p>
 					<p>
-						Public transportation in Belgrade doesn't have metro, so you would need to use buses, trams or trolleybuses.<br />
-						The system for tickets is called "Bus Plus", and a ticket price for 90min drive is 90 RSD.<br />
-						There are several types of tickets you can get:</p>
+						Градски превоз у Београду нема метро, тако да би се морали возити аутобусима, трамвајима и тролејбусима.<br />
+						Систем за наплату карата се зове "Бус Плус", и цена карте од 90 минута је 90 динара.<br />
+						Постоји неколико врста карти које можете узети:</p>
 						<ul>
 							<li>The one time ticket at the driver, which costs a bit more, around 150 RSD</li>
 							<li>The non-personalised ticket card that you can buy at the kiosk for 250 RSD and then recharge it with as much tickets as you want.</li>
