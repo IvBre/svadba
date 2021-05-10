@@ -10,7 +10,7 @@ const Tradition = () => {
 			<div class="textImagePair textImagePairAli">
 				<div class="frame">
 					<div class="frameBody">
-						<img src="/assets/tradition/Svatovi-i-običaji-mladenaca6.jpeg" alt="stari-obicaji" width="600" />
+						<img src="/assets/tradition/Svatovi-i-obicaji-mladenaca6.jpeg" alt="stari-obicaji" width="600" />
 					</div>
 				</div>
 				<p>{t("tradition_disclaimer")}</p>
