@@ -119,7 +119,7 @@ class RSVPForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <div class="box">
                     <div class="boxBody">
-                        <label class="label" for="email">{t("email")}:</label>
+                        <label class="label" for="email">{this.translation.t("email")}:</label>
                         <input id="input-email" name="email" class="inputText" type="email" value={this.state.invitation.email} onInput={this.handleInvitationChange} />
                     </div>
                 </div>
@@ -128,17 +128,17 @@ class RSVPForm extends React.Component {
                     <>
                     <GuestForm state={guest} onInput={this.handleGuestChange(index)} />
                     {guest.guestId === 0 ?
-                        <button onClick={this.handleRemoveGuest(index)} class="buttonChoice">{t("remove_guest")}</button> : ""
+                        <button onClick={this.handleRemoveGuest(index)} class="buttonChoice">{this.translation.t("remove_guest")}</button> : ""
                     }
                     </>
                 )}
 
                 {this.state.invitation.maxGuests > this.state.invitation.guests.length ?
-                    <button onClick={this.handleAddMoreGuests} class="buttonChoice">{t("add_guest")}</button> : ""
+                    <button onClick={this.handleAddMoreGuests} class="buttonChoice">{this.translation.t("add_guest")}</button> : ""
                 }
 
                 <span class="centerX">
-                    <button type="submit" class="buttonChoice">{t("submit")}</button>
+                    <button type="submit" class="buttonChoice">{this.translation.t("submit")}</button>
                 </span>
             </form>
         );
