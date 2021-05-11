@@ -41,7 +41,7 @@ const Home = () => {
 					{lang === "sr" ? (
 						<p>Церемонија ће се одржати у <strong>17 часова</strong>, на горњој тераси Кур Салона.</p>
 					) : lang === "de" ? (
-						<p>The ceremony will happen at <strong>16h</strong>, at the upper balcony of the Kur Salon.</p>
+						<p>Die Trauung findet um <strong>16:00 Uhr</strong>, auf dem oberen Balkon des Kursalons statt.</p>
 					) : (
 						<p>The ceremony will happen at <strong>16h</strong>, at the upper balcony of the Kur Salon.</p>
 					)}
@@ -57,8 +57,8 @@ const Home = () => {
 					</div>
 				) : lang === "de" ? (
 					<div>
-						<p>If you want to partake in <Link href="/tradition">the traditional serbian wedding activities</Link>, please arrive at the above location at <strong>13h, latest 14h</strong>. Please refer to <Link href="/schedule">the schedule</Link> for more details.</p>
-						<p>Please keep in mind that we will drive some 15km to <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Donja Borina</a> to "pick up" the bride, so make sure you have a designated driver and a car.</p>
+						<p>Wenn Ihr an den <Link href="/tradition">traditionellen serbischen Hochzeitsaktivitäten</Link> teilnehmen wollt, findet Euch bitte bis <strong>13:00 Uhr, spätestens 14:00</strong> an der oben genannten Location ein. Haltet Euch einfach an den <Link href="/schedule">Ablaufplan</Link>, um mehr Details zu erfahren.</p>
+						<p>Bitte merkt Euch, dass wir 15km nach <a href="https://www.google.com/maps/@44.4372553,19.1615533,243m/data=!3m1!1e3" target="_blank">Donja Borina</a> fahren werden, um die Braut abzuholen. Also besorgt Euch einen Wagen und klärt, wer diesen fahren wird.</p>
 					</div>
 				) : (
 					<div>
