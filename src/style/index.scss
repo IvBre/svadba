@@ -217,7 +217,7 @@ iframe {
 	@include visuallyhidden;
 
 	&:checked {
-		+ .pinoeppel {
+		+ Joeppel {
 			&:before{
 				background-color: var(--color-green-pantone);
 			}
@@ -229,6 +229,7 @@ iframe {
 		
 	& + .pinoeppel {
 		background: var(--color-white);
+		border: 2px solid var(--color-green-forest);
 		border-radius: 80px;
 		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 		display: block;
