@@ -39,7 +39,7 @@ const Location = () => {
 				) : lang === "de" ? (
 					<p class="paragraph">
 					So sieht dieser Park aus der Vogelperspektive aus. <br />
-					In der Mitte seht Ihr einen großen Brunnen, und wenn Ihr nach Westen abbiegt, seht Ihr den Kur Salon. <br />
+					In der Mitte seht Ihr einen großen Brunnen, unten im Bild seht Ihr den Kur Salon. <br />
 					Andere Gebäude, sind ein spezialisiertes Rehabilitationskrankenhaus und ein Wellnesscenter "Kovilje".
 					</p>
 				) : (

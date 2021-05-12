@@ -132,6 +132,7 @@ p {
 	margin: 24px 0;
 }
 
+
 a {
 	color: var(--color-blue);
 }
@@ -141,9 +142,19 @@ a:hover {
 }
 
 ul {
-	list-style: none;
-	margin-bottom: 24px;
+	margin: 0 0 24px 24px;
 	padding: 0;
+}
+
+.noBullets {
+	list-style: none;
+	margin-left: 0;
+}
+
+li {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 12px;
 }
 
 iframe {

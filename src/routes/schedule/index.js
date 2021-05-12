@@ -7,7 +7,7 @@ const Schedule = () => {
 	return (
 		<div class="pageWrapper">
 			<h1>{t("schedule_title")}</h1>
-			<ul>
+			<ul class="noBullets">
 				<li class={style.listItem}><time datetime="13:00+02:00" class={`${style.time} ampersand`}><span class="ampersandArrowLeft"></span>13:00<span class="ampersandArrowRight"></span></time> <span class={style.listItemText}>{t("schedule_1")}</span></li>
 				<li class={style.listItem}><time datetime="14:00+02:00" class={`${style.time} ampersand`}><span class="ampersandArrowLeft"></span>14:00<span class="ampersandArrowRight"></span></time> <span class={style.listItemText}>{t("schedule_2")}</span></li>
 				<li class={style.listItem}><time datetime="14:30+02:00" class={`${style.time} ampersand`}><span class="ampersandArrowLeft"></span>14:30<span class="ampersandArrowRight"></span></time> <span class={style.listItemText}>{t("schedule_3")}</span></li>
