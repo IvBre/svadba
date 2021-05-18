@@ -164,7 +164,7 @@ const Interesting = () => {
 						</ul>
 					<p>
 					Wenn Ihr Probleme bei der Buchung habt, lasst es uns wissen und wir können weiterhelfen. <br />
-					In jedem Fall könnt Ihr auch in unserem Garten campen. Wir haben viel Platz. Wir haben auch einige Zelte. Aber denkt dran, dass diese begrenzt sind. Also werden wir sie nach dem System verteilen, "wer zuerst kommt, mahlt zuerst".
+					In jedem Fall könnt Ihr auch in unserem Garten campen. Wir haben viel Platz. Wir haben auch einige Zelte. Aber denkt dran, dass diese begrenzt sind. Also werden wir sie nach dem System verteilen, "wer zuerst kommt, malt zuerst".
 					</p>
 				</div>
 			) : (
