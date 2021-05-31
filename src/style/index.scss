@@ -246,7 +246,11 @@ iframe {
 				transform: rotate(0deg);
 			}
 		}
-	}	
+	}
+	
+	// &:hover + .pinoeppel {
+	// 	box-shadow: 0 0.15em 0 0 rgba(9, 173, 75, 0.75);
+	// }
 		
 	& + .pinoeppel {
 		background: var(--color-white);
@@ -259,6 +263,7 @@ iframe {
 		margin: -2px 0 32px 16px;
 		outline: none;
 		padding: 2px 5px;
+		transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 		width: 64px;
 		height: 32px;
 		user-select: none;
@@ -293,7 +298,7 @@ iframe {
 			opacity: 1;
 			top: -2px;
 			left: -2px;
-		}	
+		}
 	}
 }
 
