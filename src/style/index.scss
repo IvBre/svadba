@@ -290,7 +290,7 @@ iframe {
  */
 .labelWrapperInline {
 	display: inline-flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 
 	.inputCheckbox {
 		margin: 0 0 32px 12px;
@@ -345,6 +345,12 @@ iframe {
 		padding: 32px;
 		position: relative;
 		z-index: 2;
+	}
+
+	&:last-of-type {
+		.boxBody {
+			margin-bottom: 24px;
+		}
 	}
 }
 

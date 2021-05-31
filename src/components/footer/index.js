@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<footer class={style.footer}>
 			<h4 class={style.footerHeadline}>{t("footer.message")}:</h4>
-			<ul>
+			<ul style="margin: 0;">
 				<li class={style.listItemLabelIcon}>
 					<span class={ `${style.icon} ${style.iconMessenger}` }>
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
