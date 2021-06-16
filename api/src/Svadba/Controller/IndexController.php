@@ -103,6 +103,8 @@ class IndexController
             $this->guestRepository->insert($insertGuestData);
         }
 
+        mail("slatkishar@gmail.com", "New RSVP for the wedding", "New response on the wedding invitation: " . json_encode($data));
+
         $response = new SuccessJsonResponse();
 
         return $response->send();
