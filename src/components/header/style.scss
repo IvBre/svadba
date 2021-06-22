@@ -90,6 +90,7 @@
 
 .list {
 	height: calc(100% - 66px);
+	overflow-x: hidden;
 	overflow-y: auto;
 	margin: 0;
 	

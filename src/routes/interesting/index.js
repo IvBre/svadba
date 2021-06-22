@@ -7,9 +7,11 @@ const Interesting = () => {
 		<div class="pageWrapper">
 			<h1>{t("interesting_title")}</h1>
 			<h2>{t("interesting_belgrade")}</h2>
-			<div class="frame">
-				<div class="frameBody">
-					<img src="/assets/interesting/Upoznajte-Beograd.jpeg" alt="beograd" width="600" />
+			<div class="textImagePairAli">
+				<div class="frame">
+					<div class="frameBody">
+						<img src="/assets/interesting/Upoznajte-Beograd.jpeg" alt="beograd" width="600" />
+					</div>
 				</div>
 			</div>
 			<p>{t("interesting_intro_1")}</p>
@@ -54,15 +56,17 @@ const Interesting = () => {
 						Надамо се да ћете уживати у овом месту колико и ми уживамо сваки пут кад дођемо у Србију!<br />
 					</p>
 					
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+							</div>
 						</div>
+						<p>
+							Пошто је Бања место пре свега за људе који долазе да се лече, нема неких додатних активности у којима можете уживати сем опуштања у велнесу или шетња по парку. <br />
+							Али ако имате нешто времена, можете отићи у комплекс <a href="https://suncanareka.rs/" target="_blank">Сунчана река</a>, неких 10 мин вожње од Бање. Деца би посебно уживала јер комплекс има прилично разних домаћих животиња.<br />
+						</p>
 					</div>
-					<p>
-						Пошто је Бања место пре свега за људе који долазе да се лече, нема неких додатних активности у којима можете уживати сем опуштања у велнесу или шетња по парку. <br />
-						Али ако имате нешто времена, можете отићи у комплекс <a href="https://suncanareka.rs/" target="_blank">Сунчана река</a>, неких 10 мин вожње од Бање. Деца би посебно уживала јер комплекс има прилично разних домаћих животиња.<br />
-					</p>
 				</div>
 			) : lang === "de" ? (
 				<div>
@@ -77,9 +81,11 @@ const Interesting = () => {
 					Der heutige Spa-Komplex der Banja besteht aus einem großen Park mit einem Brunnen in der Mitte, der von mehreren Rehabilitationszentren, Wellnesshotels und dem oben genannten „Kur-Salon“ umgeben ist. <br />
 					Wir hoffen, Sie werden diesen Ort genauso genießen, wie wir ihn jedes Mal genießen, wenn wir in Serbien sind!<br />
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+					<div class="textImagePair textImagePairMicha">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -100,9 +106,11 @@ const Interesting = () => {
 						The Banja’s spa complex today consists of a big park with a fountain in the middle, surrounded by several rehabilitation centers, wellness hotels and the above mentioned “Kur-Salon”.<br />
 						We hope you will enjoy this place as much as we enjoy it every time we are in Serbia!<br />
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/banja-koviljaca.jpeg" alt="banjski-park-fontana" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -206,9 +214,11 @@ const Interesting = () => {
 						If you continue driving from the cabin, in the direction of Tara and Bajina Bašta city you will see right before the entrance to Bajina Bašta,<br />
 						a famous House on the Drina river, which appeared on the front cover of the National Geographic magazine as the best picture taken of that month.<br />
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+					<div class="textImagePair textImagePairMicha">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+							</div>
 						</div>
 					</div>
 					<p>
@@ -225,9 +235,11 @@ const Interesting = () => {
 					<p>
 					Wenn Ihr von der Hütte aus weiter in Richtung Tara und Bajina Bašta fahrt, seht Ihr direkt vor dem Eingang zur Bajina Bašta ein berühmtes Haus an der Drina, das auf der Titelseite des National Geographic Magazins als bestes Foto des Monats erschien. <br />
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+							</div>
 						</div>
 					</div>
 					<p>
@@ -245,9 +257,11 @@ const Interesting = () => {
 						If you continue driving from the cabin, in the direction of Tara and Bajina Bašta city you will see right before the entrance to Bajina Bašta,<br />
 						a famous House on the Drina river, which appeared on the front cover of the National Geographic magazine as the best picture taken of that month.<br />
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/kucica-na-drini.jpeg" alt="kucica-na-drini" width="600"/>
+							</div>
 						</div>
 					</div>
 					<p>
@@ -284,9 +298,11 @@ const Interesting = () => {
 						Zaovine lake is an accumulative reversible lake, meaning that in the times of electricity shortage on the national level it can become almost empty. <br />
 						Although in summer times this barely ever happens, since the demand of electricity is not as high as in the winter.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -310,9 +326,11 @@ const Interesting = () => {
 						<p>
 						Es gibt einen berühmten Aussichtspunkt "Banjska stena", von dem aus Ihr den massiven Canyon von Tara und Drina sehen könnt.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -320,9 +338,11 @@ const Interesting = () => {
 					Der Zaovine-See ist ein akkumulativer reversibler See, was bedeutet, dass er in Zeiten des Strommangels auf nationaler Ebene fast leer werden kann. <br />
 					Obwohl dies im Sommer kaum jemals vorkommt, ist der Strombedarf nicht so hoch wie im Winter.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+					<div class="textImagePair textImagePairMicha">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -346,9 +366,11 @@ const Interesting = () => {
 					<p>
 						There is a famous viewpoint "Banjska stena" where you can see the massive canyon of Tara and Drina.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/Tara_Vidikovac_Banjska_Stena_01.jpeg" alt="vidikovac-tara" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -356,9 +378,11 @@ const Interesting = () => {
 						Zaovine lake is an accumulative reversible lake, meaning that in the times of electricity shortage on the national level it can become almost empty. <br />
 						Although in summer times this barely ever happens, since the demand of electricity is not as high as in the winter.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/zaovinsko_jezero_aps_341442240.jpeg" alt="zaovisnko-jezero" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -380,9 +404,11 @@ const Interesting = () => {
 						Anyways, needless to say this "village" has a lot of movie memorabilia as well, it's own alternative movies cinema, restaurant etc. <br />
 						It happened more often then not that some famous move stars would visit Kusturice here.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+							</div>
 						</div>
 					</div>
 					
@@ -398,9 +424,11 @@ const Interesting = () => {
 						Natürlich hat dieses "Dorf" auch viele Film-Erinnerungsstücke, es ist ein eigenes alternatives Kino, Restaurant, Restaurant usw. <br />
 						Es kam öfter vor, dass einige berühmte Movie-Stars Kusturice hier besuchten.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+							</div>
 						</div>
 					</div>
 					
@@ -416,9 +444,11 @@ const Interesting = () => {
 						Anyways, needless to say this "village" has a lot of movie memorabilia as well, it's own alternative movies cinema, restaurant etc. <br />
 						It happened more often then not that some famous move stars would visit Kusturice here.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/Drvengrad.jpeg" alt="drvengrad" width="600" />
+							</div>
 						</div>
 					</div>
 					
@@ -438,9 +468,11 @@ const Interesting = () => {
 						In the middle of it is a town also called "Zlatibor" that became a bit more urban then intended but still interesting to see, if you're missing a bit of society.<br />
 						This town has a little lake in the middle of it, and a nice park/forest area were you can go for a walk.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+					<div class="textImagePair textImagePairMicha">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -461,9 +493,11 @@ const Interesting = () => {
 						In seiner Mitte befindet sich das gleichnamige Stättchen namens "Zlatibor", welches über die Zeit etwas urbaner geworden ist als geplant, aber dennoch interessant zu besichtigen ist. Falls Ihr die Gesellschaft vermissen solltet.<br />
 						Die Stadt hat einen kleinen Fluss in seiner Mitte und eine schöne Park/Waldgegend, die zum spazieren einläd.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -485,9 +519,11 @@ const Interesting = () => {
 						In the middle of it is a town also called "Zlatibor" that became a bit more urban then intended but still interesting to see, if you're missing a bit of society.<br />
 						This town has a little lake in the middle of it, and a nice park/forest area were you can go for a walk.
 					</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/slika-zlatibor-1.jpeg" alt="zlatibor-lake" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>
@@ -511,9 +547,11 @@ const Interesting = () => {
 						He rose through the ranks of the Ottoman Empire, eventually becoming the Grand Vizier.</p>
 					<p>Even though he was taken to become a Turk, he never forgot his roots. So when he had an opportunity he helped his people back home as much as he could.<br />
 						One of these things he did is also building this bridge on the Drina river.</p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>This bridge also inspired our Nobelist writer Ivo Andrić in writing his master piece "Na Drini Ćuprija".</p>
@@ -530,9 +568,11 @@ const Interesting = () => {
 					Er stieg durch die Reihen des Osmanischen Reiches auf und wurde schließlich der Großwesir.</p>
 					<p>Obwohl er als Türke aufgenommen wurde, vergaß er nie seine Wurzeln. Als er die Gelegenheit hatte, half er seinen Leuten zu Hause so viel er konnte. <br />
 					Eines dieser Dinge, die er getan hat, ist auch der Bau dieser Brücke über die Drina. </p>
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+					<div class="textImagePair textImagePairMicha">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>Diese Brücke inspirierte auch unseren Nobelpreisträger Ivo Andrić beim Schreiben seines Meisterwerks "Die Brücke über die Drina". </p>
@@ -550,9 +590,11 @@ const Interesting = () => {
 					<p>Even though he was taken to become a Turk, he never forgot his roots. So when he had an opportunity he helped his people back home as much as he could.<br />
 						One of these things he did is also building this bridge on the Drina river.</p>
 					
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/na-drini-cuprija.jpeg" alt="na-drini-cuprija" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>This bridge also inspired our Nobelist writer Ivo Andrić in writing his master piece "Na Drini Ćuprija".</p>
@@ -568,9 +610,11 @@ const Interesting = () => {
 						So if you have another week to spear then we would recommend you to visit it, if you haven't did so before.</p>
 					<p>The road through Bosnia is actually better, has less curves, so if it's possible take that route, and go straight to "Herceg Novi" city.</p>
 					
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+					<div class="textImagePair textImagePairJerome">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>From there you can explore the "Boka Kotorska" bay, and the old city "Kotor". After that you can continue east, towards Budva and other bigger cities.</p>
@@ -581,9 +625,11 @@ const Interesting = () => {
 				Wenn Ihr also noch eine Woche Zeit habt, empfehlen wir Euch, es zu besuchen, falls Ihr dies noch nicht getan haben solltet.</p>
 				<p> Die Straße durch Bosnien ist tatsächlich besser, hat weniger Kurven. Wenn es also möglich ist, nehmt direkt diese Route und fahrt direkt in die Stadt "Herceg Novi".</p>
 				
-				<div class="frame">
-					<div class="frameBody">
-						<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+				<div class="textImagePair textImagePairMicha">
+					<div class="frame">
+						<div class="frameBody">
+							<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+						</div>
 					</div>
 				</div>
 				<p>Von dort aus könnt Ihr die Bucht "Boka Kotorska" und die Altstadt "Kotor" erkunden. Danach könnt Ihr weiter nach Osten in Richtung Budva und anderen größeren Städten fahren.</p>
@@ -594,21 +640,24 @@ const Interesting = () => {
 						So if you have another week to spear then we would recommend you to visit it, if you haven't did so before.</p>
 					<p>The road through Bosnia is actually better, has less curves, so if it's possible take that route, and go straight to "Herceg Novi" city.</p>
 					
-					<div class="frame">
-						<div class="frameBody">
-							<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+					<div class="textImagePair textImagePairAli">
+						<div class="frame">
+							<div class="frameBody">
+								<img src="/assets/interesting/herceg-novi-slider.jpeg" alt="herceg novi" width="600" />
+							</div>
 						</div>
 					</div>
 					<p>From there you can explore the "Boka Kotorska" bay, and the old city "Kotor". After that you can continue east, towards Budva and other bigger cities.</p>
 				</div>
 			)}
 
-			<div class="frame">
-				<div class="frameBody">
-					<img src="/assets/interesting/site_0125_0025-750-0-20151105143925.jpeg" alt="kotor" width="600" />
+			<div class="textImagePair textImagePairJerome">
+				<div class="frame">
+					<div class="frameBody">
+						<img src="/assets/interesting/site_0125_0025-750-0-20151105143925.jpeg" alt="kotor" width="600" />
+					</div>
 				</div>
 			</div>
-
 		</div>
 	)
 };
