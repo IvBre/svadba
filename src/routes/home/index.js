@@ -41,9 +41,9 @@ const Home = () => {
 					{lang === "sr" ? (
 						<p>Церемонија ће се одржати у <strong>17 часова</strong>, на горњој тераси Кур Салона.</p>
 					) : lang === "de" ? (
-						<p>Die Trauung findet um <strong>16:00 Uhr</strong>, auf dem oberen Balkon des Kursalons statt.</p>
+						<p>Die Trauung findet um <strong>17:00 Uhr</strong>, auf dem oberen Balkon des Kursalons statt.</p>
 					) : (
-						<p>The ceremony will happen at <strong>16h</strong>, at the upper balcony of the Kur Salon.</p>
+						<p>The ceremony will happen at <strong>17h</strong>, at the upper balcony of the Kur Salon.</p>
 					)}
 				<div class="frame">
 					<div class="frameBody">

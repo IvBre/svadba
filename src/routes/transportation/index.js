@@ -81,7 +81,7 @@ const Transportation = () => {
 					Aber die Fahrt ist sehr angenehm, da nicht so viele Leute sie antreten. <br />
 					Der Hauptbahnhof in Belgrad wurde nach <a href="https://goo.gl/maps/NKFs2xao1nYPBPrB8" target="_blank"> Prokop </a> verlegt, das sich nicht im Stadtzentrum befindet <br />
 					Ihr müsst also ein Taxi nehmen und zusätzliche Zeit berechnen, um dorthin zu gelangen. <br />
-					Anstatt nach Prokop zu fahren, könnt Ihr auch zur nächsten Station gehen, die sich auf <a href="https://goo.gl/maps/Vkeg11fbDxy2joZf9" target="_blank"> New Belgrade </a> befindet. <br / >
+					Anstatt nach Prokop zu fahren, könnt Ihr auch zur nächsten Station gehen, die sich auf <a href="https://goo.gl/maps/Vkeg11fbDxy2joZf9" target="_blank"> New Belgrade </a> befindet. <br />
 					Ihr könnt den Zugfahrplan hier überprüfen: <a href="https://www.srbvoz.rs/en/timetable/" target="_blank"> srbvoz.rs </a>
 					</p>
 				) : (
@@ -284,7 +284,7 @@ const Transportation = () => {
 
 			{lang === "sr" ? (
 				<div>
-					<p>We usually use VIP mobile provider, since they have a nice starting package. Last time we each got 21 GB that you can use for a month.<br />
+					<p>We usually use VIP (which got rebranded to "A1") mobile provider, since they have a nice starting package. Last time we each got 21 GB that you can use for a month.<br />
 						And you would pay only 300 dinars, which is like 2.5 euro.<br />
 						Last time we were in Serbia we saw that they changed their brand name to <a href="https://a1.rs/privatni" target="_blank">A1.</a><br />
 						Make sure not to take "the special sim card for foreigners". They also offer this, not sure why would anyone buy this, it's way less GBs and you pay ~30 euros.</p>
@@ -319,7 +319,7 @@ const Transportation = () => {
 				</div>
 			) : (
 				<div>
-					<p>We usually use VIP mobile provider, since they have a nice starting package. Last time we each got 21 GB that you can use for a month.<br />
+					<p>We usually use VIP (which got rebranded to "A1") mobile provider, since they have a nice starting package. Last time we each got 21 GB that you can use for a month.<br />
 						And you would pay only 300 dinars, which is like 2.5 euro.<br />
 						Make sure not to take "the special sim card for foreigners". They also offer this, not sure why would anyone buy this, it's way less GBs and you pay ~30 euros.</p>
 					<p>
